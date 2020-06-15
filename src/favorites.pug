@@ -1,0 +1,34 @@
+- var pageTitle = 'Избранное'
+
+include assets/chunks/header/__header
+include assets/chunks/filters/__filters
+include assets/chunks/filters-adaptive/__filters-adaptive
+include assets/chunks/leftMenu/__leftMenu
+include assets/chunks/catalog/__catalog
+include assets/chunks/footer/__footer
+include assets/chunks/scripts/__scripts
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	include assets/chunks/head/__head
+body
+
+	.site__header
+		+header
+
+	.site__center
+		//- include __breadcrumbs
+
+		.catalogPage.w1
+			+adaptiveFilters
+			+leftMenu
+			.catalog__outer
+				.adaptiveFilterOnBtn Фильтрация
+				+filtersArea
+				+catalogArea
+
+
+	.site__footer
+		+footer
+
+	+scripts

@@ -1,0 +1,25 @@
+- var pageTitle = 'Главная страница'
+
+include assets/chunks/header/__header
+include assets/chunks/slider-promo/__slider-promo
+include assets/chunks/footer/__footer
+include assets/chunks/scripts/__scripts
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+	include assets/chunks/head/__head
+body
+
+	.site__header
+		+header
+
+	.site__center
+		+slider-promo
+
+	.site__footer
+		+footer
+
+	+scripts
+	
