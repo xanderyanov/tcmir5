@@ -18,14 +18,12 @@ body
 
 	.site__center
 		//- include __breadcrumbs
-
-		.catalogPage.w1
-			+adaptiveFilters
-			+leftMenu
-			.catalog__outer
-				.adaptiveFilterOnBtn Фильтрация
-				+filtersArea
-				+catalogArea
+		.catalogPage__outer.w0
+			.title1.w1
+				h1= pageTitle
+			.catalogPage.w1
+				.catalog__outer.catalog__outer_fav
+					+catalogAreaFav
 
 
 	.site__footer

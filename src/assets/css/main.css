@@ -30,7 +30,7 @@ body {
   background: var(--x1greySuperLight);
   display: flex;
   align-items: baseline;
-  margin: 4px auto 0;
+  margin: 8px auto 0;
 }
 
 .title1 h1,
@@ -45,4 +45,9 @@ body {
   line-height: 1;
   display: flex;
   margin-left: 1.25rem;
+}
+
+.screen-resolution {
+  margin-top: 10px;
+  color: rgba(65, 51, 40, 0.3);
 }

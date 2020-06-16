@@ -163,7 +163,7 @@
 
 .topFavBtn__area {
   position: relative;
-  margin-right: 0.625rem;
+  /* margin-right: 0.625rem; */
   display: flex;
   align-items: center;
 }

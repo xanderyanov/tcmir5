@@ -14,6 +14,9 @@
   .tovarCard__area {
     width: 33.333%;
   }
+  .catalog_fav .tovarCard__area {
+    width: 25%;
+  }
   .catalogMenu__outer {
     width: 25%;
   }
@@ -28,6 +31,10 @@
 @media only screen and (max-width: 768px) {
   .catalog__outer {
     width: 100%;
+  }
+
+  .catalog_fav .tovarCard__area {
+    width: 33.333%;
   }
 
   .tovarCard__area:hover {
@@ -80,6 +87,9 @@
   .tovarCard__area {
     width: 50%;
   }
+  .catalog_fav .tovarCard__area {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -89,16 +99,25 @@
   .tovarCard__area {
     width: 80%;
   }
+  .catalog_fav .tovarCard__area {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .tovarCard__area {
     width: 90%;
   }
+  .catalog_fav .tovarCard__area {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   .tovarCard__area {
+    width: 100%;
+  }
+  .catalog_fav .tovarCard__area {
     width: 100%;
   }
 }

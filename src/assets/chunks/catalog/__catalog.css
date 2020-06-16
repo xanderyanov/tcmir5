@@ -10,6 +10,10 @@
   width: 80%;
 }
 
+.catalog__outer_fav {
+  width: 100% !important;
+}
+
 .catalog {
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +31,10 @@
 }
 .tovarCard__area:hover {
   z-index: 3000;
+}
+
+.catalog_fav .tovarCard__area {
+  width: 20%;
 }
 
 .tovarCard__areaborder {
@@ -65,7 +73,7 @@
 
 .tovarCard__more {
   left: 0;
-  padding: 0 15px 10px;
+  padding: 2px 8px 10px;
   border: 1px solid var(--x1border);
   box-sizing: border-box;
   border-top: none;
@@ -219,6 +227,10 @@
   color: var(--tColor);
 }
 
+.tovarCard__price span {
+  margin-left: 3px;
+}
+
 .tovarCard__price_red {
   color: var(--redFill);
 }
@@ -232,6 +244,10 @@
   margin: 0 0.3125rem 0 0;
   text-decoration: line-through;
 }
+
+/* .tovarCard__priceOld span {
+  margin-left: 2px;
+} */
 
 .tovarCard__infoTitle {
   font-weight: 500;

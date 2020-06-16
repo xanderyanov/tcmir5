@@ -2,6 +2,10 @@
 
 include assets/chunks/header/__header
 include assets/chunks/shop/__shop
+include assets/chunks/filters/__filters
+include assets/chunks/filters-adaptive/__filters-adaptive
+include assets/chunks/leftMenu/__leftMenu
+include assets/chunks/catalog/__catalog
 include assets/chunks/content/__textInContent
 include assets/chunks/footer/__footer
 include assets/chunks/scripts/__scripts
@@ -19,8 +23,19 @@ body
 			h1= pageTitle
 		//- include __breadcrumbs
 		+shop
+		
+		.catalogPage__outer.w0
+			.title1.w1
+				h2= pageTitle
+				span 785
+			.catalogPage.w1
+				+adaptiveFilters
+				+leftMenuInShop
+				.catalog__outer
+					.adaptiveFilterOnBtn Фильтрация
+					+filtersArea
+					+catalogArea
 		+textInContent
-
 
 	.site__footer
 		+footer

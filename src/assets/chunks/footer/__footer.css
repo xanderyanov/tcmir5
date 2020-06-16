@@ -47,7 +47,7 @@
   margin-bottom: 1.25rem;
 }
 
-.policy1 {
+a.policy1 {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.4;
@@ -56,8 +56,8 @@
   text-decoration: none;
 }
 
-.policy1:hover {
-  text-decoration: underline;
+a.policy1:hover {
+  text-decoration: underline !important;
 }
 
 .footerMenu {
