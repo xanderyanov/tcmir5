@@ -37,7 +37,6 @@
 .catalogMenu li {
   list-style: none;
   width: 100%;
-  margin-bottom: 1px;
 }
 
 .catalogMenu li a {
@@ -48,6 +47,7 @@
   border-radius: 0.3125rem;
   position: relative;
   width: 100%;
+  margin-bottom: 2px;
 }
 
 .catalogMenu_inShop > li > a {
@@ -60,6 +60,10 @@
   font-weight: 700;
   text-transform: uppercase;
   background: var(--x1dark);
+}
+
+.catalogMenu li.lmLev0 > a > span {
+  color: #fff !important;
 }
 
 .catalogMenu li.lmLev1 > a {
