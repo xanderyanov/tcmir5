@@ -1,3 +1,9 @@
+$(window).on("load", function () {
+  if ($(".tovarPage__sliderAreaWrapper").length) {
+    $(".tovarPage__sliderAreaWrapper").removeClass("invisible");
+  }
+});
+
 $(function () {
   // Открытие и закрытие адаптивного меню по кнопке
   $(".am__JS").click(function (e) {

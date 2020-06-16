@@ -398,3 +398,29 @@
   opacity: 1;
   background-color: var(--redFill);
 }
+
+.shop__infoText {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.shop__infoTextContent {
+  padding: 0 10px 0 2.125rem;
+  font-size: 0.875rem;
+  color: var(--tColor);
+  line-height: 1.4;
+  width: 80%;
+}
+
+.shop__igArea {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.shopIg {
+  display: flex;
+  text-decoration: none;
+}

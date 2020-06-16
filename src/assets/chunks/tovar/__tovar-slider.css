@@ -1,5 +1,6 @@
 .tovarPage__sliderArea {
   width: 45%;
+  position: relative;
 }
 
 .slider__new {
@@ -72,7 +73,7 @@
   height: auto;
 }
 
-// Общие стили для слайдера
+/* Общие стили для слайдера */
 .sliderImgBtnPrev,
 .sliderImgBtnNext {
   background-color: #a6a6a6;
@@ -127,6 +128,16 @@
 }
 
 /* SliderPro-myCSS */
+.tovarPage__sliderAreaWrapper {
+  width: 100%;
+}
+
+.invisible {
+  position: absolute;
+  top: -20000px;
+  opacity: 0;
+}
+
 .tovarSliderPro {
   width: 100%;
 }

@@ -1,6 +1,7 @@
 .tovarPage__area {
   position: relative;
   margin-bottom: 1.875rem;
+  overflow: hidden;
 }
 
 .tovarPage {
@@ -12,6 +13,7 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  /* justify-content: flex-end; */
 }
 
 .tovarPage__info {
