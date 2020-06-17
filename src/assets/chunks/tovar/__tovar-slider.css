@@ -128,29 +128,42 @@
 }
 
 /* SliderPro-myCSS */
-.tovarPage__sliderAreaWrapper {
-  width: 100%;
+.tovarSliderPro {
+  visibility: hidden;
 }
 
-.invisible {
+.tovarPage__sliderAreaWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* .invisible {
   position: absolute;
   top: -20000px;
   opacity: 0;
-}
+} */
+/* .sp-image-container {
+  overflow: hidden;
+} */
 
 .tovarSliderPro {
   width: 100%;
 }
 
+/* .tovarSliderPro img {
+  display: none;
+} */
+
 .sp-previous-arrow:before,
 .sp-previous-arrow:after,
 .sp-next-arrow:before,
 .sp-next-arrow:after {
-  content: "";
+  /* content: "";
   position: absolute;
   width: 50%;
   height: 50%;
-  background-color: rgb(121, 121, 121);
+  background-color: rgb(121, 121, 121); */
+  display: none;
 }
 
 .sp-slide {
@@ -199,13 +212,59 @@
 }
 
 a.sp-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: 100%; */
-  height: 100%;
+  display: block;
 }
-a.sp-image img {
+/* a.sp-image img {
   display: block;
   width: 100%;
+} */
+
+.sp-arrows:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  /* background: #eee; */
+  z-index: 1;
+}
+
+.sp-arrows:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  /* background: #eee; */
+  z-index: 1;
+}
+
+.sp-arrow {
+  z-index: 10;
+  width: 2rem;
+  height: 2rem;
+  background: #a6a6a6;
+  text-align: center;
+  transition: all 0.2s;
+  border-radius: 3px;
+}
+
+.sp-arrow:hover {
+  background: #be3f46;
+}
+
+.sp-arrow i {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #fff;
+}
+
+.sp-grab {
+  cursor: url(../img/openhand.cur), move;
+}
+
+.sp-grabbing {
+  cursor: url(../img/closedhand.cur), move;
 }

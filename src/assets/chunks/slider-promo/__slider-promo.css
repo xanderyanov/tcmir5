@@ -182,13 +182,13 @@
 .swiper-button-prev1,
 .swiper-button-next1 {
   background: rgba(255, 255, 255, 0.8);
-  width: 56px;
-  height: 56px;
+  width: 2.25rem;
+  height: 2.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 50%;
-  margin-top: -28px;
+  margin-top: -1.125rem;
   border-radius: 3px;
 }
 

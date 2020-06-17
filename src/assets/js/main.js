@@ -1,8 +1,9 @@
-$(window).on("load", function () {
-  if ($(".tovarPage__sliderAreaWrapper").length) {
-    $(".tovarPage__sliderAreaWrapper").removeClass("invisible");
-  }
-});
+// $(window).on("load", function () {
+//   if ($(".tovarPage__sliderAreaWrapper").length) {
+//     $(".tovarPage__sliderAreaWrapper").removeClass("invisible");
+//     $(".tovarSliderPro img").css("display", "block");
+//   }
+// });
 
 $(function () {
   // Открытие и закрытие адаптивного меню по кнопке
@@ -260,6 +261,7 @@ $(function () {
     width: "100%",
     height: 600,
     arrows: true,
+    fadeArrows: true,
     buttons: false,
     waitForLayers: false,
     centerImage: true,
@@ -274,8 +276,12 @@ $(function () {
     thumbnailWidth: 66,
     thumbnailHeight: 100,
     breakpoints: {
+      1280: {
+        height: 500,
+        thumbnailsPosition: "bottom",
+      },
       1024: {
-        height: 400,
+        height: 450,
         thumbnailsPosition: "bottom",
       },
       768: {
@@ -292,6 +298,9 @@ $(function () {
       },
     },
   });
+  $(".sp-arrow").append("<i class='icon-arr-left1'></i>");
+  // $(".sp-next-arrow").append("<i class='icon-arr-right1'></i>");
+  $(".tovarSliderPro").css("visibility", "visible");
 
   // слайдер на странице магазина
   if ($(".swiper-container_shop").length) {
