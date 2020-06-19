@@ -70,6 +70,7 @@ a {
 .content ul,
 .content ol {
   padding: 0 0 15px 25px;
+  list-style-position: outside;
 }
 
 .content ul li,
@@ -79,7 +80,7 @@ a {
 }
 
 .content ul li {
-  list-style-image: url("../img/ulbg.png");
+  /* list-style-image: url("../img/ulbg.png"); */
 }
 
 .content blockquote {
@@ -187,4 +188,10 @@ table.clear td {
 }
 .table_outer250 table {
   min-width: 250px;
+}
+
+.wideRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
