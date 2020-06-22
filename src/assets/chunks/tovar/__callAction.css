@@ -28,6 +28,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
 
 /* .callAction__title {
