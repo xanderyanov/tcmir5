@@ -182,6 +182,7 @@
   bottom: 0 !important;
   right: 0 !important;
   left: 0 !important;
+  padding: 0 5px;
 }
 
 .sp-thumbnail-container img {
@@ -267,4 +268,71 @@ a.sp-image {
 
 .sp-grabbing {
   cursor: url(../img/closedhand.cur), move;
+}
+
+/* Slick-Carousel */
+.slickCarousel__area {
+  width: 100%;
+  position: relative;
+  padding: 0 60px 0 0;
+  overflow: hidden;
+}
+
+.slickCarousel__img {
+  position: relative;
+}
+
+.slickBtnPrev,
+.slickBtnNext {
+  position: absolute;
+  top: 50%;
+  margin-top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  background: #a6a6a6;
+  text-align: center;
+  transition: all 0.2s;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+.slickBtnPrev {
+  left: 0;
+}
+.slickBtnNext {
+  right: 0;
+}
+.slickBtnPrev i,
+.slickBtnNext i {
+  font-size: 1rem;
+  color: #fff;
+}
+.slickBtnPrev:hover,
+.slickBtnNext:hover {
+  background: #be3f46;
+}
+
+.slickCarousel__imgItem a {
+  width: 100%;
+}
+
+.slickCarousel__imgItem a img {
+  width: 100%;
+  display: block;
+}
+
+.slickCarousel__thmbItem img {
+  width: 100%;
+  display: block;
+}
+
+.slickCarousel__thmb {
+  width: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
 }

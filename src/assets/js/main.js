@@ -257,17 +257,41 @@ $(function () {
     });
   }
 
+  // $(".slickCarousel__img").slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: true,
+  //   prevArrow: '<div class="slickBtnPrev"><i class="icon-arr-left1"></i></div>',
+  //   nextArrow: '<div class="slickBtnNext"><i class="icon-arr-right1"></i></div>',
+  //   dots: false,
+  //   fade: true,
+  //   asNavFor: ".slickCarousel__thmb",
+  //   slide: ".slickCarousel__imgItem",
+  // });
+  // $(".slickCarousel__thmb").slick({
+  //   slidesToShow: 10,
+  //   slidesToScroll: 1,
+  //   asNavFor: ".slickCarousel__img",
+  //   arrows: false,
+  //   dots: false,
+  //   centerMode: true,
+  //   focusOnSelect: true,
+  //   slide: ".slickCarousel__thmbItem",
+  //   vertical: true,
+  // });
+
   $("#my-slider").sliderPro({
-    width: "100%",
+    width: 500,
     height: 600,
     arrows: true,
-    fadeArrows: true,
+    fadeArrows: false,
     buttons: false,
     waitForLayers: false,
     centerImage: true,
     autoSlideSize: false,
     loop: false,
     fade: false,
+    forceSize: true,
     autoplay: false,
     autoScaleLayers: false,
     imageScaleMode: "contain",
@@ -277,25 +301,29 @@ $(function () {
     thumbnailHeight: 100,
     breakpoints: {
       1280: {
-        height: 500,
-        thumbnailsPosition: "bottom",
+        // height: 500,
+        // thumbnailsPosition: "bottom",
       },
       1024: {
-        height: 450,
+        width: 450,
+        height: 500,
+        thumbnailWidth: 60,
+        thumbnailHeight: 90,
         thumbnailsPosition: "bottom",
       },
-      768: {
-        height: 400,
-      },
-      600: {
-        height: 350,
-      },
-      568: {
-        height: 320,
-      },
-      480: {
-        height: 320,
-      },
+      // 768: {
+      //   height: 400,
+      //   thumbnailsPosition: "bottom",
+      // },
+      // 600: {
+      //   height: 350,
+      // },
+      // 568: {
+      //   height: 320,
+      // },
+      // 480: {
+      //   height: 320,
+      // },
     },
   });
   $(".sp-arrow").append("<i class='icon-arr-left1'></i>");
