@@ -27,12 +27,12 @@
     font-size: 0.875rem;
   }
 
-  .swiper__infoBoxLink {
+  /* .swiper__infoBoxLink {
     font-size: 0.875rem;
   }
-  .promoBox__smallInner a span {
-    font-size: 1rem;
-  }
+  a span.promoBox__smallLink {
+    font-size: 0.875rem;
+  } */
 }
 
 @media only screen and (max-width: 920px) {
@@ -84,10 +84,15 @@
     font-size: 0.75rem;
   }
 
-  .swiper__infoBoxLink {
+  /* .swiper__infoBoxLink {
     padding: 0.3125rem 1rem;
     font-size: 0.75rem;
   }
+  .promoBox__smallLink {
+    padding: 0.3125rem 1rem;
+    font-size: 0.75rem;
+    padding: 0;
+  } */
 }
 
 @media only screen and (max-width: 480px) {
