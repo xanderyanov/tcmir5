@@ -497,7 +497,6 @@ $(function () {
       $(this).removeClass("inFav");
       $(this).children(".favOff").show();
       $(this).children(".favOn").hide();
-      // favorites = favorites.filter((val) => val !== "value");
       var index = favorites.indexOf(value);
       if (index >= 0) {
         favorites.splice(index, 1);
@@ -521,13 +520,13 @@ $(function () {
     }
   });
 
-  $(".topFavBtn_yesFav").click(function () {
-    console.log("переход на страницу избранного");
-    var parameters = favorites.join();
-    // console.log(favorites);
-    console.log(parameters);
-    $(location).attr("href", "http://mir.deltal.beget.tech/category.html/" + parameters);
-  });
+  // раскоммментировать - для перехода в избранное
+  // $(".topFavBtn_yesFav").click(function () {
+  //   console.log("переход на страницу избранного");
+  //   var parameters = favorites.join();
+  //   console.log(parameters);
+  //   $(location).attr("href", "http://mir.deltal.beget.tech/category.html/" + parameters);
+  // });
 
   //Раскрытие фильтра в каталоге по клику на его заголовке
   $(".catalogFilter1__itemTitle").on("click", function () {
