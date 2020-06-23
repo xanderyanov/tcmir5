@@ -11,6 +11,13 @@
   .callAction__title {
     margin-bottom: 10px;
   }
+  .callActionBtnGoToShop {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .callActionBtn_inTovar {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

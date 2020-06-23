@@ -54,6 +54,17 @@
   font-size: 1.25rem;
 } */
 
+.callActionBtnGoToShop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 38px;
+  background: var(--x1greyLight);
+  text-decoration: none;
+  color: #fff;
+}
+
 .callActionBtn {
   display: flex;
   align-items: center;
@@ -62,6 +73,12 @@
   height: 38px;
   background: var(--redFill);
   margin-left: auto;
+  /* padding: 10px 0; */
+}
+
+.callActionBtn_inTovar {
+  width: 40%;
+  margin-left: 0;
   /* padding: 10px 0; */
 }
 
