@@ -28,7 +28,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
 }
 
 /* .callAction__title {
@@ -74,10 +74,11 @@
   background: var(--redFill);
   margin-left: auto;
   /* padding: 10px 0; */
+  padding: 0 10px;
 }
 
 .callActionBtn_inTovar {
-  width: 40%;
+  width: 50%;
   margin-left: 0;
   /* padding: 10px 0; */
 }

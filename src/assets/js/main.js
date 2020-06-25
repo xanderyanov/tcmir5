@@ -284,7 +284,7 @@ $(function () {
     width: 500,
     height: 600,
     arrows: true,
-    fadeArrows: false,
+    fadeArrows: true,
     buttons: false,
     waitForLayers: false,
     centerImage: true,
@@ -535,11 +535,13 @@ $(function () {
     if ($(this).hasClass("open1")) {
       $(this).removeClass("open1");
       fAll.find(".catalogFilter1__itemContent").removeClass("visible");
+      $(".catalogFilter1__overlay").hide();
     } else {
       fAll.find(".catalogFilter1__itemTitle").removeClass("open1");
       fAll.find(".catalogFilter1__itemContent").removeClass("visible");
       $(this).addClass("open1");
       fCont.addClass("visible");
+      $(".catalogFilter1__overlay").show();
     }
   });
 
@@ -561,6 +563,12 @@ $(function () {
   // });
   // Работающий по старому - выше
 
+  $(".catalogFilter1__overlay").on("click", function () {
+    $(".catalogFilter1__overlay").hide();
+    $(".catalogFilter1__itemContent").removeClass("visible");
+    $(".catalogFilter1__itemTitle").removeClass("open1");
+  });
+
   $(".filterEnterBtn").on("click", function () {
     var filtrItemParent = $(this).closest(".filterBox");
 
@@ -569,11 +577,13 @@ $(function () {
       filtrItemParent.closest(".catalogFilter1__item").find(".catalogFilter1__itemTitle").addClass("active");
       $(".catalogFilter1__itemContent").removeClass("visible");
       $(".catalogFilter1__itemTitle").removeClass("open1");
+      $(".catalogFilter1__overlay").hide();
     } else {
       console.log("не выбрано");
       filtrItemParent.closest(".catalogFilter1__item").find(".catalogFilter1__itemTitle").removeClass("active");
       $(".catalogFilter1__itemContent").removeClass("visible");
       $(".catalogFilter1__itemTitle").removeClass("open1");
+      $(".catalogFilter1__overlay").hide();
     }
   });
 
@@ -643,6 +653,7 @@ $(function () {
       $(this).closest(".catalogFilter1__item").find(".catalogFilter1__itemTitle").addClass("active");
       $(".catalogFilter1__itemContent").removeClass("visible");
       $(".catalogFilter1__itemTitle").removeClass("open1");
+      $(".catalogFilter1__overlay").hide();
     });
   }
 
@@ -662,6 +673,7 @@ $(function () {
     //сброс сортировки
     $(this).closest(".catalogFilter1").find(".filterSort__item").removeClass("filterSort__item_active");
     $(".catalogFilter1__itemTitle_sort span").html("Сортировка");
+    $(".catalogFilter1__overlay").hide();
   });
 
   $("a[data-fancybox]").fancybox({
