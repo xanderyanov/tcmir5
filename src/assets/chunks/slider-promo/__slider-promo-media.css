@@ -44,21 +44,22 @@
 @media only screen and (max-width: 768px) {
   .promoBox__big {
     width: 100%;
-    padding: 0 0 1.25rem 0;
   }
   .promoBox__small {
-    width: 100%;
-    justify-content: space-between;
+    width: 50%;
   }
-  .promoBox__smallInner {
+  /* .promoBox__smallInner {
     width: 49%;
     padding: 0 !important;
-  }
+  } */
 }
 
 @media only screen and (max-width: 600px) {
   .promoBox__big {
-    padding: 0 0 1rem 0;
+    padding: 5px;
+  }
+  .promoBox__small {
+    padding: 5px;
   }
   .swiper-button-prev1,
   .swiper-button-next1 {
@@ -96,8 +97,8 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .promoBox__big {
-    padding: 0 0 0.75rem 0;
+  .promoBox__small {
+    width: 100%;
   }
 }
 

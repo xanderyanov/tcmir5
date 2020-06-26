@@ -76,3 +76,9 @@ a.hover {
 .indent3 {
   padding-left: 1.25rem;
 } */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

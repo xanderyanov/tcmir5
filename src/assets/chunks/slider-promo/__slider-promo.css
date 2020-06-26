@@ -5,22 +5,22 @@
 }
 
 .promoBox {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 -10px;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .promoBox__big {
   display: flex;
-  width: 70%;
-  padding-right: 1.25rem;
+  width: 66.666%;
+  float: left;
+  padding: 10px;
 }
 
 .promoBox__small {
-  display: flex;
-  width: 30%;
-  flex-wrap: wrap;
-  /* padding-left: 1.25rem; */
+  width: 33.333%;
+  float: left;
+  padding: 10px;
 }
 
 .promoBox__smallInner {
