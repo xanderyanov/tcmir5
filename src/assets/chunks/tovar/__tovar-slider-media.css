@@ -25,12 +25,18 @@
   .sp-horizontal .sp-next-arrow {
     right: 0px;
   }
+  .juneSlider__item {
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
 }
 
 @media only screen and (max-width: 800px) {
+  .mainShopsBox__item {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -45,6 +51,9 @@
 @media only screen and (max-width: 600px) {
   .tovarPage__sliderArea {
     width: 100%;
+  }
+  .juneSlider__item {
+    height: 250px;
   }
 }
 
@@ -64,9 +73,21 @@
     height: 100%;
     /* min-height: 70px; */
   }
+  .mainShopsBox {
+    margin: 0 -5px;
+  }
+  .mainShopsBox__item {
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
+  .juneSlider__item {
+    height: 200px;
+  }
+  .mainShopsBox__item {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
