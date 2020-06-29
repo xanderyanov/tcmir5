@@ -370,11 +370,30 @@ a.sp-image {
   text-decoration: none;
   display: block;
   height: 100%;
+  pointer-events: none;
+  outline: none;
+  border: 0;
+}
+.juneSlider__item a,
+.juneSlider__item a:active,
+.juneSlider__item a:focus {
+  outline: none;
+}
+
+.slick-slide:focus {
+  outline: none !important;
+}
+
+.juneSlider__item.slick-active a {
+  pointer-events: all;
+  border: none !important;
+  outline: none !important;
 }
 
 .juneSlider__item img {
   display: block;
   height: 100%;
+  border: none;
 }
 
 .juneSlider__item img {
