@@ -6,6 +6,24 @@
 // });
 
 $(function () {
+  // if ($(".juneSlider__area").length) {
+  //   $(".juneSlider").slick({
+  //     dots: true,
+  //     infinite: true,
+  //     speed: 300,
+  //     slidesToShow: 1,
+  //     centerMode: true,
+  //     variableWidth: true,
+  //     focusOnSelect: true,
+  //     autoplay: true,
+  //     autoplaySpeed: 5000,
+  //     slide: ".juneSlider__item",
+  //     prevArrow: '<div class="june__slickBtnPrev"><i class="icon-arr-left1"></i></div>',
+  //     nextArrow: '<div class="june__slickBtnNext"><i class="icon-arr-right1"></i></div>',
+  //     dotsClass: "june__dots",
+  //   });
+  // }
+
   if ($(".juneSlider__area").length) {
     $(".juneSlider").slick({
       dots: true,
@@ -15,8 +33,8 @@ $(function () {
       centerMode: true,
       variableWidth: true,
       focusOnSelect: true,
-      // autoplay: true,
-      // autoplaySpeed: 5000,
+      autoplay: true,
+      autoplaySpeed: 5000,
       slide: ".juneSlider__item",
       prevArrow: '<div class="june__slickBtnPrev"><i class="icon-arr-left1"></i></div>',
       nextArrow: '<div class="june__slickBtnNext"><i class="icon-arr-right1"></i></div>',
@@ -31,7 +49,6 @@ $(function () {
       arrows: false,
       centerMode: true,
       focusOnSelect: true,
-      // fade: true,
     });
   }
 
