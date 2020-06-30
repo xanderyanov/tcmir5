@@ -21,6 +21,17 @@ $(function () {
       prevArrow: '<div class="june__slickBtnPrev"><i class="icon-arr-left1"></i></div>',
       nextArrow: '<div class="june__slickBtnNext"><i class="icon-arr-right1"></i></div>',
       dotsClass: "june__dots",
+      asNavFor: ".juneSlider__tovars",
+    });
+    $(".juneSlider__tovars").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: ".juneSlider",
+      dots: false,
+      arrows: false,
+      centerMode: true,
+      focusOnSelect: true,
+      // fade: true,
     });
   }
 

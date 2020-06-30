@@ -75,6 +75,9 @@
   margin-left: auto;
   /* padding: 10px 0; */
   padding: 0 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .callActionBtn_inTovar {

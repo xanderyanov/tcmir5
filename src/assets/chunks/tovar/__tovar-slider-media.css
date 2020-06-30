@@ -85,10 +85,10 @@
   .juneSlider__item {
     height: 200px;
   }
-  .mainShopsBox__item {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 320px) {
+  .mainShopsBox__item {
+    width: 100%;
+  }
 }

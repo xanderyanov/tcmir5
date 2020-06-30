@@ -485,6 +485,14 @@ a.sp-image {
   background: var(--redFill);
 }
 
+/* juneTovars */
+.juneSlider__tovars {
+}
+
+.juneSlider__tovarsItem {
+  width: 100%;
+}
+
 /* mainShopsBox__area */
 
 .mainShopsBox__area {
