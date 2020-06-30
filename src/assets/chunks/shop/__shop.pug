@@ -133,3 +133,25 @@ mixin shop
         //-     a.shop__contactsItem(href="mailto:shop@tcmir.ru")
         //-       span shop@tcmir.ru
 
+mixin newCollection
+  .newCollection__area.w0
+    .newCollection__outer.w1
+      .newCollection
+        each item in newCollections
+          .newCollection__itemOuter(id=item.id)
+            a.newCollection__item(href="#")
+              span.newCollection__itemImg
+                img(src!=item.img, alt="")
+                if item.discount 
+                  span.newCollection__itemDiscount!=item.discount 
+              span.newCollection__itemInfo
+                span.newCollection__itemTitle!= item.title
+                span.newCollection__itemPriceArea
+                  if item.oldPrice
+                    span.newCollection__itemOldPrice!= item.oldPrice 
+                      span ₽
+                    span.newCollection__itemPrice!= item.price 
+                      span ₽
+                  else
+                    span.newCollection__itemPrice!= item.price
+                      span ₽

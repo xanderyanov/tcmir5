@@ -363,7 +363,7 @@ a.sp-image {
 }
 
 .juneSlider__item {
-  height: 450px;
+  height: 350px;
 }
 
 .juneSlider__item a {
@@ -504,6 +504,7 @@ a.sp-image {
 
 .mainShopsBox__item {
   width: 33.333%;
+  width: 25%;
   padding: 10px;
 }
 
