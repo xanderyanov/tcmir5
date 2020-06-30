@@ -155,3 +155,25 @@ mixin newCollection
                   else
                     span.newCollection__itemPrice!= item.price
                       span ₽
+
+
+mixin newCollectionInMain
+  .newCollection.newCollection_inMain
+    each item in newCollections
+      .newCollection__itemOuter(id=item.id)
+        a.newCollection__item(href="#")
+          span.newCollection__itemImg.newCollection__itemImg_main
+            img(src!=item.img, alt="")
+            if item.discount 
+              span.newCollection__itemDiscount!=item.discount 
+          span.newCollection__itemInfo
+            span.newCollection__itemTitle!= item.title
+            span.newCollection__itemPriceArea
+              if item.oldPrice
+                span.newCollection__itemOldPrice!= item.oldPrice 
+                  span ₽
+                span.newCollection__itemPrice!= item.price 
+                  span ₽
+              else
+                span.newCollection__itemPrice!= item.price
+                  span ₽

@@ -63,6 +63,12 @@
   background: var(--x1greyLight);
   text-decoration: none;
   color: #fff;
+  transition: all 0.3s;
+}
+
+.callActionBtnGoToShop:hover {
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
 }
 
 .callActionBtn {
@@ -78,6 +84,12 @@
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.callActionBtn:hover {
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
 }
 
 .callActionBtn_inTovar {

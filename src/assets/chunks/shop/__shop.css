@@ -441,6 +441,8 @@
   margin: 0 -10px;
   flex-wrap: wrap;
 }
+.newCollection_inMain {
+}
 
 .newCollection__itemOuter {
   padding: 10px;
@@ -473,6 +475,9 @@
   align-items: center;
   position: relative;
 }
+.newCollection__itemImg_main {
+  padding: 0 30px;
+}
 
 .newCollection__itemImg img {
   display: block;
@@ -499,7 +504,7 @@
 .newCollection__itemTitle {
   font-weight: 600;
   color: var(--tColor);
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.3125rem;
   font-size: 0.875rem;
   text-align: center;
 }

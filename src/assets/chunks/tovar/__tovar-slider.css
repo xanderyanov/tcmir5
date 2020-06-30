@@ -356,6 +356,8 @@ a.sp-image {
 .slick-list {
   display: flex;
   order: 1;
+  overflow: hidden;
+  padding: 0 !important;
 }
 
 .slick-track {
@@ -363,7 +365,7 @@ a.sp-image {
 }
 
 .juneSlider__item {
-  height: 350px;
+  height: 300px;
 }
 
 .juneSlider__item a {
@@ -491,13 +493,19 @@ a.sp-image {
 
 .juneSlider__tovarsItem {
   width: 100%;
+  transition: all 0.3s;
+  /* opacity: 0; */
+}
+
+.slick-active {
+  /* opacity: 1; */
 }
 
 /* mainShopsBox__area */
 
 .mainShopsBox__area {
   position: relative;
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
 
 .mainShopsBox__outer {
