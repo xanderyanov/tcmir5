@@ -1,18 +1,19 @@
 - var pageTitle = 'Страница магазина Каспер'
 
-include assets/chunks/header/__header
-include assets/chunks/shop/__shop
-include assets/chunks/filters/__filters
-include assets/chunks/filters-adaptive/__filters-adaptive
-include assets/chunks/leftMenu/__leftMenu
-include assets/chunks/catalog/__catalog
-include assets/chunks/content/__textInContent
-include assets/chunks/footer/__footer
-include assets/chunks/scripts/__scripts
+include __head
+include __header
+include __shop
+include __filters
+include __filters-adaptive
+include __leftMenu
+include __catalog
+include __textInContent
+include __footer
+include __scripts
 
 <!DOCTYPE html>
 html(lang="ru-RU")
-	include assets/chunks/head/__head
+	+head
 body
 
 	.site__header

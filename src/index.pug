@@ -1,16 +1,17 @@
 - var pageTitle = 'Главная страница'
 
-include assets/chunks/header/__header
-include assets/chunks/slider-promo/__slider-promo
-include assets/chunks/shop/__shop
-include assets/chunks/footer/__footer
-include assets/chunks/scripts/__scripts
+include __head
+include __header
+include __slider-promo
+include __shop
+include __footer
+include __scripts
 
 
 
 <!DOCTYPE html>
 html(lang="ru-RU")
-	include assets/chunks/head/__head
+	+head
 body
 
 	.site__header

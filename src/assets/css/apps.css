@@ -15,62 +15,67 @@
 
 @import "xandercode.css";
 
-@import "../chunks/header/__header.css";
-@import "../chunks/header/__header-media.css";
-
-@import "../chunks/slider-promo/__slider-promo.css";
-@import "../chunks/slider-promo/__slider-promo-media.css";
-
-@import "../chunks/footer/__footer.css";
-@import "../chunks/footer/__footer-media.css";
-
-@import "../chunks/breadcrumbs/__breadcrumbs.css";
-
-@import "../chunks/leftMenu/__leftMenu.css";
-@import "../chunks/leftMenu/__leftMenu-media.css";
-
-@import "../chunks/catalog/__catalog.css";
-@import "../chunks/catalog/__catalog-media.css";
-
-@import "../chunks/filters/__filters-lib.css";
-@import "../chunks/filters/__filters.css";
-@import "../chunks/filters/__filters-media.css";
-
-@import "../chunks/filters-adaptive/__filters-adaptive.css";
-@import "../chunks/filters-adaptive/__filters-adaptive-media.css";
-
-@import "../chunks/filters-adaptive/__filters-adaptive.css";
-@import "../chunks/filters-adaptive/__filters-adaptive-media.css";
-
-@import "../chunks/tovar/__tovar-slider.css";
-@import "../chunks/tovar/__tovar-slider-media.css";
-@import "../chunks/tovar/__tovar-info.css";
-@import "../chunks/tovar/__tovar-info-media.css";
-@import "../chunks/tovar/__callAction.css";
-@import "../chunks/tovar/__callAction-media.css";
-@import "../chunks/tovar/__sizeSelector.css";
-@import "../chunks/tovar/__sizeSelector-media.css";
-
-@import "../chunks/shop/__shop.css";
-@import "../chunks/shop/__shop-media.css";
-
-@import "../chunks/brand/__brand.css";
-@import "../chunks/brand/__brand-media.css";
-
-@import "../chunks/cart/__cart.css";
-@import "../chunks/cart/__cart-media.css";
-
-@import "../chunks/content/__content.css";
-
-@import "../chunks/topSearch/__top-search.css";
-@import "../chunks/topSearch/__adaptive-search.css";
-@import "../chunks/topSearch/__top-search-media.css";
+@import "__header.css";
+@import "__header-media.css";
 
 /* @import "__adaptive-menu.css";
 @import "__adaptive-menu-media.css"; */
 
-@import "../chunks/adaptiveMenu/__adaptiveMenuArs.css";
-@import "../chunks/adaptiveMenu/__adaptiveMenuArs-media.css";
+@import "__adaptiveMenuArs.css";
+@import "__adaptiveMenuArs-media.css";
+
+@import "__top-search.css";
+@import "__adaptive-search.css";
+@import "__top-search-media.css";
+
+@import "__slider-promo.css";
+@import "__slider-promo-media.css";
+
+@import "__shop.css";
+@import "__shop-media.css";
+
+@import "__callAction.css";
+@import "__callAction-media.css";
+
+@import "__footer.css";
+@import "__footer-media.css";
+
+@import "__breadcrumbs.css";
+
+@import "__leftMenu.css";
+@import "__leftMenu-media.css";
+
+@import "__catalog.css";
+@import "__catalog-media.css";
+
+@import "__filters-lib.css";
+@import "__filters.css";
+@import "__filters-media.css";
+
+@import "__filters-adaptive.css";
+@import "__filters-adaptive-media.css";
+
+@import "__filters-adaptive.css";
+@import "__filters-adaptive-media.css";
+
+@import "__tovar-slider.css";
+@import "__tovar-slider-media.css";
+@import "__tovar-info.css";
+@import "__tovar-info-media.css";
+
+@import "__sizeSelector.css";
+@import "__sizeSelector-media.css";
+
+@import "__shop.css";
+@import "__shop-media.css";
+
+@import "__brand.css";
+@import "__brand-media.css";
+
+@import "__cart.css";
+@import "__cart-media.css";
+
+@import "__content.css";
 
 @import "main.css";
 @import "media.css";

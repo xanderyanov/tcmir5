@@ -1,19 +1,20 @@
-include assets/chunks/header/__header
-include assets/chunks/breadcrumbs/__breadcrumbs
-include assets/chunks/brand/__brand
-include assets/chunks/filters/__filters
-include assets/chunks/filters-adaptive/__filters-adaptive
-include assets/chunks/leftMenu/__leftMenu
-include assets/chunks/catalog/__catalog
-include assets/chunks/footer/__footer
-include assets/chunks/scripts/__scripts
+include __head
+include __header
+include __breadcrumbs
+include __brand
+include __filters
+include __filters-adaptive
+include __leftMenu
+include __catalog
+include __footer
+include __scripts
 
 - var pageTitle = 'Бренд'
 
 
 <!DOCTYPE html>
 html(lang="ru-RU")
-	include assets/chunks/head/__head
+	+head
 body
 
 	.site__header
