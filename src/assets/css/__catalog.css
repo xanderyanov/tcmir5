@@ -152,6 +152,26 @@
   z-index: 10;
   position: relative;
 }
+.tovarCard__imgImg1 {
+  z-index: 10;
+}
+.tovarCard__imgImg2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  display: none;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+
+.tovarCard__area:hover .tovarCard__imgImg1 {
+  visibility: hidden;
+}
+.tovarCard__area:hover .tovarCard__imgImg2 {
+  display: block;
+}
 
 .tovarCard__fav {
   position: absolute;

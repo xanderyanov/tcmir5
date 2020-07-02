@@ -25,9 +25,6 @@
   .sp-horizontal .sp-next-arrow {
     right: 0px;
   }
-  .juneSlider__item {
-    height: 300px;
-  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -51,9 +48,6 @@
 @media only screen and (max-width: 600px) {
   .tovarPage__sliderArea {
     width: 100%;
-  }
-  .juneSlider__item {
-    height: 250px;
   }
 }
 
@@ -82,9 +76,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .juneSlider__item {
-    height: 200px;
-  }
 }
 
 @media only screen and (max-width: 320px) {

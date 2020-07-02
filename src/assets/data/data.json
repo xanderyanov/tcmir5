@@ -22,7 +22,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/001.jpeg"
+      "img1": "assets/img/tovar/001.jpeg",
+      "img2": "assets/img/tovar/002.jpeg"
     },
     {
       "id": "321321322",
@@ -31,7 +32,8 @@
       "discount": "-30%",
       "price": "2500",
       "oldPrice": "3000",
-      "img": "assets/img/tovar/002.jpeg"
+      "img1": "assets/img/tovar/002.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
     },
     {
       "id": "321321323",
@@ -40,7 +42,8 @@
       "discount": "",
       "price": "2500",
       "oldPrice": "",
-      "img": "assets/img/tovar/003.jpeg"
+      "img1": "assets/img/tovar/003.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
     },
     {
       "id": "321321324",
@@ -49,7 +52,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/004.jpeg"
+      "img1": "assets/img/tovar/004.jpeg",
+      "img2": "assets/img/tovar/003.jpeg"
     },
     {
       "id": "321321325",
@@ -58,7 +62,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/005.jpeg"
+      "img1": "assets/img/tovar/004.jpeg",
+      "img2": "assets/img/tovar/005.jpeg"
     },
     {
       "id": "321321326",
@@ -67,7 +72,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/006.jpeg"
+      "img1": "assets/img/tovar/006.jpeg",
+      "img2": "assets/img/tovar/002.jpeg"
     },
     {
       "id": "321321327",
@@ -76,7 +82,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/007.jpeg"
+      "img1": "assets/img/tovar/007.jpeg",
+      "img2": "assets/img/tovar/003.jpeg"
     },
     {
       "id": "321321328",
@@ -85,7 +92,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/008.jpeg"
+      "img1": "assets/img/tovar/008.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
     },
     {
       "id": "321321329",
@@ -94,7 +102,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/009.jpeg"
+      "img1": "assets/img/tovar/009.jpeg",
+      "img2": "assets/img/tovar/006.jpeg"
     },
     {
       "id": "321321330",
@@ -103,7 +112,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/010.jpeg"
+      "img1": "assets/img/tovar/010.jpeg",
+      "img2": "assets/img/tovar/007.jpeg"
     },
     {
       "id": "321321331",
@@ -112,7 +122,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/011.jpeg"
+      "img1": "assets/img/tovar/011.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
     }
   ],
   "newCollections": [
@@ -123,7 +134,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/001.jpeg"
+      "img1": "assets/img/tovar/001.jpeg",
+      "img2": "assets/img/tovar/002.jpeg"
     },
     {
       "id": "321321322",
@@ -132,7 +144,8 @@
       "discount": "-30%",
       "price": "2500",
       "oldPrice": "3000",
-      "img": "assets/img/tovar/002.jpeg"
+      "img1": "assets/img/tovar/002.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
     },
     {
       "id": "321321323",
@@ -141,7 +154,8 @@
       "discount": "",
       "price": "2500",
       "oldPrice": "",
-      "img": "assets/img/tovar/003.jpeg"
+      "img1": "assets/img/tovar/003.jpeg",
+      "img2": "assets/img/tovar/001.jpeg"
     },
     {
       "id": "321321324",
@@ -150,7 +164,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/004.jpeg"
+      "img1": "assets/img/tovar/004.jpeg",
+      "img2": "assets/img/tovar/003.jpeg"
     },
     {
       "id": "321321325",
@@ -159,7 +174,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/005.jpeg"
+      "img1": "assets/img/tovar/005.jpeg",
+      "img2": "assets/img/tovar/004.jpeg"
     },
     {
       "id": "321321326",
@@ -168,7 +184,8 @@
       "discount": "-50%",
       "price": "2500",
       "oldPrice": "3500",
-      "img": "assets/img/tovar/006.jpeg"
+      "img1": "assets/img/tovar/006.jpeg",
+      "img2": "assets/img/tovar/002.jpeg"
     }
   ]
 }

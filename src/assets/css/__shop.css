@@ -433,7 +433,7 @@
 .newCollection__outer {
   position: relative;
   margin-bottom: 1.25rem;
-  padding: 0 100px;
+  /* padding: 0 100px; */
 }
 
 .newCollection {
@@ -474,6 +474,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  padding: 0 50px;
 }
 .newCollection__itemImg_main {
   padding: 0 50px;

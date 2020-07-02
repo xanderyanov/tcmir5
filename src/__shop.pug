@@ -141,7 +141,7 @@ mixin newCollection
           .newCollection__itemOuter(id=item.id)
             a.newCollection__item(href="#")
               span.newCollection__itemImg
-                img(src!=item.img, alt="")
+                img(src!=item.img1, alt="")
                 if item.discount 
                   span.newCollection__itemDiscount!=item.discount 
               span.newCollection__itemInfo
@@ -163,7 +163,7 @@ mixin newCollectionInMain
       .newCollection__itemOuter(id=item.id)
         a.newCollection__item(href="#")
           span.newCollection__itemImg.newCollection__itemImg_main
-            img(src!=item.img, alt="")
+            img(src!=item.img1, alt="")
             if item.discount 
               span.newCollection__itemDiscount!=item.discount 
           span.newCollection__itemInfo

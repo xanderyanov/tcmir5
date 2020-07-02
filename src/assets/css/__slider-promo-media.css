@@ -33,6 +33,9 @@
   a span.promoBox__smallLink {
     font-size: 0.875rem;
   } */
+  .juneSlider__item {
+    height: 230px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -94,6 +97,10 @@
     font-size: 0.75rem;
     padding: 0;
   } */
+
+  .juneSlider__item {
+    height: 210px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -110,6 +117,9 @@
   .promoBox__smallInner:last-child {
     width: 100%;
     padding: 0 !important;
+  }
+  .juneSlider__item {
+    height: 200px;
   }
 }
 

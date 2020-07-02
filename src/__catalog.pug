@@ -9,7 +9,8 @@ mixin catalogArea
               .tovarCard__fav
                 i.icon-favorit1.favOff
                 i.icon-favorit2.favOn
-              img.tovarCard__imgImg(src!=item.img, alt='')
+              img.tovarCard__imgImg.tovarCard__imgImg1(src!=item.img1, alt='')
+              img.tovarCard__imgImg.tovarCard__imgImg2(src!=item.img2, alt='')
               if item.discount
                 .tovarCard__priceDiscount!=item.discount
             .tovarCard__info
@@ -47,7 +48,7 @@ mixin catalogAreaFav
               .tovarCard__fav
                 i.icon-favorit1.favOff
                 i.icon-favorit2.favOn
-              img.tovarCard__imgImg(src!=item.img, alt='')
+              img.tovarCard__imgImg(src!=item.img1, alt='')
               if item.discount
                 .tovarCard__priceDiscount!=item.discount
             .tovarCard__info
