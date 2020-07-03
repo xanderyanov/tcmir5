@@ -532,3 +532,28 @@
   line-height: 1.1;
   color: var(--tColor);
 }
+
+.shop__tempText {
+  margin-top: 1.5rem;
+  padding: 0 1.875rem;
+}
+
+.shop__tempTextInner {
+  padding: 1.25rem 1.875rem;
+  background: var(--x1greySuperLight);
+  display: flex;
+  align-items: center;
+}
+
+.shop__tempTextInner i {
+  font-size: 2rem;
+  color: var(--tColor);
+  margin-right: 2rem;
+}
+
+.shop__tempText span {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--tColor);
+  font-weight: 600;
+}
