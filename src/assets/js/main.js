@@ -6,6 +6,11 @@
 // });
 
 $(function () {
+  $(".backBtn").on("click", function (e) {
+    window.history.back();
+    console.log("Кнопка назад");
+  });
+
   // if ($(".juneSlider__area").length) {
   //   $(".juneSlider").slick({
   //     dots: true,

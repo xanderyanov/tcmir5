@@ -100,6 +100,59 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .adaptiveHeader {
+    display: none;
+  }
+  .tovarPage__info {
+    padding: 10px 0 0 0;
+  }
+  .tovarTitle__logo {
+    order: 1;
+    width: 100%;
+    margin-bottom: 0.875rem;
+    justify-content: center;
+  }
+  .tovarTitle__text {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+  .breadcrumbs__area {
+    padding: 10px 0 5px;
+    background-color: transparent;
+  }
+  .tovarTitle {
+    order: 0;
+  }
+  .tovar__priceArea {
+    order: 1;
+    align-items: center;
+  }
+
+  .callAction__wrapper {
+    order: 2;
+  }
+  .tovarPage__desc {
+    order: 5;
+  }
+  .sizeSelector__area {
+    order: 2;
+  }
+  .callActionBtnGoToShop {
+    display: none;
+  }
+  .callAction__intro {
+    display: none;
+  }
+  .tovarDescTab__area {
+    order: 6;
+  }
+  .difColorLink__title {
+    text-align: center;
+  }
+  .difColorLink__content {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 400px) {

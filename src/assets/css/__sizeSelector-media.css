@@ -23,6 +23,20 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .sizeSelector__area {
+    order: 2;
+    margin-bottom: 1.25rem;
+  }
+  .sizeSelector__title {
+    text-align: center;
+  }
+  .sizeSelector {
+    justify-content: center;
+  }
+  .sizeSelector__item {
+    margin: 2px;
+    padding: 2px 7px;
+  }
 }
 
 @media only screen and (max-width: 400px) {

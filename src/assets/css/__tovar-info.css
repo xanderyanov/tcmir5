@@ -13,6 +13,7 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
   /* justify-content: flex-end; */
 }
 
@@ -29,6 +30,7 @@
   margin-bottom: 1.25rem;
   flex-direction: column;
   align-items: flex-end;
+  order: 0;
 }
 
 .tovarTitle__logo {
@@ -110,21 +112,23 @@
   font-size: 1rem;
   color: var(--colorDarkGrey);
   text-align: right;
-  margin-bottom: 1.25rem;
+  margin: 1.25rem;
 }
 
 .tovarPage__desc {
   font-size: 0.875rem;
   color: var(--tColor);
   text-align: right;
-  margin-bottom: 1.25rem;
+  margin: 1.25rem 0;
   line-height: 1.4;
+  order: 1;
 }
 
 .tovarDescTab__area {
   position: relative;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 1.25rem 0;
+  order: 2;
 }
 
 .tovarDescTab__area table {
@@ -152,6 +156,7 @@
   flex-direction: column;
   align-items: flex-end;
   margin: 0.625rem 0 1.25rem;
+  order: 6;
 }
 
 .tovar__oldPrice {
@@ -174,6 +179,7 @@
 .addToCartOuter {
   display: flex;
   justify-content: flex-end;
+  order: 7;
 }
 
 .tovar__addToCart {
@@ -375,9 +381,10 @@
 }
 
 .difColorLink__area {
-  margin: 1.25rem 0 1.25rem;
+  margin: 1.25rem 0 0;
   display: flex;
   flex-direction: column;
+  order: 4;
 }
 
 .difColorLink__title {

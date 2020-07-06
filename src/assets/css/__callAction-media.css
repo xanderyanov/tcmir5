@@ -39,6 +39,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .callActionBtn {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 400px) {

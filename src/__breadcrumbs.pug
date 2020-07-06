@@ -1,5 +1,5 @@
 mixin breadcrumbs
-  .breadcrumbs__area.bgE5E5E5.w0
+  .breadcrumbs__area.w0
     .breadcrumbs.w1
       div
         a(href='#') Главная 
@@ -9,3 +9,12 @@ mixin breadcrumbs
       |           /
       div
         span Текущий пункт
+
+mixin fake-breadcrumbs
+  .breadcrumbs__area.bgE5E5E5.w0
+    .breadcrumbs.w1
+      .fakeBreadcrumbs
+        .backBtn
+          i.icon-arr-left1
+          span Назад
+        a.shopInBreadcrumbsTitle(href="") Monte Napoleone

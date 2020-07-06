@@ -274,7 +274,10 @@
 
 .juneSlider__area {
   position: relative;
-  padding-top: 0.625rem;
+  /* padding-top: 0.625rem; */
+}
+
+.juneSlider__outer {
 }
 
 .juneSlider {
@@ -284,6 +287,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
+  padding-top: 0.6125rem;
 }
 
 .slick-list {
@@ -293,12 +298,17 @@
   padding: 0 !important;
 }
 
+.juneSlider .slick-list {
+  overflow: visible;
+}
+
 .slick-track {
   display: flex;
 }
 
 .juneSlider__item {
   height: 250px;
+  padding: 0 0.3125rem;
 }
 
 .juneSlider__item a {
@@ -338,6 +348,7 @@
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: gray; /* IE 6-9 */
+  opacity: 0.5;
 }
 .juneSlider__item.slick-active img {
   -webkit-filter: none;
@@ -351,13 +362,20 @@
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  opacity: 1;
+  /* transform: scale(1.08);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 100;
+  position: relative; */
 }
 
 .june__slickBtnPrev,
 .june__slickBtnNext {
   /* position: absolute;
   bottom: 0; */
-  margin: 0.5rem 1rem;
+  margin: 1.125rem 1rem 0.5rem;
   width: 1.25rem;
   height: 1.25rem;
   background: #a6a6a6;
@@ -390,6 +408,7 @@
 
 .june__dots {
   padding-top: 0.625rem;
+  padding-top: 1.25rem;
   order: 3;
   display: flex;
   /* position: absolute;
