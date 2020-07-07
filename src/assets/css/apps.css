@@ -31,9 +31,6 @@
 @import "__slider-promo.css";
 @import "__slider-promo-media.css";
 
-@import "__shop.css";
-@import "__shop-media.css";
-
 @import "__callAction.css";
 @import "__callAction-media.css";
 
@@ -62,6 +59,9 @@
 @import "__tovar-slider-media.css";
 @import "__tovar-info.css";
 @import "__tovar-info-media.css";
+
+@import "__tovar.css";
+@import "__tovar-media.css";
 
 @import "__sizeSelector.css";
 @import "__sizeSelector-media.css";

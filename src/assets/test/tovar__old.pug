@@ -3,7 +3,6 @@
 include __head
 include __header
 include __breadcrumbs
-include __tovar
 include __tovar-slider
 include __tovar-info
 include __tovarArsTab
@@ -20,17 +19,18 @@ body
 		+header
 
 	.site__center
-		+fake-breadcrumbs
+		+breadcrumbs
 
-		.tovarPage__area.w0
-			.tovarPage.w1
-				.tovarPage__top
-					.tovarPage__topLeft
-						+tovarSlider7
-					.tovarPage__topRight
-						+tovar-info
-		+tovarArsTab
-		+textInContent
+		.xBlock__area.w0
+			.xBlock.w1
+				.tovarPage__area
+					.tovarPage
+						.tovarPage__top
+							+tovar-slider
+							//- +tovarSliderPro
+							+tovar-info
+				+tovarArsTab
+		//- +textInContent
 
 
 	.site__footer

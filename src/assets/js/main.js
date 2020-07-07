@@ -29,6 +29,7 @@ $(function () {
   //   });
   // }
 
+  // слайдер на главной
   if ($(".juneSlider__area").length) {
     $(".juneSlider").slick({
       dots: true,
@@ -54,6 +55,78 @@ $(function () {
       arrows: false,
       centerMode: true,
       focusOnSelect: true,
+    });
+  }
+  // слайдер товара 5
+  if ($(".tovarSlider5").length) {
+    $(".tovarSlider5__img").slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // centerMode: true,
+      // variableWidth: true,
+      focusOnSelect: true,
+      // autoplay: true,
+      // autoplaySpeed: 5000,
+      appendArrows: ".tovarSlider5__pagination",
+      appendDots: ".tovarSlider5__pagination",
+      slide: ".tovarSlider5__imgItem",
+      prevArrow: '<div class="tovarSlider5__Prev"><i class="icon-arr-left1"></i></div>',
+      nextArrow: '<div class="tovarSlider5__Next"><i class="icon-arr-right1"></i></div>',
+      dotsClass: "tovarSlider5__dots",
+      asNavFor: ".tovarSlider5__min",
+    });
+    $(".tovarSlider5__min").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: ".tovarSlider5__img",
+      dots: false,
+      arrows: false,
+      centerMode: true,
+      focusOnSelect: true,
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+      centeredSlides: true,
+    });
+  }
+
+  // слайдер товара 7
+  if ($(".tovarSlider7").length) {
+    var galleryThumbs7 = new Swiper(".tovarSlider7__min", {
+      spaceBetween: 10,
+      slidesPerView: 7,
+      loop: false,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      direction: "vertical",
+      centeredSlides: false,
+    });
+    var galleryTop7 = new Swiper(".tovarSlider7__img", {
+      autoHeight: false,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: false,
+      // autoplay: {
+      //   delay: 5500,
+      //   disableOnInteraction: false,
+      // },
+      pagination: {
+        el: ".tovarSlider7__pagination",
+        type: "bullets",
+        dynamicBullets: false,
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".tovarSlider7__Next",
+        prevEl: ".tovarSlider7__Prev",
+      },
+      thumbs: {
+        swiper: galleryThumbs7,
+      },
     });
   }
 
