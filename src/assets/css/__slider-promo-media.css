@@ -36,6 +36,9 @@
   .juneSlider__item {
     height: 230px;
   }
+  .julySlider.swiper-container {
+    height: 230px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -101,6 +104,9 @@
   .juneSlider__item {
     height: 210px;
   }
+  .julySlider.swiper-container {
+    height: 210px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -119,6 +125,9 @@
     padding: 0 !important;
   }
   .juneSlider__item {
+    height: 200px;
+  }
+  .julySlider.swiper-container {
     height: 200px;
   }
 }

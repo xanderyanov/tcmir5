@@ -70,6 +70,7 @@ body {
 }
 .indexInfo__outer {
   position: relative;
+  padding: 5px 0 10px !important;
 }
 
 .indexInfo__inner {

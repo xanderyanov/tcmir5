@@ -41,6 +41,10 @@ $(function () {
       focusOnSelect: true,
       autoplay: true,
       autoplaySpeed: 5000,
+      pauseOnHover: true,
+      draggable: true,
+      swipe: true,
+      swipeToSlide: true,
       slide: ".juneSlider__item",
       prevArrow: '<div class="june__slickBtnPrev"><i class="icon-arr-left1"></i></div>',
       nextArrow: '<div class="june__slickBtnNext"><i class="icon-arr-right1"></i></div>',
@@ -57,6 +61,50 @@ $(function () {
       focusOnSelect: true,
     });
   }
+
+  if ($(".julySlider__outer").length) {
+    var galleryThumbs = new Swiper(".julySlider__tovars", {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      loop: true,
+      // watchSlidesVisibility: true,
+      // watchSlidesProgress: true,
+      speed: 600,
+    });
+
+    var galleryTop = new Swiper(".julySlider", {
+      speed: 600,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 10,
+      loop: true,
+      slideToClickedSlide: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".julySlider__pagination",
+        type: "bullets",
+        dynamicBullets: false,
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".julySlider__Next",
+        prevEl: ".julySlider__Prev",
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+    $(".swiper-container").mouseenter(function () {
+      galleryTop.autoplay.stop();
+    });
+    $(".swiper-container").mouseleave(function () {
+      galleryTop.autoplay.start();
+    });
+  }
+
   // слайдер товара 5
   if ($(".tovarSlider5").length) {
     $(".tovarSlider5__img").slick({
