@@ -95,6 +95,7 @@ $(function () {
 
   // слайдер товара 7
   if ($(".tovarSlider7").length) {
+    // if ($(window).width() >= 1024) {
     var galleryThumbs7 = new Swiper(".tovarSlider7__min", {
       spaceBetween: 10,
       slidesPerView: 7,
@@ -105,6 +106,8 @@ $(function () {
       direction: "vertical",
       centeredSlides: false,
     });
+    // }
+
     var galleryTop7 = new Swiper(".tovarSlider7__img", {
       autoHeight: false,
       slidesPerView: 1,

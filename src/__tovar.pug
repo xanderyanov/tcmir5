@@ -1,44 +1,4 @@
-mixin tovarSlider5
-  .tovarSlider5__area.tovarSlider5_slickSlider
-    .tovarSlider5
-      .tovarSlider5__img
-        .tovarSlider5__imgItem
-          a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG', data-fancybox='group1', data-caption='001')
-            img(src='assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG', alt='', title='')
-        .tovarSlider5__imgItem
-          a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', data-fancybox='group1', data-caption='002')
-            img(src='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', alt='', title='')
-        .tovarSlider5__imgItem
-          a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-3.JPG', data-fancybox='group1', data-caption='003')
-            img(src='assets/img/tovar3/Bluza-5100/Bluza-5100-3.JPG', alt='', title='')
-        .tovarSlider5__imgItem
-          a(href='assets/img/tovar4/Destra-Krossovki-6661-22-7141-1.JPG', data-fancybox='group1', data-caption='004')
-            img(src='assets/img/tovar4/Destra-Krossovki-6661-22-7141-1.JPG', alt='', title='')
-        .tovarSlider5__imgItem
-          a(href='assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG', data-fancybox='group1', data-caption='005')
-            img(src='assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG', alt='', title='')
-        .tovarSlider5__imgItem
-          a(href='assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG', data-fancybox='group1', data-caption='005')
-            img(src='assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG', alt='', title='')
-        .tovarSlider5__imgItem
-          a(href='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', data-fancybox='group1', data-caption='006')
-            img(src='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', alt='', title='')
-        .tovarSlider5__pagination
-      .tovarSlider5__min
-        .tovarSlider5__minItem
-          img(src='assets/img/tovar3/Bluza-5100/Bluza-5100-1.JPG', alt='', title='')
-        .tovarSlider5__minItem
-          img(src='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', alt='', title='')
-        .tovarSlider5__minItem
-          img(src='assets/img/tovar3/Bluza-5100/Bluza-5100-3.JPG', alt='', title='')
-        .tovarSlider5__minItem
-          img(src='assets/img/tovar4/Destra-Krossovki-6661-22-7141-1.JPG', alt='', title='')
-        .tovarSlider5__minItem
-          img(src='assets/img/tovar4/Destra-Krossovki-6661-22-7141-2.JPG', alt='', title='')
-        .tovarSlider5__minItem
-          img(src='assets/img/tovar5/SalvatoreFerragamo-Ochki-178S-067-1.JPG', alt='', title='')
-        .tovarSlider5__minItem
-          img(src='assets/img/tovar3/Bluza-5100/Bluza-5100-2.JPG', alt='', title='')
+include __callAction
 
 mixin tovarSlider7
   .tovarSlider7__area.tovarSlider7_swiperSlider
@@ -84,4 +44,91 @@ mixin tovarSlider7
           i.icon-arr-right1
         
       
+mixin tovarInfo
+  .tovarPage__info
+    .tovarTitle
+      .tovarTitle__logo
+        //- img(src='assets/img/vendor/camelactive/camel_active.png', alt='')
+        span Adidas
+      .tovarTitle__text
+        h1 Платье
+    .tovarPage__desc
+      | Короткое описание товара в несоклько строчек Lorem ipsum dolor sit amet consectetur adipisicing
+      | elit. Ipsa optio corporis voluptates ea expedita molestiae ipsam, est esse modi libero beatae
+      | perferendis omnis inventore provident pariatur veniam. Omnis, in sit.
+    
+    .tovar__priceArea
+      .tovar__oldPrice Старая цена: 1800 руб
+      .tovar__price Цена: 1500 руб
+    
+    //- .tovarCard__icons.tovarCard__icons_inPage
+    //-   .tovarCard__icon.tovarCard__icon_sale -25%
+    //-   .tovarCard__icon.tovarCard__icon_new NEW
+    //-   .tovarCard__icon.tovarCard__icon_hit ХИТ
+    
+    +sizeSelector
 
+    .difColorLink__area
+      .difColorLink__title В другом цвете:
+      .difColorLink__content
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/01.jpg", alt="")
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/02.jpg", alt="")
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/01.jpg", alt="")
+        a(href="#", title="12321")
+          span(style='background-color: #C56430; height: 100%')
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/02.jpg", alt="")
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/01.jpg", alt="")
+        a(href="#", title="12321")
+          img(src="assets/img/difcolor/02.jpg", alt="")
+    
+    .tovarDescTab__area
+      .table_outer250
+        table
+          tbody
+            tr
+              td(colspan='2') Характеристики:
+            tr
+              td Пол
+              td Женский
+            tr
+              td Сезон
+              td Лето
+            tr
+              td Стиль
+              td Спортивный
+            tr
+              td Материал
+              td Хлопок
+            tr
+              td Размер
+              td XL, L, S
+    
+
+    
+    
+
+    .callAction__areaInTovar
+      +callAction
+
+
+    .addToCartOuter
+      .number
+        button.minus -
+        input.cartCountInput(type='text', name='count', value='1')
+        button.plus +
+      a.tovar__addToCart.redBtn_withSpan(href='#', type='submit', name='ms2_action', value='cart/add')
+        span Купить
+
+
+mixin sizeSelector
+  .sizeSelector__area
+    .sizeSelector__title Укажите нужный размер:
+    .sizeSelector
+      each item in size
+        .sizeSelector__item
+          span=item
