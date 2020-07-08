@@ -46,6 +46,7 @@
   }
   .shop__brandsItemOuter {
     width: 25%;
+    width: 20%;
   }
   .newCollection {
     padding: 0;
@@ -80,7 +81,7 @@
   }
   .shop__info {
     width: 100%;
-    padding: 20px 0 0 0;
+    padding: 1.25rem 0 0 0;
   }
   .shop__brandsItemOuter {
     width: 16.666%;
@@ -99,24 +100,40 @@
   .shop__infoTextContent {
     margin-bottom: 1.25rem;
   }
+  .shop__callActionArea {
+    width: 40%;
+  }
+  .shop__brands {
+    padding: 0;
+  }
+  .shop__logo {
+    padding: 0;
+  }
+  .shop__infoTextContent {
+    padding: 0 10px 0 0;
+  }
+  .shop__tempText {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .shop {
-    padding: 5px !important;
-  }
   .swiper__infoBoxShop {
     padding: 0.625rem;
   }
   .shop__brandsItemOuter {
-    width: 25%;
+    width: 20%;
+  }
+
+  .shop__callActionArea {
+    width: 50%;
   }
   .newCollection {
     padding: 0;
   }
   .newCollection {
     margin: 0 -5px;
-    padding: 0 30px;
+    padding: 0 10px;
   }
 
   .newCollection__itemOuter {
@@ -125,24 +142,36 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .newCollection {
-    /* padding: 0 50px; */
-    padding: 0 25px;
+  .shop__sliderArea {
+    order: 0;
   }
-  .newCollection__itemOuter {
-    width: 50%;
+  .newCollection {
+    padding: 1.25rem 5px 0;
+    order: 1;
+  }
+  .shop__info {
+    order: 2;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .newCollection {
+    /* padding: 0 20px; */
     padding: 0;
-    padding: 0 20px;
+  }
+  /* .newCollection__itemOuter {
+    width: 50%;
+  } */
+  .newCollection__itemTitle {
+    font-size: 0.75rem;
+  }
+  .shop__callActionArea {
+    width: 60%;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .shop__brandsItemOuter {
-    width: 33.333%;
+  .newCollection {
+    padding: 0;
   }
 }

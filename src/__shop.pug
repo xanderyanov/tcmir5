@@ -55,6 +55,39 @@ mixin shop
             img(src="assets/img/vendor/guinot/guinot.jpg", alt="")
           .shop__callActionArea
             +callActionBtn_inShop
+        .shop__brandsArea
+          .shop__brands
+            .shop__brandsItemOuter
+              .shop__brandsItem
+                a.shop__brandsItemInner(href="#")
+                  img(src="assets/img/vendor/Abel&Lula/logo A&L 1.jpg", alt="")
+                  span Abel&Lula
+            .shop__brandsItemOuter
+              .shop__brandsItem
+                a.shop__brandsItemInner(href="#")
+                  img(src="assets/img/vendor/Birba/birba.svg", alt="")
+                  span Birba
+            .shop__brandsItemOuter
+              .shop__brandsItem
+                a.shop__brandsItemInner(href="#")
+                  img(src="assets/img/vendor/Converse/converse.png", alt="")
+                  span Converse
+            .shop__brandsItemOuter
+              .shop__brandsItem
+                .shop__brandsItemInner
+                  img(src="assets/img/vendor/Crocs/crocs.jpg", alt="")
+                  span Crocs
+            .shop__brandsItemOuter
+              .shop__brandsItem
+                a.shop__brandsItemInner(href="#")
+                  img(src="assets/img/vendor/Dakkem/Dakkem.png", alt="")
+                  span Dakkem
+            //- .shop__brandsItemOuter
+            //-   .shop__brandsItem
+            //-     a.shop__brandsItemInner(href="#")
+            //-       img(src="assets/img/vendor/Forward/Forward.jpg", alt="")
+            //-       span Forward
+        
         .shop__brandsCarouselArea
           .brandsCarousel
             .swiper-container.brandsCarousel-container1
@@ -89,26 +122,26 @@ mixin shop
                     a.shop__brandsItemInner(href="#")
                       img(src="assets/img/vendor/Forward/Forward.jpg", alt="")
                       span Forward
-                .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
-                  .shop__brandsItem
-                    a.shop__brandsItemInner(href="#")
-                      img(src="assets/img/vendor/Gucci/gucci.jpg", alt="")
-                      span Gucci
-                .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
-                  .shop__brandsItem
-                    a.shop__brandsItemInner(href="#")
-                      img(src="assets/img/vendor/Guinot/Guinot.jpg", alt="")
-                      span Guinot
-                .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
-                  .shop__brandsItem
-                    a.shop__brandsItemInner(href="#")
-                      img(src="assets/img/vendor/Crocs/crocs.jpg", alt="")
-                      span Crocs
-                .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
-                  .shop__brandsItem
-                    a.shop__brandsItemInner(href="#")
-                      img(src="assets/img/vendor/Dakkem/Dakkem.png", alt="")
-                      span Dakkem
+                //- .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
+                //-   .shop__brandsItem
+                //-     a.shop__brandsItemInner(href="#")
+                //-       img(src="assets/img/vendor/Gucci/gucci.jpg", alt="")
+                //-       span Gucci
+                //- .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
+                //-   .shop__brandsItem
+                //-     a.shop__brandsItemInner(href="#")
+                //-       img(src="assets/img/vendor/Guinot/Guinot.jpg", alt="")
+                //-       span Guinot
+                //- .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
+                //-   .shop__brandsItem
+                //-     a.shop__brandsItemInner(href="#")
+                //-       img(src="assets/img/vendor/Crocs/crocs.jpg", alt="")
+                //-       span Crocs
+                //- .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
+                //-   .shop__brandsItem
+                //-     a.shop__brandsItemInner(href="#")
+                //-       img(src="assets/img/vendor/Dakkem/Dakkem.png", alt="")
+                //-       span Dakkem
           .swiper-button-prev.brandsCarousel__btn.brandsCarousel__btnPrev
             i.icon-arr-left1
           .swiper-button-next.brandsCarousel__btn.brandsCarousel__btnNext
@@ -136,29 +169,29 @@ mixin shop
 
         //-     a.shop__contactsItem(href="mailto:shop@tcmir.ru")
         //-       span shop@tcmir.ru
-
+      +newCollection
 mixin newCollection
-  .newCollection__area.w0
-    .newCollection__outer.w1
-      .newCollection
-        each item in newCollections
-          .newCollection__itemOuter(id=item.id)
-            a.newCollection__item(href="#")
-              span.newCollection__itemImg
-                img(src!=item.img1, alt="")
-                if item.discount 
-                  span.newCollection__itemDiscount!=item.discount 
-              span.newCollection__itemInfo
-                span.newCollection__itemTitle!= item.title
-                span.newCollection__itemPriceArea
-                  if item.oldPrice
-                    span.newCollection__itemOldPrice!= item.oldPrice 
-                      span ₽
-                    span.newCollection__itemPrice!= item.price 
-                      span ₽
-                  else
-                    span.newCollection__itemPrice!= item.price
-                      span ₽
+  //- .newCollection__area.w0
+  //-   .newCollection__outer.w1
+  .newCollection
+    each item in newCollections
+      .newCollection__itemOuter(id=item.id)
+        a.newCollection__item(href="#")
+          span.newCollection__itemImg
+            img(src!=item.img1, alt="")
+            if item.discount 
+              span.newCollection__itemDiscount!=item.discount 
+          span.newCollection__itemInfo
+            span.newCollection__itemTitle!= item.title
+            span.newCollection__itemPriceArea
+              if item.oldPrice
+                span.newCollection__itemOldPrice!= item.oldPrice 
+                  span ₽
+                span.newCollection__itemPrice!= item.price 
+                  span ₽
+              else
+                span.newCollection__itemPrice!= item.price
+                  span ₽
 
 
 mixin newCollectionInMain

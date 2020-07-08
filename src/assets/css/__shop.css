@@ -200,6 +200,7 @@
 
 .shop__logo {
   width: 30%;
+  padding-left: 20px;
 }
 
 .shop__logo img {
@@ -235,6 +236,7 @@
 
 .shop__brandsItemOuter {
   width: 16.666%;
+  /* width: 20%; */
   padding: 3px;
   position: relative;
 }
@@ -535,7 +537,7 @@
 
 .shop__tempText {
   margin-top: 1.5rem;
-  padding: 0 1.875rem;
+  padding: 0 0 0 1.875rem;
 }
 
 .shop__tempTextInner {

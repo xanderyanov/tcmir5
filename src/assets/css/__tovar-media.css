@@ -31,6 +31,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .tovarTitle__logo {
+    display: none;
+  }
+  .tovarTitle__logo_adaptive {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -48,7 +54,7 @@
   .tovarTitle {
     align-items: center;
   }
-  .tovarTitle__logo {
+  .tovarTitle__logo_adaptive {
     justify-content: center;
   }
   .tovarTitle__text {

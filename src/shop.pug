@@ -24,19 +24,13 @@ body
 			h1= pageTitle
 		//- include __breadcrumbs
 		+shop
-		
-		.catalogPage__outer.w0
-			.title1.w1
-				h2= pageTitle
-				span 785
-			+newCollection
-			.catalogPage.w1
-				+adaptiveFilters
-				+leftMenuInShop
-				.catalog__outer
-					.adaptiveFilterOnBtn Фильтрация
-					+filtersArea
-					+catalogArea
+		.catalogPage.w1
+			+adaptiveFilters
+			+leftMenuInShop
+			.catalog__outer
+				.adaptiveFilterOnBtn Фильтрация
+				+filtersArea
+				+catalogArea
 		+textInContent
 
 	.site__footer
