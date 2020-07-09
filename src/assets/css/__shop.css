@@ -504,6 +504,14 @@
   margin-top: auto;
 }
 
+.newCollection__itemBrand {
+  font-weight: 400;
+  color: var(--tColor);
+  margin-bottom: 0.3125rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
 .newCollection__itemTitle {
   font-weight: 600;
   color: var(--tColor);

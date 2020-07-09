@@ -316,15 +316,16 @@
 .toTop {
   z-index: 2600;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  left: 10px;
+  bottom: 40px;
   opacity: 0.75;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  padding: 5px;
+  width: 2rem;
+  height: 2rem;
   background: #be3f46;
 }
 
@@ -333,7 +334,7 @@
 }
 
 .toTop i {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #fff;
 }
 

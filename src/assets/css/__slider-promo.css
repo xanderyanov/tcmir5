@@ -222,6 +222,10 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  pointer-events: none;
+}
+.julySlider__item.swiper-slide-active a {
+  pointer-events: all;
 }
 .julySlider__item img {
   display: block;

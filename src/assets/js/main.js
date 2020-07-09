@@ -11,24 +11,6 @@ $(function () {
     console.log("Кнопка назад");
   });
 
-  // if ($(".juneSlider__area").length) {
-  //   $(".juneSlider").slick({
-  //     dots: true,
-  //     infinite: true,
-  //     speed: 300,
-  //     slidesToShow: 1,
-  //     centerMode: true,
-  //     variableWidth: true,
-  //     focusOnSelect: true,
-  //     autoplay: true,
-  //     autoplaySpeed: 5000,
-  //     slide: ".juneSlider__item",
-  //     prevArrow: '<div class="june__slickBtnPrev"><i class="icon-arr-left1"></i></div>',
-  //     nextArrow: '<div class="june__slickBtnNext"><i class="icon-arr-right1"></i></div>',
-  //     dotsClass: "june__dots",
-  //   });
-  // }
-
   // слайдер на главной
   if ($(".juneSlider__area").length) {
     $(".juneSlider").slick({
@@ -340,60 +322,8 @@ $(function () {
     $(".adaptiveSearch__area").slideToggle(200);
   });
 
-  // главный слайдер на главной
-  if ($(".swiper-container1").length) {
-    var mySwiper1 = new Swiper(".swiper-container1", {
-      slidesPerView: 1,
-      loop: true,
-      autoplay: {
-        delay: 5500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination1",
-        type: "bullets",
-        dynamicBullets: false,
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next1",
-        prevEl: ".swiper-button-prev1",
-      },
-      on: {
-        init: function () {
-          console.log("swiper initialized");
-          $(".swiper-slide").children(".swiper__cadr").removeClass("animationfadeIn").fadeOut(500);
-          setTimeout(function () {
-            $(".swiper-slide-active")
-              .children(".swiper__cadr")
-              .fadeIn(500)
-              .addClass("animated")
-              .addClass("animationfadeIn");
-          }, 500);
-        },
-        slideChange: function () {
-          $(".swiper-slide").children(".swiper__cadr").removeClass("animationfadeIn").fadeOut(500);
-          setTimeout(function () {
-            $(".swiper-slide-active")
-              .children(".swiper__cadr")
-              .fadeIn(500)
-              .addClass("animated")
-              .addClass("animationfadeIn");
-          }, 500);
-        },
-      },
-    });
-  }
-
   //Слайдер на странице товара
   if ($(".slider__new").length) {
-    // if ($(".gallery-top-v .swiper-slide2").length == 1) {
-    //   $(".swiper-pagination").addClass("disabled");
-    //   $(".swiper-button-nextV").hide();
-    //   $(".swiper-button-prevV").hide();
-    //   $(".gallery-thumbs-v").hide();
-    // }
-
     var galleryThumbs = new Swiper(".slider__newThumbs", {
       spaceBetween: 5,
       loop: false,
@@ -443,29 +373,6 @@ $(function () {
       setWrapperSize: true,
     });
   }
-
-  // $(".slickCarousel__img").slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: true,
-  //   prevArrow: '<div class="slickBtnPrev"><i class="icon-arr-left1"></i></div>',
-  //   nextArrow: '<div class="slickBtnNext"><i class="icon-arr-right1"></i></div>',
-  //   dots: false,
-  //   fade: true,
-  //   asNavFor: ".slickCarousel__thmb",
-  //   slide: ".slickCarousel__imgItem",
-  // });
-  // $(".slickCarousel__thmb").slick({
-  //   slidesToShow: 10,
-  //   slidesToScroll: 1,
-  //   asNavFor: ".slickCarousel__img",
-  //   arrows: false,
-  //   dots: false,
-  //   centerMode: true,
-  //   focusOnSelect: true,
-  //   slide: ".slickCarousel__thmbItem",
-  //   vertical: true,
-  // });
 
   $("#my-slider").sliderPro({
     width: 500,
@@ -571,7 +478,7 @@ $(function () {
   }
   // карусель брендов-
   if ($(".brandsCarousel-container1").length) {
-    var carousel = new Swiper(".brandsCarousel-container1", {
+    var brandsCarousel = new Swiper(".brandsCarousel-container1", {
       slidesPerView: 3,
       spaceBetween: 0,
       slidesPerGroup: 1,
@@ -611,6 +518,12 @@ $(function () {
           spaceBetween: 0,
         },
       },
+    });
+    $(".brandsCarousel").mouseenter(function () {
+      brandsCarousel.autoplay.stop();
+    });
+    $(".brandsCarousel").mouseleave(function () {
+      brandsCarousel.autoplay.start();
     });
   }
 
@@ -982,4 +895,17 @@ $(function () {
       // }
     });
   }
+
+  $(".toTop").hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $(".toTop").fadeIn();
+    } else {
+      $(".toTop").fadeOut();
+    }
+  });
+  $(".toTop").click(function () {
+    $("body,html").animate({ scrollTop: 0 }, 400);
+    return false;
+  });
 });
