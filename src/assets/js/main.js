@@ -1,48 +1,8 @@
-// $(window).on("load", function () {
-//   if ($(".tovarPage__sliderAreaWrapper").length) {
-//     $(".tovarPage__sliderAreaWrapper").removeClass("invisible");
-//     $(".tovarSliderPro img").css("display", "block");
-//   }
-// });
-
 $(function () {
   $(".backBtn").on("click", function (e) {
     window.history.back();
     console.log("Кнопка назад");
   });
-
-  // слайдер на главной
-  if ($(".juneSlider__area").length) {
-    $(".juneSlider").slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      centerMode: true,
-      variableWidth: true,
-      focusOnSelect: true,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      pauseOnHover: true,
-      draggable: true,
-      swipe: true,
-      swipeToSlide: true,
-      slide: ".juneSlider__item",
-      prevArrow: '<div class="june__slickBtnPrev"><i class="icon-arr-left1"></i></div>',
-      nextArrow: '<div class="june__slickBtnNext"><i class="icon-arr-right1"></i></div>',
-      dotsClass: "june__dots",
-      asNavFor: ".juneSlider__tovars",
-    });
-    $(".juneSlider__tovars").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      asNavFor: ".juneSlider",
-      dots: false,
-      arrows: false,
-      centerMode: true,
-      focusOnSelect: true,
-    });
-  }
 
   setTimeout(function () {
     if ($(".julySlider__outer").length) {
@@ -85,10 +45,10 @@ $(function () {
         },
         on: {
           init: function () {
-            console.log("initialized."); //this works
+            console.log("initialized.");
           },
           imagesReady: function () {
-            console.log("images ready."); //this doesn't work
+            console.log("images ready.");
           },
         },
       });
@@ -103,42 +63,6 @@ $(function () {
       // galleryThumbs.controller.control = galleryTop;
     }
   }, 100);
-
-  // слайдер товара 5
-  if ($(".tovarSlider5").length) {
-    $(".tovarSlider5__img").slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      // centerMode: true,
-      // variableWidth: true,
-      focusOnSelect: true,
-      // autoplay: true,
-      // autoplaySpeed: 5000,
-      appendArrows: ".tovarSlider5__pagination",
-      appendDots: ".tovarSlider5__pagination",
-      slide: ".tovarSlider5__imgItem",
-      prevArrow: '<div class="tovarSlider5__Prev"><i class="icon-arr-left1"></i></div>',
-      nextArrow: '<div class="tovarSlider5__Next"><i class="icon-arr-right1"></i></div>',
-      dotsClass: "tovarSlider5__dots",
-      asNavFor: ".tovarSlider5__min",
-    });
-    $(".tovarSlider5__min").slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      asNavFor: ".tovarSlider5__img",
-      dots: false,
-      arrows: false,
-      centerMode: true,
-      focusOnSelect: true,
-      infinite: true,
-      vertical: true,
-      verticalSwiping: true,
-      centeredSlides: true,
-    });
-  }
 
   // слайдер товара 7
 
