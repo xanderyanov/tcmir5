@@ -235,7 +235,7 @@
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: gray; /* IE 6-9 */
+  filter: gray;
   opacity: 0.5;
   transition: all 0.5s;
 }

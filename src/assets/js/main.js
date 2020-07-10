@@ -44,53 +44,65 @@ $(function () {
     });
   }
 
-  if ($(".julySlider__outer").length) {
-    var galleryThumbs = new Swiper(".julySlider__tovars", {
-      spaceBetween: 10,
-      slidesPerView: 1,
-      loop: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-      speed: 600,
-      nested: true,
-      allowTouchMove: false, //запрет свайпа
-    });
+  setTimeout(function () {
+    if ($(".julySlider__outer").length) {
+      var galleryThumbs = new Swiper(".julySlider__tovars", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        loop: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        speed: 600,
+        nested: true,
+        allowTouchMove: false, //запрет свайпа
+      });
 
-    var galleryTop = new Swiper(".julySlider", {
-      speed: 600,
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 10,
-      loop: true,
-      slideToClickedSlide: true,
-      autoplay: {
-        delay: 5500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".julySlider__pagination",
-        type: "bullets",
-        dynamicBullets: false,
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".julySlider__Next",
-        prevEl: ".julySlider__Prev",
-      },
-      thumbs: {
-        swiper: galleryThumbs,
-      },
-    });
-    $(".swiper-container").mouseenter(function () {
-      galleryTop.autoplay.stop();
-    });
-    $(".swiper-container").mouseleave(function () {
-      galleryTop.autoplay.start();
-    });
+      var galleryTop = new Swiper(".julySlider", {
+        preloadImages: true,
+        updateOnImagesReady: true,
+        speed: 600,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 10,
+        loop: true,
+        slideToClickedSlide: true,
+        autoplay: {
+          delay: 5500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".julySlider__pagination",
+          type: "bullets",
+          dynamicBullets: false,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".julySlider__Next",
+          prevEl: ".julySlider__Prev",
+        },
+        thumbs: {
+          swiper: galleryThumbs,
+        },
+        on: {
+          init: function () {
+            console.log("initialized."); //this works
+          },
+          imagesReady: function () {
+            console.log("images ready."); //this doesn't work
+          },
+        },
+      });
+      $(".swiper-container").mouseenter(function () {
+        galleryTop.autoplay.stop();
+      });
+      $(".swiper-container").mouseleave(function () {
+        galleryTop.autoplay.start();
+      });
 
-    // galleryTop.controller.control = galleryThumbs;
-    // galleryThumbs.controller.control = galleryTop;
-  }
+      // galleryTop.controller.control = galleryThumbs;
+      // galleryThumbs.controller.control = galleryTop;
+    }
+  }, 100);
 
   // слайдер товара 5
   if ($(".tovarSlider5").length) {
