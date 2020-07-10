@@ -187,5 +187,49 @@
       "img1": "assets/img/tovar/006.jpeg",
       "img2": "assets/img/tovar/002.jpeg"
     }
+  ],
+  "sizeToPrice": [
+    {
+      "size": "XS",
+      "art": "qqq-0001-www-xs",
+      "oldPrice": "2600",
+      "price": "2500"
+    },
+    {
+      "size": "S",
+      "art": "qqq-0001-www-s",
+      "oldPrice": "2600",
+      "price": "2510"
+    },
+    {
+      "size": "M",
+      "art": "qqq-0001-www-m",
+      "oldPrice": "2600",
+      "price": "2520"
+    },
+    {
+      "size": "L",
+      "art": "qqq-0001-www-l",
+      "oldPrice": "2600",
+      "price": "2530"
+    },
+    {
+      "size": "XL",
+      "art": "qqq-0001-www-xl",
+      "oldPrice": "2600",
+      "price": "2540"
+    },
+    {
+      "size": "XXL",
+      "art": "qqq-0001-www-xxl",
+      "oldPrice": "2600",
+      "price": "2550"
+    },
+    {
+      "size": "XXXL",
+      "art": "qqq-0001-www-xxxl",
+      "oldPrice": "2600",
+      "price": "2560"
+    }
   ]
 }

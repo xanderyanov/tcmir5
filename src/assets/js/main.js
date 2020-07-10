@@ -844,4 +844,21 @@ $(function () {
     $("body,html").animate({ scrollTop: 0 }, 400);
     return false;
   });
+
+  // sizeToPrice
+
+  $(".sizeToPrice__selector").find(".sizeToPrice__selectorItem:first-child").addClass("active");
+  $(".sizeToPrice__result").find(".sizeToPrice__resultItem:first-child").addClass("active");
+
+  $(".sizeToPrice__selector").on("click", ".sizeToPrice__selectorItem:not(.active)", function () {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active")
+      .closest(".sizeToPrice")
+      .find(".sizeToPrice__resultItem")
+      .removeClass("active")
+      .eq($(this).index())
+      .addClass("active");
+  });
 });

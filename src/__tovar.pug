@@ -134,3 +134,24 @@ mixin sizeSelector
       each item in size
         .sizeSelector__item
           span=item
+
+
+mixin sizeToPrice
+  .sizeToPrice__area
+    .sizeToPrice
+      .sizeToPrice__header
+        .sizeToPrice__headerTitle Выберите нужный размер:
+        .sizeToPrice__selector
+          each item in sizeToPrice
+            .sizeToPrice__selectorItem
+              span!= item.size
+      .sizeToPrice__result
+        each item in sizeToPrice
+          .sizeToPrice__resultItem
+            span.sizeToPrice__art 
+              span.sizeToPrice__artTitle Артикул:
+              span.sizeToPrice__artInfo!= item.art
+            span.sizeToPrice__priceArea
+              span.sizeToPrice__oldPrice!= item.oldPrice
+              span.sizeToPrice__price!= item.price
+
