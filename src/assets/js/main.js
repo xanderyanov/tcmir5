@@ -62,7 +62,7 @@ $(function () {
       // galleryTop.controller.control = galleryThumbs;
       // galleryThumbs.controller.control = galleryTop;
     }
-  }, 100);
+  }, 500);
 
   // слайдер товара 7
 
