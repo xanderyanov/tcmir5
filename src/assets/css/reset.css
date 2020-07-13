@@ -120,3 +120,7 @@ a:focus {
 input {
   outline: none;
 }
+
+button:focus {
+  outline: none !important;
+}

@@ -1,4 +1,27 @@
 $(function () {
+  // discount_btn
+  if ($(".getDiscountBtn").length) {
+    $(".getDiscountBtn").on("click", function () {
+      // if ($(this).hasClass("callActionBtn_open")) {
+      //   $(this).removeClass("callActionBtn_open");
+      // } else {
+      $(this).addClass("getDiscountBtn_active");
+      // }
+    });
+  }
+
+  if ($(".getDiscountBtn_mobile").length) {
+    $(".getDiscountBtn_mobile").on("click", function () {
+      // if ($(this).hasClass("callActionBtn_open")) {
+      //   $(this).removeClass("callActionBtn_open");
+      // } else {
+      $(this).addClass("getDiscountBtn_mobile_active");
+      setTimeout(function () {
+        $(".getDiscountBtn__tooltipMobile").slideDown(500);
+      }, 500);
+    });
+  }
+
   $(".backBtn").on("click", function (e) {
     window.history.back();
     console.log("Кнопка назад");

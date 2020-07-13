@@ -18,6 +18,15 @@
   .callActionBtn_inTovar {
     width: 100%;
   }
+  .getDiscountBtn {
+    width: 100%;
+  }
+  .getDiscountBtn_desktop {
+    display: none;
+  }
+  .getDiscountBtn_mobileArea {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

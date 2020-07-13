@@ -528,6 +528,7 @@
 
 .sizeToPrice__selectorItem.active {
   border: 1px solid var(--redFill);
+  color: var(--redFill);
 }
 
 .sizeToPrice__result {
@@ -563,6 +564,10 @@
 
 .sizeToPrice__priceArea {
   display: flex;
+}
+
+.sizeToPrice__priceArea span {
+  margin-left: 0.3125rem;
 }
 
 .sizeToPrice__oldPrice {
