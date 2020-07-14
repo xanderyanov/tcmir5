@@ -274,7 +274,11 @@
   width: 100%;
 }
 .shop__brandsItem span {
-  display: none;
+  /* display: none; */
+  font-size: 1rem;
+  color: var(--tc0);
+  line-height: 1.2;
+  padding: 5px;
 }
 
 .shop__contactsArea {
