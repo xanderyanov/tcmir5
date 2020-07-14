@@ -11,10 +11,6 @@
   .callAction__title {
     margin-bottom: 10px;
   }
-  .callActionBtnGoToShop {
-    width: 100%;
-    margin-bottom: 10px;
-  }
   .callActionBtn_inTovar {
     width: 100%;
   }
@@ -30,6 +26,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .callActionArea__left {
+    width: 40%;
+  }
+
+  .callActionArea__right {
+    width: 55%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -42,6 +45,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .callActionArea__left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .callActionArea__right {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {

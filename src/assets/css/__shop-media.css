@@ -23,6 +23,9 @@
   .newCollection__itemImg {
     padding: 0 30px;
   }
+  .shop__topArea {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -38,18 +41,15 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .shop__sliderArea {
-    width: 60%;
-  }
-  .shop__info {
-    width: 40%;
-  }
   .shop__brandsItemOuter {
     width: 25%;
     width: 20%;
   }
   .newCollection {
     padding: 0;
+  }
+  .shop__callActionArea {
+    width: 60%;
   }
 
   /* .newCollection__itemImg_main {
@@ -114,6 +114,9 @@
   }
   .shop__tempText {
     padding: 0;
+  }
+  .shop__logo {
+    margin: 0 auto;
   }
 }
 

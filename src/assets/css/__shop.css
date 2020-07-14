@@ -199,8 +199,8 @@
 }
 
 .shop__logo {
-  width: 30%;
-  padding-left: 20px;
+  width: 100%;
+  max-width: 230px;
 }
 
 .shop__logo img {
@@ -209,8 +209,8 @@
 }
 
 .shop__callActionArea {
-  width: 65%;
-  margin-left: auto;
+  width: 50%;
+  /* margin-left: auto; */
 }
 
 .shop__intro {

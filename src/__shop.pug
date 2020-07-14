@@ -51,10 +51,13 @@ mixin shop
               i.icon-arr-right1
       .shop__info
         .shop__topArea
-          .shop__logo
-            img(src="assets/img/vendor/guinot/guinot.jpg", alt="")
-          .shop__callActionArea
-            +callActionBtn_inShop
+          .callActionArea
+            .callActionArea__left
+              .shop__logo
+                img(src="assets/img/vendor/guinot/guinot.jpg", alt="")
+            .callActionArea__right
+              //- +callActionBtn
+              +callActionBtnDiscount  
         .shop__brandsArea
           .shop__brands
             .shop__brandsItemOuter

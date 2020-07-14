@@ -115,7 +115,12 @@ mixin tovarInfo
     
 
     .callAction__areaInTovar
-      +getDiscountBtn
+      .callActionArea
+        .callActionArea__left
+          a.callActionBtnGoToShop(href="") Все товары продавца
+        .callActionArea__right
+          +callActionBtn
+          //- +callActionBtnDiscount
 
 
     .addToCartOuter

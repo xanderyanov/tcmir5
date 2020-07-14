@@ -115,6 +115,11 @@
   color: #fff;
 }
 
+.tovarSlider7:hover .tovarSlider7__Prev.disabled,
+.tovarSlider7:hover .tovarSlider7__Next.disabled {
+  opacity: 0;
+}
+
 .tovarSlider7__Prev {
   left: 10px;
 }

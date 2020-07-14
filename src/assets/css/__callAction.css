@@ -1,8 +1,25 @@
-.callAction__wrapper {
+.callActionArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.callActionArea__left {
+  width: 45%;
+}
+
+.callActionArea__right {
+  width: 45%;
+}
+
+.callAction__wrapper------- {
   /* margin-bottom: 20px; */
   display: flex;
   flex-direction: column;
   order: 5;
+  width: 100%;
   /* margin-top: 20px; */
 }
 
@@ -33,10 +50,10 @@
   /* margin-bottom: 1.25rem; */
 }
 
-.callAction__area_inShop .callActionBtn {
+/* .callAction__area_inShop .callActionBtn {
   width: 300px !important;
   margin-left: auto!;
-}
+} */
 
 /* .callAction__title {
   font-size: 1rem;
@@ -65,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 100%;
   height: 38px;
   background: var(--x1greyLight);
   text-decoration: none;
@@ -82,7 +99,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 100%;
+  /* width: 300px; */
+
   height: 38px;
   background: var(--redFill);
   margin-left: auto;
@@ -141,7 +160,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 100%;
   height: 38px;
   background: var(--redFill);
   margin-left: auto;
