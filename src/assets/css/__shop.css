@@ -276,9 +276,10 @@
 .shop__brandsItem span {
   /* display: none; */
   font-size: 1rem;
-  color: var(--tc0);
+  color: #000;
   line-height: 1.2;
   padding: 5px;
+  text-align: center;
 }
 
 .shop__contactsArea {
