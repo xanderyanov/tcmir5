@@ -82,11 +82,38 @@
   .difColorLink__content a {
     margin: 0.3125rem;
   }
+  .sizeToPrice__headerTitle {
+    text-align: center;
+  }
+  .sizeToPrice__selector {
+    justify-content: center;
+  }
+  .sizeToPrice__art {
+    justify-content: center;
+  }
+  .sizeToPrice__priceArea {
+    justify-content: center;
+  }
+  .callAction__areaInTovar {
+    margin-top: 10px;
+  }
+  .tovarPage__area {
+    margin: 0;
+  }
+  .tovarTitle__logo_adaptive {
+    margin-bottom: 5px;
+  }
+  .tovarTitle__logo_adaptive span {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .fakeBreadcrumbs {
     background: #fff;
+  }
+  .difColorLink__area {
+    margin: 10px 0 0;
   }
 }
 

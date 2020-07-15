@@ -138,9 +138,9 @@
   .sizeSelector__area {
     order: 2;
   }
-  .callActionBtnGoToShop {
+  /* .callActionBtnGoToShop {
     display: none;
-  }
+  } */
   .callAction__intro {
     display: none;
   }

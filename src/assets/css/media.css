@@ -47,6 +47,9 @@
   .indexInfo__inner span {
     font-size: 0.875rem;
   }
+  .xBlock__area {
+    padding: 0.625rem 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
