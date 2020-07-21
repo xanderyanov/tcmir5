@@ -42,7 +42,7 @@
 @media only screen and (max-width: 600px) {
   .tovarPage__topLeft {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .tovarPage__topRight {
@@ -105,6 +105,12 @@
   }
   .tovarTitle__logo_adaptive span {
     font-size: 1rem;
+  }
+  .sizeToPrice__price {
+    font-size: 1.625rem;
+  }
+  .tovarTitle {
+    margin: 0 0 10px 0;
   }
 }
 

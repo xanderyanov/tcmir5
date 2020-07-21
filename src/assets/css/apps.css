@@ -55,8 +55,9 @@
 @import "__filters-adaptive.css";
 @import "__filters-adaptive-media.css";
 
-@import "__tovar-slider.css";
-@import "__tovar-slider-media.css";
+@import "__tovar-slider_horiz.css";
+@import "__tovar-slider_horiz-media.css";
+
 @import "__tovar-info.css";
 @import "__tovar-info-media.css";
 

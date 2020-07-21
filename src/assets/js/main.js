@@ -104,7 +104,7 @@ $(function () {
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
-        direction: "vertical",
+        // direction: "vertical",
         centeredSlides: false,
       });
 
@@ -112,7 +112,7 @@ $(function () {
         autoHeight: false,
         slidesPerView: 1,
         spaceBetween: 10,
-        loop: false,
+        loop: true,
         autoplay: {
           delay: 5500,
           disableOnInteraction: false,
