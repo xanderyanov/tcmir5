@@ -93,9 +93,9 @@
   .tovarSlider7__img.swiper-container {
     height: 350px;
   }
-  .tovarSlider7__img {
+  /* .tovarSlider7__img {
     padding: 0 0 8px 0;
-  }
+  } */
 }
 
 @media only screen and (max-width: 400px) {

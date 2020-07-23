@@ -47,28 +47,32 @@ mixin tovarSlider7
 mixin tovarInfo
   .tovarPage__info
     .tovarTitle
+      .tovarTitle__text
+        h1 Платье
       .tovarTitle__logo
         img(src='assets/img/vendor/camelactive/camel_active.png', alt='')
         span Adidas
       .tovarTitle__logo_adaptive
         span Adidas
-      .tovarTitle__text
-        h1 Платье
-    .tovarPage__desc
-      | Короткое описание товара в несоклько строчек Lorem ipsum dolor sit amet consectetur adipisicing
-      | elit. Ipsa optio corporis voluptates ea expedita molestiae ipsam, est esse modi libero beatae
-      | perferendis omnis inventore provident pariatur veniam. Omnis, in sit.
+    //- .tovarPage__desc
+    //-   | Короткое описание товара в несоклько строчек Lorem ipsum dolor sit amet consectetur adipisicing
+    //-   | elit. Ipsa optio corporis voluptates ea expedita molestiae ipsam, est esse modi libero beatae
+    //-   | perferendis omnis inventore provident pariatur veniam. Omnis, in sit.
     
-    .tovar__priceArea
-      .tovar__oldPrice Старая цена: 1800 руб
-      .tovar__price Цена: 1500 руб
+
+    +sizeToPrice
+
+
+    //- .tovar__priceArea
+    //-   .tovar__oldPrice Старая цена: 1800 руб
+    //-   .tovar__price Цена: 1500 руб
     
     //- .tovarCard__icons.tovarCard__icons_inPage
     //-   .tovarCard__icon.tovarCard__icon_sale -25%
     //-   .tovarCard__icon.tovarCard__icon_new NEW
     //-   .tovarCard__icon.tovarCard__icon_hit ХИТ
     
-    +sizeSelector
+    //- +sizeSelector
 
     .difColorLink__area
       .difColorLink__title В другом цвете:
@@ -89,11 +93,12 @@ mixin tovarInfo
           img(src="assets/img/difcolor/02.jpg", alt="")
     
     .tovarDescTab__area
+      .tovarDescTab__areaTitle О товаре:
       .table_outer250
         table
           tbody
-            tr
-              td(colspan='2') Характеристики:
+            //- tr
+            //-   td(colspan='2') Характеристики:
             tr
               td Пол
               td Женский
@@ -123,13 +128,13 @@ mixin tovarInfo
           //- +callActionBtnDiscount
 
 
-    .addToCartOuter
-      .number
-        button.minus -
-        input.cartCountInput(type='text', name='count', value='1')
-        button.plus +
-      a.tovar__addToCart.redBtn_withSpan(href='#', type='submit', name='ms2_action', value='cart/add')
-        span Купить
+    //- .addToCartOuter
+    //-   .number
+    //-     button.minus -
+    //-     input.cartCountInput(type='text', name='count', value='1')
+    //-     button.plus +
+    //-   a.tovar__addToCart.redBtn_withSpan(href='#', type='submit', name='ms2_action', value='cart/add')
+    //-     span Купить
 
 
 mixin sizeSelector
@@ -144,12 +149,6 @@ mixin sizeSelector
 mixin sizeToPrice
   .sizeToPrice__area
     .sizeToPrice
-      .sizeToPrice__header
-        .sizeToPrice__headerTitle Выберите нужный размер:
-        .sizeToPrice__selector
-          each item in sizeToPrice
-            .sizeToPrice__selectorItem
-              span!= item.size
       .sizeToPrice__result
         each item in sizeToPrice
           .sizeToPrice__resultItem
@@ -160,4 +159,11 @@ mixin sizeToPrice
               span.sizeToPrice__oldPrice!= item.oldPrice
               span.sizeToPrice__price!= item.price
                 span ₽
+              span.sizeToPrice__discount!= item.discount
+      .sizeToPrice__header
+        .sizeToPrice__headerTitle Размер:
+        .sizeToPrice__selector
+          each item in sizeToPrice
+            .sizeToPrice__selectorItem
+              span!= item.size
 

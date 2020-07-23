@@ -17,6 +17,7 @@
 .tovarSlider7__min.swiper-container {
   height: 126px;
   order: 2;
+  display: none;
 }
 
 .tovarSlider7__img {

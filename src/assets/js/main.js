@@ -99,7 +99,7 @@ $(function () {
     } else {
       var galleryThumbs7 = new Swiper(".tovarSlider7__min", {
         spaceBetween: 10,
-        slidesPerView: 7,
+        slidesPerView: 5,
         loop: false,
         freeMode: true,
         watchSlidesVisibility: true,
