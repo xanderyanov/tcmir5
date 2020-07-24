@@ -884,4 +884,29 @@ $(function () {
       .eq($(this).index())
       .addClass("active");
   });
+
+  var use_privacy = true;
+  $("#registrationForm").on("submit", function (e) {
+    if (use_privacy) {
+      if (!$(this).find("input[name=privacy]").prop("checked")) {
+        alert("Для продолжения вы должны принять условия Пользовательского соглашения");
+        return false;
+      }
+    }
+
+    //Тут код отправки формы
+    document.write("Форма успешно отправлена!");
+
+    e.preventDefault();
+  });
+
+  $(".formUsePrivacy").on("change", function (e) {
+    console.log("change");
+    btn = $(this).closest(".formBox").find(".formBox__registration");
+    if ($(this).prop("checked")) {
+      btn.prop("disabled", false);
+    } else {
+      btn.prop("disabled", true);
+    }
+  });
 });

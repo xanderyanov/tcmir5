@@ -73,6 +73,9 @@
 @import "__brand.css";
 @import "__brand-media.css";
 
+@import "__registration.css";
+@import "__registration-media.css";
+
 @import "__cart.css";
 @import "__cart-media.css";
 
