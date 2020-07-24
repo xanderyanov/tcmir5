@@ -80,3 +80,32 @@ input.formUsePrivacy {
   font-weight: 600;
   color: var(--redFill);
 }
+
+.confirmPhoneBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  background: #eee;
+  margin: 0 0 0 10px;
+  width: 30%;
+  text-align: center;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+}
+.confirmPhoneBtn.enabled {
+  background: var(--x1greySuperLight);
+  cursor: pointer;
+}
+.confirmPhoneBtn.enabled:hover {
+  background: var(--x1greyLight);
+  color: #fff;
+}
+
+.inputBox__inner {
+  display: flex;
+}
+
+.inputBox__inner input {
+  flex: 1;
+}

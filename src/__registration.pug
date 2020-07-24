@@ -21,7 +21,12 @@ mixin registration
       .inputBox
         label(for='formBoxInputPhone') Телефон
           span.requiredStar *
-        input#formBoxInputPhone(type='text', placeholder='Ваш телефон')
+        .inputBox__inner
+          input#formBoxInputPhone(type='text', placeholder='Ваш телефон')
+          .confirmPhoneBtn Подтвердить телефон
+      .inputBox.inputBox_confirmPhone
+        label(for='formBoxInputConfirmPhone') Введите код подтверждения телефонного номера из полученого смс
+        input#formBoxInputConfirmPhone(type='text', placeholder='Код подтверждения')
       .inputBox
         label(for='formBoxInputEmail') Email
           span.requiredStar *

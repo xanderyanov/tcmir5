@@ -5,12 +5,20 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .confirmPhoneBtn {
+    margin: 0 0 0 10px;
+    width: 35%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
 }
 
 @media only screen and (max-width: 920px) {
+  .confirmPhoneBtn {
+    margin: 0 0 0 10px;
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -38,6 +46,13 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .inputBox__inner {
+    flex-direction: column;
+  }
+  .confirmPhoneBtn {
+    margin: 10px auto 0;
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 320px) {

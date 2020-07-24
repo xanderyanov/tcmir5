@@ -885,19 +885,12 @@ $(function () {
       .addClass("active");
   });
 
-  var use_privacy = true;
-  $("#registrationForm").on("submit", function (e) {
-    if (use_privacy) {
-      if (!$(this).find("input[name=privacy]").prop("checked")) {
-        alert("Для продолжения вы должны принять условия Пользовательского соглашения");
-        return false;
-      }
+  $("#formBoxInputPhone").on("change", function (e) {
+    if ($(this).val() !== "") {
+      $(".confirmPhoneBtn").addClass("enabled");
+    } else {
+      $(".confirmPhoneBtn").removeClass("enabled");
     }
-
-    //Тут код отправки формы
-    document.write("Форма успешно отправлена!");
-
-    e.preventDefault();
   });
 
   $(".formUsePrivacy").on("change", function (e) {
