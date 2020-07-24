@@ -886,6 +886,7 @@ $(function () {
   });
 
   $("#formBoxInputPhone").on("change", function (e) {
+    console.log($(this).val());
     if ($(this).val() !== "") {
       $(".confirmPhoneBtn").addClass("enabled");
     } else {
