@@ -885,15 +885,53 @@ $(function () {
       .addClass("active");
   });
 
-  $("#formBoxInputPhone").on("change", function (e) {
-    console.log($(this).val());
-    if ($(this).val() !== "") {
-      $(".confirmPhoneBtn").addClass("enabled");
+  // телефон в поле регистраци пользователя
+
+  var pattern = /^[9]{1}[0-9]{9}$/g;
+
+  $("#formBoxInputPhone").on("input", function (e) {
+    var value = $(this).val();
+    var result = pattern.test(value);
+
+    if (result) {
+      $(".confirmPhoneBtn").addClass("confirmPhoneBtn_enabled");
     } else {
-      $(".confirmPhoneBtn").removeClass("enabled");
+      $(".confirmPhoneBtn").removeClass("confirmPhoneBtn_enabled");
+    }
+
+    // if ($(this).val().length >= 10) {
+    //   $(".confirmPhoneBtn").addClass("confirmPhoneBtn_enabled");
+    // } else {
+    //   $(".confirmPhoneBtn").removeClass("confirmPhoneBtn_enabled");
+    // }
+  });
+
+  $(".confirmPhoneBtn").on("click", function () {
+    $(".inputBox_confirmPhoneArea").slideDown(200);
+    $(this).addClass("confirmPhoneBtn_enabled_openBottom");
+    $("#formBoxInputPhone").prop("disabled", true);
+    $(".changePhoneBtn").addClass("changePhoneBtn_visible");
+  });
+
+  $("#formBoxInputConfirmPhone").on("input", function (e) {
+    if ($(this).val().length == 4) {
+      $(".sendPhoneCodeBtn").addClass("sendPhoneCodeBtn_enabled");
+    } else {
+      $(".sendPhoneCodeBtn").removeClass("sendPhoneCodeBtn_enabled");
     }
   });
 
+  $(".sendPhoneCodeBtn").on("click", function () {
+    if ($(this).hasClass("sendPhoneCodeBtn_enabled")) {
+      console.log("код подтверждения отправлен");
+      setTimeout(function () {
+        $(".inputBox_confirmPhoneArea").slideUp(200);
+      }, 500);
+    } else {
+    }
+  });
+
+  // отправка при выбраном чекбоксе
   $(".formUsePrivacy").on("change", function (e) {
     console.log("change");
     btn = $(this).closest(".formBox").find(".formBox__registration");
@@ -901,6 +939,19 @@ $(function () {
       btn.prop("disabled", false);
     } else {
       btn.prop("disabled", true);
+    }
+  });
+
+  $(".changePhoneBtn").on("click", function () {
+    if ($(this).hasClass("changePhoneBtn_visible")) {
+      console.log("Изменение телефона");
+      $("#formBoxInputPhone").prop("disabled", false).val("");
+      $(".confirmPhoneBtn ").removeClass("confirmPhoneBtn_enabled").removeClass("confirmPhoneBtn_enabled_openBottom");
+      $(".inputBox_confirmPhoneArea").slideUp(200);
+      $(this).removeClass("changePhoneBtn_visible");
+      $("#formBoxInputConfirmPhone").val("");
+      $(".sendPhoneCodeBtn").removeClass("sendPhoneCodeBtn_enabled");
+    } else {
     }
   });
 });
