@@ -954,4 +954,17 @@ $(function () {
     } else {
     }
   });
+
+  // кнопка резерва товара на странице товара
+  $(".rezervBtn").on("click", function () {
+    if ($(this).hasClass("rezervBtn_inReserv")) {
+      $(this).removeClass("rezervBtn_inReserv");
+      $(".rezervYes").hide();
+      $(".rezervNo").show();
+    } else {
+      $(this).addClass("rezervBtn_inReserv");
+      $(".rezervNo").hide();
+      $(".rezervYes").show();
+    }
+  });
 });

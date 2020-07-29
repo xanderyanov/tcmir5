@@ -1,0 +1,28 @@
+.rezerv__area {
+  margin: 20px 0 0 0;
+  width: 100%;
+  order: 90;
+}
+
+.rezervBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 10px;
+  cursor: pointer;
+  color: #fff;
+  background: var(--x1greyLight);
+}
+
+.rezervBtn_inReserv {
+  background: var(--redFill);
+}
+
+.rezervNo {
+  display: block;
+}
+
+.rezervYes {
+  display: none;
+}

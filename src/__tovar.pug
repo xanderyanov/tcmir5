@@ -1,4 +1,5 @@
 include __callAction
+include __rezerv
 
 mixin tovarSlider7
   .tovarSlider7__area.tovarSlider7_swiperSlider
@@ -92,6 +93,25 @@ mixin tovarInfo
         a(href="#", title="12321")
           img(src="assets/img/difcolor/02.jpg", alt="")
     
+    .callAction__areaInTovar
+      .callActionArea
+        .callActionArea__left
+          a.callActionBtnGoToShop(href="") Все товары продавца
+        .callActionArea__right
+          +callActionBtn
+          //- +callActionBtnDiscount
+
+
+    //- .addToCartOuter
+    //-   .number
+    //-     button.minus -
+    //-     input.cartCountInput(type='text', name='count', value='1')
+    //-     button.plus +
+    //-   a.tovar__addToCart.redBtn_withSpan(href='#', type='submit', name='ms2_action', value='cart/add')
+    //-     span Купить
+
+    +rezerv
+
     .tovarDescTab__area
       .tovarDescTab__areaTitle О товаре:
       .table_outer250
@@ -114,27 +134,8 @@ mixin tovarInfo
             tr
               td Размер
               td XL, L, S
-    
-
-    
-    
-
-    .callAction__areaInTovar
-      .callActionArea
-        .callActionArea__left
-          a.callActionBtnGoToShop(href="") Все товары продавца
-        .callActionArea__right
-          +callActionBtn
-          //- +callActionBtnDiscount
 
 
-    //- .addToCartOuter
-    //-   .number
-    //-     button.minus -
-    //-     input.cartCountInput(type='text', name='count', value='1')
-    //-     button.plus +
-    //-   a.tovar__addToCart.redBtn_withSpan(href='#', type='submit', name='ms2_action', value='cart/add')
-    //-     span Купить
 
 
 mixin sizeSelector
