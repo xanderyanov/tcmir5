@@ -91,9 +91,9 @@ gulp.task("myJs", function () {
       // .src("src/assets/js/**/*.*")
       .src("src/assets/js/main.js")
       .pipe(plumber())
-      .pipe(sourcemaps.init()) //Инициализируем sourcemap
-      .pipe(uglify()) //Сожмем наш js
-      .pipe(sourcemaps.write("."))
+      // .pipe(sourcemaps.init()) //Инициализируем sourcemap
+      // .pipe(uglify()) //Сожмем наш js
+      // .pipe(sourcemaps.write("."))
       .pipe(gulp.dest("build/assets/js"))
   );
 });

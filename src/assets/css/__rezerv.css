@@ -26,3 +26,27 @@
 .rezervYes {
   display: none;
 }
+
+.simpleReg__area {
+  width: 100%;
+  order: 95;
+}
+
+.simpleReg {
+  margin: 20px 0 0 0;
+}
+
+#simpleReg__readPhone {
+  margin: 0 0 10px 0;
+}
+
+#simpleReg__readPass {
+  margin: 0 0 10px 0;
+}
+
+#simpleReg__readSmsCode {
+  margin: 0 0 10px 0;
+}
+
+.simpleReg__readPhoneSubmit {
+}
