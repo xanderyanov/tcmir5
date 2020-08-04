@@ -50,6 +50,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 2px 0;
 }
 
 .backBtn {
@@ -76,4 +77,12 @@
 .shopInBreadcrumbsTitle {
   color: var(--tColor);
   font-size: 1rem !important;
+}
+
+.brandTitle {
+  margin: 0 !important;
+}
+
+.brandTitle h1 {
+  margin: 0 !important;
 }

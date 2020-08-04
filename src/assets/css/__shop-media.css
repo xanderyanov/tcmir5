@@ -97,6 +97,9 @@
   .newCollection {
     padding: 0 50px;
   }
+  .shop__infoText {
+    padding: 0;
+  }
   .shop__infoTextContent {
     margin-bottom: 1.25rem;
   }
