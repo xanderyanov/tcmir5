@@ -735,6 +735,11 @@ $(function () {
     $(".catalogFilter1__overlay").hide();
   });
 
+  //Убирает лишний фансибокс у слайдера при дублировании блоков для loop true
+  $(".swiper-slide-duplicate a[data-fancybox]").each(function (i, elem) {
+    $(elem).removeAttr("data-fancybox");
+  });
+
   $("a[data-fancybox]").fancybox({
     closeBtn: false,
     arrows: true,

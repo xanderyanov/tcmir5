@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 2px solid var(--x1grey);
   align-items: center;
 }
@@ -15,6 +15,11 @@
 .brand__logo img {
   display: block;
   width: 100%;
+}
+
+.brand__logo span {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .brand__intro {
