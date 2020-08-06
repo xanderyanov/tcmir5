@@ -85,6 +85,9 @@
 @import "__m1_index.css";
 @import "__m1_index-media.css";
 
+@import "__m1_catalog.css";
+@import "__m1_catalog-media.css";
+
 @import "__content.css";
 
 @import "main.css";

@@ -82,13 +82,13 @@ $(function () {
         },
       };
 
-      if (havethumbs) {
+      if (haveThumbs) {
         MainSwiperParams.thumbs = {
           swiper: galleryThumbs,
         };
       }
 
-      var galleryTop = new Swiper(".julySlider");
+      var galleryTop = new Swiper(".julySlider", MainSwiperParams);
       $(".swiper-container").mouseenter(function () {
         galleryTop.autoplay.stop();
       });
@@ -107,10 +107,12 @@ $(function () {
       method: "GET",
       success: function (data) {
         $(".julySlider__outer").html(data.html);
-        StartSwipers(data.haveThumbs);
+        setTimeout(function () {
+          StartSwipers(data.haveThumbs);
+        }, 500);
       },
     });
-  }, 500);
+  }, 10);
 
   // слайдер товара 7
 

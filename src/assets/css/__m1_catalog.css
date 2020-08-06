@@ -1,0 +1,24 @@
+.m1_catalog__outer {
+  padding: 10px 10px 10px 10px !important;
+}
+
+.m1_catalog {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 -10px; */
+}
+
+.m1_catalog__itemOuter {
+  width: 50%;
+  padding: 10px;
+  height: 40vh;
+}
+
+.m1_catalog__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+}
