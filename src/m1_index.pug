@@ -1,0 +1,30 @@
+- var pageTitle = 'Главная страница - мобильное исполнение'
+
+include __head
+include __header
+include __slider-promo
+include __m1_index
+include __shop
+include __footer
+include __scripts
+
+
+
+<!DOCTYPE html>
+html(lang="ru-RU")
+  +head
+body
+
+  .site__header
+    +header
+
+  .site__center
+    //- +sliderSlickInMain
+    +sliderSwiperInMain
+    +m1_mainBtn
+    
+
+  .site__footer
+    +footer
+
+  +scripts

@@ -82,6 +82,9 @@
 @import "__rezerv.css";
 @import "__rezerv-media.css";
 
+@import "__m1_index.css";
+@import "__m1_index-media.css";
+
 @import "__content.css";
 
 @import "main.css";

@@ -60,6 +60,12 @@ a.policy1:hover {
   text-decoration: underline !important;
 }
 
+.screenResolutionInfo {
+  font-size: 0.75rem;
+  color: rgba(65, 51, 40, 0.3);
+  margin-top: 5px;
+}
+
 .footerMenu {
   display: flex;
   flex-direction: column;

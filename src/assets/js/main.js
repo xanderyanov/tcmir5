@@ -1,4 +1,11 @@
 $(function () {
+  //resolution screen info
+  // var wWidth = $(window).width();
+  // var wHeight = $(window).height();
+  // console.log(wWidth + "x" + wHeight);
+
+  // $(".screenResolutionInfo").text(wWidth + "x" + wHeight);
+
   // discount_btn
   if ($(".getDiscountBtn").length) {
     $(".getDiscountBtn").on("click", function () {
@@ -27,20 +34,22 @@ $(function () {
     console.log("Кнопка назад");
   });
 
-  setTimeout(function () {
+  function StartSwipers(haveThumbs) {
     if ($(".julySlider__outer").length) {
-      var galleryThumbs = new Swiper(".julySlider__tovars", {
-        spaceBetween: 10,
-        slidesPerView: 1,
-        loop: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        speed: 600,
-        nested: true,
-        allowTouchMove: false, //запрет свайпа
-      });
+      if (haveThumbs) {
+        var galleryThumbs = new Swiper(".julySlider__tovars", {
+          spaceBetween: 10,
+          slidesPerView: 1,
+          loop: true,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+          speed: 600,
+          nested: true,
+          allowTouchMove: false, //запрет свайпа
+        });
+      }
 
-      var galleryTop = new Swiper(".julySlider", {
+      var MainSwiperParams = {
         preloadImages: true,
         updateOnImagesReady: true,
         speed: 600,
@@ -63,9 +72,6 @@ $(function () {
           nextEl: ".julySlider__Next",
           prevEl: ".julySlider__Prev",
         },
-        thumbs: {
-          swiper: galleryThumbs,
-        },
         on: {
           init: function () {
             console.log("initialized.");
@@ -74,7 +80,15 @@ $(function () {
             console.log("images ready.");
           },
         },
-      });
+      };
+
+      if (havethumbs) {
+        MainSwiperParams.thumbs = {
+          swiper: galleryThumbs,
+        };
+      }
+
+      var galleryTop = new Swiper(".julySlider");
       $(".swiper-container").mouseenter(function () {
         galleryTop.autoplay.stop();
       });
@@ -85,6 +99,17 @@ $(function () {
       // galleryTop.controller.control = galleryThumbs;
       // galleryThumbs.controller.control = galleryTop;
     }
+  }
+
+  setTimeout(function () {
+    var $window = $(window);
+    $.ajax("/ru/GetSwipers?w=" + $window.width() + "&h=" + $window.height(), {
+      method: "GET",
+      success: function (data) {
+        $(".julySlider__outer").html(data.html);
+        StartSwipers(data.haveThumbs);
+      },
+    });
   }, 500);
 
   // слайдер товара 7
