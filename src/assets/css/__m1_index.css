@@ -1,5 +1,6 @@
 .m1_mainBtn__outer {
   padding: 10px 10px 10px 10px !important;
+  display: none;
 }
 
 .m1_mainBtn {

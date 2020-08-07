@@ -20,6 +20,12 @@
   .julySlider__tovars {
     display: none;
   }
+  .m1_mainBtn__outer {
+    display: block;
+  }
+  .inIndexPage {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
