@@ -6,6 +6,7 @@ h5,
 h6 {
   color: var(--tColor);
   font-family: "Montserrat", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   margin: 0 0 10px 0;
   font-weight: 600;
   line-height: 1.2;
@@ -51,7 +52,6 @@ a {
 .content ol,
 .content blockquote,
 .content table {
-  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;

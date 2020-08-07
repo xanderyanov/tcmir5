@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700&display=swap&subset=cyrillic");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"); */
+
 @import "../../../node_modules/sweetalert/dist/sweetalert.css";
 @import "../../../node_modules/nouislider/distribute/nouislider.css";
 

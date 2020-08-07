@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1280px) {
+  .m1_catalog {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -20,9 +23,19 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .m1_catalog__itemOuter {
+    height: 35vh;
+  }
+  .m1_catalog__item span {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .m1_catalog__item span {
+    padding: 5px 10px;
+    font-size: 1.375rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
