@@ -46,7 +46,7 @@
   .tovarCard {
     /* border: none; */
     border: 1px solid transparent;
-    height: auto;
+    /* height: auto; */
     padding: 10px 10px 0;
   }
   .tovarCard__wrapper {

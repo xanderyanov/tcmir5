@@ -1,4 +1,7 @@
 $(function () {
+  var m2_headerHeight = $(".m2_header").outerHeight();
+  $(".m2_headerFake").css({ height: m2_headerHeight });
+
   //resolution screen info
   // var wWidth = $(window).width();
   // var wHeight = $(window).height();
@@ -34,7 +37,7 @@ $(function () {
     console.log("Кнопка назад");
   });
 
-  // Главный слайдер при верстке
+  // Главный слайдер при верстке - надо закомментировать если в студию добавлять
   setTimeout(function () {
     if ($(".julySlider__outer").length) {
       var galleryThumbs = new Swiper(".julySlider__tovars", {

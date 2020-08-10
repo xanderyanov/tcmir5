@@ -18,7 +18,7 @@
 @import "xandercode.css";
 
 @import "__header.css";
-@import "__header-media.css";
+/* @import "__header-media.css"; */
 
 /* @import "__adaptive-menu.css";
 @import "__adaptive-menu-media.css"; */
@@ -46,6 +46,9 @@
 
 @import "__catalog.css";
 @import "__catalog-media.css";
+
+@import "__m2_catalog.css";
+@import "__m2_catalog-media.css";
 
 @import "__filters-lib.css";
 @import "__filters.css";
