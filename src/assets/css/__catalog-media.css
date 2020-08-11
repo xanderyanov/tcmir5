@@ -11,9 +11,9 @@
   .catalog__outer {
     width: 75%;
   }
-  .tovarCard__area {
+  /* .tovarCard__area {
     width: 33.333%;
-  }
+  } */
   .catalog_fav .tovarCard__area {
     width: 25%;
   }

@@ -190,6 +190,7 @@
   align-items: center;
   color: #000;
   text-decoration: none;
+  position: relative;
 }
 
 .m2_bottomMenu__item i {
@@ -202,6 +203,21 @@
   font-size: 1rem;
   color: var(--x1greyDark);
   text-align: center;
+}
+
+.m2_bottomMenu__item span.cartCounter {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: red;
+  color: #fff;
 }
 
 .m2_category__area {
@@ -289,4 +305,9 @@
   color: #000;
   border-radius: 5px;
   white-space: nowrap;
+}
+
+.m2_catalogArea {
+  display: none;
+  padding: 0 10px;
 }

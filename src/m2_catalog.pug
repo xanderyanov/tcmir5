@@ -16,13 +16,15 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header
+    .m2_hideHeader
+      +header
     +m2_header
 
   .site__center
     +m2_catMenu
     +m2_innerCategory
     +m2_category
+    +m2_catalogArea
     //- include __breadcrumbs
     .catalogPage__outer.w0
       .title1.w1
