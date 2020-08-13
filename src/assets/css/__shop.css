@@ -556,6 +556,7 @@
 .shop__tempText {
   margin-top: 1.5rem;
   padding: 0 0 0 1.875rem;
+  display: none;
 }
 
 .shop__tempTextInner {
@@ -576,4 +577,58 @@
   line-height: 1.5;
   color: var(--tColor);
   font-weight: 600;
+}
+
+.mainShopsBox__area {
+  position: relative;
+  /* padding-top: 10px; */
+}
+
+.inIndexPage {
+  /* margin-top: 20px; */
+}
+
+.mainShopsBox__outer {
+  position: relative;
+}
+
+.mainShopsBox {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+
+.mainShopsBox__item {
+  width: 33.333%;
+  width: 25%;
+  padding: 10px;
+}
+
+.mainShopsBox__itemInner {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  border: 1px solid var(--x1border);
+}
+
+.mainShopsBox__itemInner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: all 0.3s;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mainShopsBox__itemInner a:hover {
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.mainShopsBox__itemInner img {
+  display: block;
+  width: 100%;
 }

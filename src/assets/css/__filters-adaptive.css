@@ -14,7 +14,7 @@
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 6000;
+  z-index: 9000;
   display: none;
 }
 
@@ -35,7 +35,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 6001;
+  z-index: 9001;
   display: none;
 }
 
@@ -45,7 +45,7 @@
   bottom: 0;
   left: 0;
 
-  z-index: 6010;
+  z-index: 9010;
 }
 
 .aFilters__titleArea {

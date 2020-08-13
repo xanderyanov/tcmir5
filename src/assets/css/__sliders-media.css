@@ -5,6 +5,12 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .julySlider.swiper-container {
+    height: 230px;
+  }
+  .julySlider__tovars {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -17,24 +23,21 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .julySlider__tovars {
-    display: none;
-  }
-  .m1_mainBtn__outer {
-    display: block;
-  }
-  .inIndexPage {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 600px) {
+  .julySlider.swiper-container {
+    height: 210px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
 }
 
 @media only screen and (max-width: 400px) {
+  .julySlider.swiper-container {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 320px) {

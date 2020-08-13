@@ -1,0 +1,434 @@
+/* главный слайдер  */
+
+.julySlider__area {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.julySlider__outer {
+}
+
+.julySlider {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.julySlider.swiper-container {
+  height: 250px;
+}
+
+.julySlider {
+  width: 100%;
+  position: relative;
+}
+
+.julySlider__item {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.julySlider__item a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.julySlider__item.swiper-slide-active a {
+  pointer-events: all;
+}
+.julySlider__item img {
+  display: block;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.julySlider__item.swiper-slide-active img {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+/* .tovarSlider7__min {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12%;
+  padding: 0 20px 0 0;
+} */
+
+.julySlider__tovarsItem {
+  position: relative;
+  width: 100%;
+  padding: 2px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #fff;
+}
+.julySlider__tovarsItem img {
+  display: block;
+  width: 100%;
+}
+
+.julySlider__pag {
+  position: relative;
+  display: flex;
+}
+
+.julySlider__Prev,
+.julySlider__Next {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #a6a6a6;
+  text-align: center;
+  transition: all 0.2s;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  outline: none !important;
+}
+
+.julySlider__outer:hover .julySlider__Prev,
+.julySlider__outer:hover .julySlider__Next {
+  opacity: 1;
+}
+
+.julySlider__Prev i,
+.julySlider__Next i {
+  font-size: 0.5rem;
+  color: #fff;
+}
+
+.julySlider__Prev {
+  order: 1;
+}
+.julySlider__Next {
+  order: 3;
+}
+
+.julySlider__Prev:hover,
+.julySlider__Next:hover {
+  background: #be3f46;
+}
+
+.julySlider__outer .swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.julySlider__pag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 0;
+}
+
+.julySlider__pagination {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  order: 2;
+  margin: 0 10px;
+}
+
+.julySlider__tovarsItem:focus {
+  /* border: 2px solid #be3f46; */
+  outline: none;
+}
+/* .julySlider__tovarsItem.swiper-slide-thumb-active {
+  border: 2px solid var(--colorGrey);
+} */
+.julySlider__tovarsItem img:focus {
+  /* border: 2px solid #be3f46; */
+  outline: none;
+}
+
+.julySlider__pagination .swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #a6a6a6;
+  outline: none !important;
+}
+
+.julySlider__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #be3f46;
+  background: var(--orange);
+}
+
+.shop__sliderArea {
+  width: 50%;
+}
+
+/*************************************** слайдер на странице магазина - начало ******************************************/
+.shop__slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container_shop {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%;
+}
+
+.swiper-slide_shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slide_shop img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper__cadr_shop {
+  width: 100%;
+  /* height: 20%; */
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+  visibility: hidden;
+}
+
+.swiper__cadr_shop:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.swiper__infoBoxShop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  /* background: #fff; */
+  align-items: flex-start;
+}
+
+.swiper__infoBoxShopTitle {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--tColor);
+}
+
+.swiper__infoBoxShopDescription {
+  color: var(--tColor);
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.swiper__infoBoxShopLink {
+  margin-top: 10px;
+  display: flex;
+  padding: 10px 20px;
+  background: var(--redFill);
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.swiper__infoBoxShopLink:hover {
+  background: var(--redFillhover);
+}
+
+.swiper-button-prevShop,
+.swiper-button-nextShop {
+  background: rgba(255, 255, 255, 0.8);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  margin-top: -1rem;
+  border-radius: 3px;
+  transform: none;
+}
+
+.swiper-button-prevShop i,
+.swiper-button-nextShop i {
+  color: #000;
+  font-size: 0.75rem;
+}
+
+.swiper-button-prevShop:hover,
+.swiper-button-nextShop:hover {
+  background: var(--redFill);
+}
+
+.swiper-button-prevShop:hover i,
+.swiper-button-nextShop:hover i {
+  color: #fff;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-pagination_shop {
+  bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Это стили, определенные ранее в другом слайдере - если брать отсюда, то надо убрать комментарий */
+/* .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--redFill);
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.2;
+  pointer-events: visible;
+  background-color: #a6a6a6;
+}
+
+.swiper-button-next.swiper-button-disabled:hover,
+.swiper-button-prev.swiper-button-disabled:hover {
+  background-color: #a6a6a6;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+}
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: "";
+} */
+/* слайдер на странице магазина - конец */
+
+/* brands carousel */
+
+.shop__brandsCarouselArea {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.brandsCarousel {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.brandsCarousel-container1 {
+  position: relative;
+}
+
+.brandsCarousel__wrapper {
+  display: flex;
+}
+
+.brandsCarousel__btn {
+  position: absolute;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: var(--x1greySuperLight);
+  cursor: pointer;
+  transition: all 0.3s;
+  top: 50%;
+  margin-top: -0.875rem;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  outline: none;
+}
+
+.brandsCarousel__btn:hover {
+  background: var(--redFill);
+}
+
+.brandsCarousel__btn i {
+  color: #362b23;
+  font-size: 0.75rem;
+  transition: all 0.3s;
+}
+
+.brandsCarousel__btn:hover i {
+  color: #fff;
+}
+
+.brandsCarousel__btnPrev {
+  left: 0;
+}
+.brandsCarousel__btnNext {
+  right: 0;
+}
+
+.brandsCarousel-pagination1 {
+  bottom: 30px !important;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  background-color: var(--x1greySuperLight);
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--redFill);
+}

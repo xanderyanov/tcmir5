@@ -18,7 +18,7 @@
 @import "xandercode.css";
 
 @import "__header.css";
-/* @import "__header-media.css"; */
+@import "__header-media.css";
 
 /* @import "__adaptive-menu.css";
 @import "__adaptive-menu-media.css"; */
@@ -26,12 +26,18 @@
 @import "__adaptiveMenuArs.css";
 @import "__adaptiveMenuArs-media.css";
 
-@import "__top-search.css";
+@import "__search.css";
 @import "__adaptive-search.css";
-@import "__top-search-media.css";
+@import "__search-media.css";
 
-@import "__slider-promo.css";
-@import "__slider-promo-media.css";
+/* @import "__slider-promo.css";
+@import "__slider-promo-media.css"; */
+
+@import "__sliders.css";
+@import "__sliders-media.css";
+
+@import "__index.css";
+@import "__index-media.css";
 
 @import "__callAction.css";
 @import "__callAction-media.css";
@@ -47,18 +53,10 @@
 @import "__catalog.css";
 @import "__catalog-media.css";
 
-@import "__m2_catalog.css";
-@import "__m2_catalog-media.css";
-
 @import "__filters-lib.css";
 @import "__filters.css";
+@import "__filters-adaptive.css";
 @import "__filters-media.css";
-
-@import "__filters-adaptive.css";
-@import "__filters-adaptive-media.css";
-
-@import "__filters-adaptive.css";
-@import "__filters-adaptive-media.css";
 
 @import "__tovar-slider_horiz.css";
 @import "__tovar-slider_horiz-media.css";
@@ -86,9 +84,6 @@
 
 @import "__rezerv.css";
 @import "__rezerv-media.css";
-
-@import "__m1_index.css";
-@import "__m1_index-media.css";
 
 @import "__m1_catalog.css";
 @import "__m1_catalog-media.css";

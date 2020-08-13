@@ -1,31 +1,50 @@
 @media only screen and (max-width: 1280px) {
-  .x1menu li a {
-    font-size: 1rem;
-    padding: 0.3125rem;
-  }
 }
 
 @media only screen and (max-width: 1140px) {
 }
 
 @media only screen and (max-width: 1080px) {
-}
-
-@media only screen and (max-width: 1024px) {
-  .topLine__item3 span {
+  .header {
     display: none;
   }
-  .topLine__item3 i {
-    margin: 0;
+  .orangeHeader__area {
+    display: block;
   }
-  .topLine__item3 {
-    margin: 0 20px 0 0;
-  }
-  .x1menu {
+
+  .x1menu__area {
     display: none;
   }
   .topMenu__wrapper {
     display: none;
+  }
+  .topSearch__area {
+    width: 100%;
+  }
+  .topLine__right {
+    display: none;
+  }
+  .m2_search__area {
+    display: block;
+  }
+  .topLine__left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .topLine__item {
+    margin: 0;
+  }
+  .header__action {
+    display: none;
+  }
+  .m2_header__action {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .tovarCard__area {
+    width: 25%;
   }
 }
 
@@ -36,107 +55,64 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .topLine__item1 {
-    display: none;
+  .m2_topMenu__outer {
+    padding: 0 10px;
   }
-  .greyRound {
-    height: 2.5rem;
-    width: 2.5rem;
+  .m2_catMenu__outer {
+    padding: 0 10px;
   }
-  .topFavBtn {
-    height: 2.5rem;
-    width: 2.5rem;
+  .tovarCard__area {
+    width: 33.333%;
   }
-  .topFavBtn i {
-    font-size: 1.125rem;
-  }
-  .miniCart__link {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-  .miniCart__link i {
-    font-size: 1.125rem;
-  }
-  .miniCart__link span {
-    border: 1px solid #fff;
-    font-weight: 400;
-    font-size: 0.75rem;
-    width: 30px;
-    height: 20px;
-    top: -5px;
-  }
-  .logo1__area {
-    display: flex;
-    justify-content: center;
-    padding: 0.3125rem 0;
-  }
-  .aH__iconLink {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-
-  .aH__iconLink i {
-    font-size: 1rem;
-  }
-  .header__action {
-    /* width: auto; */
-    justify-content: flex-end;
+  .headerLine__area {
+    padding-top: 10px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .header {
-    display: none;
+  .m2_search__outer {
+    padding: 10px 10px 5px;
   }
-  .adaptiveHeader {
-    display: flex;
+
+  .m2_topMenu li a {
+    font-size: 1.125rem;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
-  .header__action {
-    width: auto;
-    /* justify-content: flex-end; */
-  }
-  .miniCart__totalPrice {
-    margin-left: 3rem;
+
+  .m2_search__outer {
+    padding: 5px 10px 5px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .aH__logo {
-    /* display: none; */
+  .tovarCard__area {
+    width: 50%;
   }
-  .aH__iconLink {
-    height: 2rem;
-    width: 2rem;
+  .topLine__item1_titme {
+    display: none;
   }
-
-  .aH__iconLink i {
-    font-size: 0.875rem;
+  .m2_header__actionMenuItem span {
+    display: none;
   }
-  .topFavBtn {
-    height: 2rem;
-    width: 2rem;
+  .m2_header__actionMenuItem i {
+    margin: 0;
+    font-size: 1.875rem;
   }
-  .topFavBtn i {
-    font-size: 1rem;
-  }
-  .miniCart__link {
-    height: 2rem;
-    width: 2rem;
-  }
-  .miniCart__link i {
-    font-size: 1rem;
-  }
-  .miniCart__link span {
-    font-size: 0.75rem;
-    width: 30px;
-    height: 20px;
-    top: -5px;
-    left: 22px;
+  .m2_header__actionMenuItem span.cartCounter {
+    right: -8px;
+    top: -8px;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  .topLine__area {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 320px) {
+  .tovarCard__area {
+    width: 80%;
+  }
 }

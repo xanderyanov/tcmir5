@@ -13,27 +13,27 @@ include __scripts
 
 <!DOCTYPE html>
 html(lang="ru-RU")
-	+head
+  +head
 body
 
-	.site__header
-		+header
+  .site__header
+    +header
 
-	.site__center
-		.title1.w1
-			h1= pageTitle
-		//- include __breadcrumbs
-		+shop
-		.catalogPage.w1
-			+adaptiveFilters
-			+leftMenuInShop
-			.catalog__outer
-				.adaptiveFilterOnBtn Фильтрация
-				+filtersArea
-				+catalogArea
-		+textInContent
+  .site__center
+    .title1.w1
+      h1= pageTitle
+    //- include __breadcrumbs
+    +shop
+    .catalogPage.w1
+      +adaptiveFilters
+      +leftMenu
+      .catalog__outer
+        .adaptiveFilterOnBtn Фильтрация
+        +filtersArea
+        +catalogArea
+    +textInContent
 
-	.site__footer
-		+footer
+  .site__footer
+    +footer
 
-	+scripts
+  +scripts

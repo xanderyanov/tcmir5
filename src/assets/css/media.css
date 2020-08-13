@@ -24,12 +24,8 @@
     width: 25%;
   }
   .toTop {
-    z-index: 2600;
-    position: fixed;
     left: auto;
     right: 10px;
-    bottom: 80px;
-    background: #be3f46;
   }
 }
 

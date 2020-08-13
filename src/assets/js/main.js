@@ -1,4 +1,17 @@
 $(function () {
+  var orangeHeaderHeight = $(".orangeHeader").outerHeight();
+  var searchWhite = $(".searchWhite__area");
+  var searchWhiteHeight = $(".searchWhite__area").outerHeight();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > orangeHeaderHeight) {
+      searchWhite.css({ position: "fixed", top: "0", left: "0" });
+      $(".orangeHeader__areaFake").css({ height: searchWhiteHeight });
+    } else if ($(this).scrollTop() <= orangeHeaderHeight) {
+      searchWhite.css({ position: "relative", top: "auto", left: "auto" });
+      $(".orangeHeader__areaFake").css({ height: "0" });
+    }
+  });
+
   var m2_headerHeight = $(".m2_header").outerHeight();
   $(".m2_headerFake").css({ height: m2_headerHeight });
 

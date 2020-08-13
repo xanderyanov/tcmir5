@@ -1,13 +1,10 @@
-include __adaptiveMenuArs.pug
-include __top-search.pug
-
-
-
+include __search
 
 mixin header
-  +adaptiveSearch
-  +adaptiveMenuArs
-  +adaptiveHeader
+  +orangeHeader
+  //- +adaptiveSearch
+  //- +adaptiveMenuArs
+  //- +adaptiveHeader
   header.header.w0
     .topLine__area.w0
       .topLine.w1
@@ -15,7 +12,7 @@ mixin header
           .topLine__item.topLine__item1
             i.icon-marker1
             span г. Саратов, ул. Московская, 117
-          .topLine__item.topLine__item1
+          .topLine__item.topLine__item1.topLine__item1_titme
             i.icon-time1
             span c 10:00 до 20:00
           .topLine__item.topLine__item2
@@ -57,6 +54,22 @@ mixin header
               i.icon-cart1
               span 36
             span.miniCart__totalPrice 28 642 ₽
+        .m2_header__action
+          .m2_header__actionMenu
+            a.m2_header__actionMenuItem(href="#")
+              i.icon-search
+              span Каталог
+            a.m2_header__actionMenuItem(href="#")
+              i.icon-cart1
+              span Корзина
+              span.cartCounter 5
+            a.m2_header__actionMenuItem(href="#")
+              i.icon-favorit1
+              span Избранное
+            a.m2_header__actionMenuItem(href="#")
+              i.icon-avatar1
+              span Профиль
+
     .topMenu__area.w0
       .topMenu__outer.w1
         nav.topMenu__wrapper
@@ -75,27 +88,97 @@ mixin header
               a(href='#') Sale 
         +topSearch
 
-mixin adaptiveHeader
-  .adaptiveHeader__fake
-  .adaptiveHeader
-    .aH__logo
-      a(href="#")
-        img(src="assets/img/logo1a.png", alt="")
-    .header__action
-      .aH__iconLink.adaptiveSearchOn__btn
-        i.icon-search1
-      .aH__iconLink(href="#")
-        i.icon-present1
-      .aH__iconLink
-        i.icon-avatar1
-      .topFavBtn__area
-        .topFavBtn.topFavBtn_notFav.greyRoundBtn
-          i.icon-favorit1
-        .topFavBtn.topFavBtn_yesFav
-          i.icon-favorit2
-      .miniCart__area.miniCart__area_desktop.greyRoundBtn
-        a.miniCart__link(href='#')
-          i.icon-cart1
-          span 36
-        span.miniCart__totalPrice 28 642 ₽
-    +menuButton1
+//- mixin adaptiveHeader
+//-   .adaptiveHeader__fake
+//-   .adaptiveHeader
+//-     .aH__logo
+//-       a(href="#")
+//-         img(src="assets/img/logo1a.png", alt="")
+//-     .header__action
+//-       .aH__iconLink.adaptiveSearchOn__btn
+//-         i.icon-search1
+//-       .aH__iconLink(href="#")
+//-         i.icon-present1
+//-       .aH__iconLink
+//-         i.icon-avatar1
+//-       .topFavBtn__area
+//-         .topFavBtn.topFavBtn_notFav.greyRoundBtn
+//-           i.icon-favorit1
+//-         .topFavBtn.topFavBtn_yesFav
+//-           i.icon-favorit2
+//-       .miniCart__area.miniCart__area_desktop.greyRoundBtn
+//-         a.miniCart__link(href='#')
+//-           i.icon-cart1
+//-           span 36
+//-         span.miniCart__totalPrice 28 642 ₽
+//-     +menuButton1
+
+
+mixin menuButton1
+  .menuButton1__area.menuButton1__areaJS
+    .menuButton1
+      span
+      span
+      span
+
+mixin m2_header
+  .m2_headerFake
+    +m2_search
+  .m2_header
+    +m2_search
+    .m2_topMenu__area
+      .m2_topMenu__outer
+        ul.m2_topMenu
+          li.active
+            a(href="#") Женщинам
+          li
+            a(href="#") Мужчинам
+          li
+            a(href="#") Детям
+          li
+            a(href="#") Красота
+
+
+mixin m2_search
+  .m2_search__area
+    .m2_search__outer
+      form.m2_search(action='#', method='get')
+        input.m2_search__input(type='text', name='', value='', placeholder='Поиск по названию товара')
+        button.m2_search__btn(type='submit')
+          i.icon-search1
+
+mixin m2_header
+  .m2_headerFake
+  .m2_header
+    +m2_search
+    .m2_topMenu__area
+      .m2_topMenu__outer
+        ul.m2_topMenu
+          li.active
+            a(href="#") Женщинам
+          li
+            a(href="#") Мужчинам
+          li
+            a(href="#") Детям
+          li
+            a(href="#") Красота
+
+
+
+mixin searchWhite
+  .searchWhite__area
+    .searchWhite__outer
+      form.searchWhite(action='#', method='get')
+        input.searchWhite__input(type='text', name='', value='', placeholder='Поиск по названию товара')
+        button.searchWhite__btn(type='submit')
+          i.icon-search1
+
+mixin orangeHeader
+  .orangeHeader__areaFake
+  .orangeHeader__area
+    .orangeHeader__outer
+      .orangeHeader
+        .orangeLogo
+          a(href="#")
+            img(src="assets/img/logo-white.png", alt='Торговый комплекс МИР')
+      +searchWhite

@@ -1,4 +1,65 @@
-include __callAction
+mixin newCollection
+  .newCollection
+    each item in newCollections
+      .newCollection__itemOuter(id=item.id)
+        a.newCollection__item(href="#")
+          span.newCollection__itemImg.newCollection__itemImg_main
+            img(src!=item.img1, alt="")
+            if item.discount 
+              span.newCollection__itemDiscount!=item.discount 
+          span.newCollection__itemInfo
+            span.newCollection__itemBrand!= item.content
+            span.newCollection__itemTitle!= item.title
+            span.newCollection__itemPriceArea
+              if item.oldPrice
+                span.newCollection__itemOldPrice!= item.oldPrice 
+                  span ₽
+                span.newCollection__itemPrice!= item.price 
+                  span ₽
+              else
+                span.newCollection__itemPrice!= item.price
+                  span ₽
+
+
+
+mixin mainShopsBox
+  .mainShopsBox
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/Talio_Giotto.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/basconi-1.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/beauty_lounge.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/kasper.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/Monte_Napoleone.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+    .mainShopsBox__item
+      .mainShopsBox__itemInner
+        a(href='#' style='background-image: url(assets/img/june/Talio_Giotto.jpg);')
+          img(src='assets/img/pr413-229.png', alt='')
+
+
+
+
+mixin m1_mainBtn
+  .m1_mainBtn__area.w0
+    .m1_mainBtn__outer.w1
+      .m1_mainBtn.m1_mainBtn_cat Наш каталог
+      .m1_mainBtn.m1_mainBtn_mag Наши магазины
+
+
+
 mixin shop
   .shop__area.w0
     .shop.w1
@@ -58,38 +119,34 @@ mixin shop
             .callActionArea__right
               //- +callActionBtn
               +callActionBtnDiscount  
-        .shop__brandsArea
-          .shop__brands
-            .shop__brandsItemOuter
-              .shop__brandsItem
-                a.shop__brandsItemInner(href="#")
-                  img(src="assets/img/vendor/Abel&Lula/logo A&L 1.jpg", alt="")
-                  span Abel&Lula
-            .shop__brandsItemOuter
-              .shop__brandsItem
-                a.shop__brandsItemInner(href="#")
-                  img(src="assets/img/vendor/Birba/birba.svg", alt="")
-                  span Birba
-            .shop__brandsItemOuter
-              .shop__brandsItem
-                a.shop__brandsItemInner(href="#")
-                  img(src="assets/img/vendor/Converse/converse.png", alt="")
-                  span Converse
-            .shop__brandsItemOuter
-              .shop__brandsItem
-                .shop__brandsItemInner
-                  img(src="assets/img/vendor/Crocs/crocs.jpg", alt="")
-                  span Crocs
-            .shop__brandsItemOuter
-              .shop__brandsItem
-                a.shop__brandsItemInner(href="#")
-                  img(src="assets/img/vendor/Dakkem/Dakkem.png", alt="")
-                  span Dakkem
-            //- .shop__brandsItemOuter
-            //-   .shop__brandsItem
-            //-     a.shop__brandsItemInner(href="#")
-            //-       img(src="assets/img/vendor/Forward/Forward.jpg", alt="")
-            //-       span Forward
+        //- .shop__brandsArea       // если не надо карусели
+        //-   .shop__brands
+        //-     .shop__brandsItemOuter
+        //-       .shop__brandsItem
+        //-         a.shop__brandsItemInner(href="#")
+        //-           img(src="assets/img/vendor/Abel&Lula/logo A&L 1.jpg", alt="")
+        //-           span Abel&Lula
+        //-     .shop__brandsItemOuter
+        //-       .shop__brandsItem
+        //-         a.shop__brandsItemInner(href="#")
+        //-           img(src="assets/img/vendor/Birba/birba.svg", alt="")
+        //-           span Birba
+        //-     .shop__brandsItemOuter
+        //-       .shop__brandsItem
+        //-         a.shop__brandsItemInner(href="#")
+        //-           img(src="assets/img/vendor/Converse/converse.png", alt="")
+        //-           span Converse
+        //-     .shop__brandsItemOuter
+        //-       .shop__brandsItem
+        //-         .shop__brandsItemInner
+        //-           img(src="assets/img/vendor/Crocs/crocs.jpg", alt="")
+        //-           span Crocs
+        //-     .shop__brandsItemOuter
+        //-       .shop__brandsItem
+        //-         a.shop__brandsItemInner(href="#")
+        //-           img(src="assets/img/vendor/Dakkem/Dakkem.png", alt="")
+        //-           span Dakkem
+
         
         .shop__brandsCarouselArea
           .brandsCarousel
@@ -99,32 +156,32 @@ mixin shop
                   .shop__brandsItem
                     a.shop__brandsItemInner(href="#")
                       img(src="assets/img/vendor/Abel&Lula/logo A&L 1.jpg", alt="")
-                      span Abel&Lula
+                      //- span Abel&Lula
                 .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
                   .shop__brandsItem
                     a.shop__brandsItemInner(href="#")
                       img(src="assets/img/vendor/Birba/birba.svg", alt="")
-                      span Birba
+                      //- span Birba
                 .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
                   .shop__brandsItem
                     a.shop__brandsItemInner(href="#")
                       img(src="assets/img/vendor/Converse/converse.png", alt="")
-                      span Converse
+                      //- span Converse
                 .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
                   .shop__brandsItem
                     .shop__brandsItemInner
                       img(src="assets/img/vendor/Crocs/crocs.jpg", alt="")
-                      span Crocs
+                      //- span Crocs
                 .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
                   .shop__brandsItem
                     a.shop__brandsItemInner(href="#")
                       img(src="assets/img/vendor/Dakkem/Dakkem.png", alt="")
-                      span Dakkem
+                      //- span Dakkem
                 .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
                   .shop__brandsItem
                     a.shop__brandsItemInner(href="#")
                       img(src="assets/img/vendor/Forward/Forward.jpg", alt="")
-                      span Forward
+                      //- span Forward
                 //- .shop__brandsItemOuter.swiper-slide.brandsCarousel__slide
                 //-   .shop__brandsItem
                 //-     a.shop__brandsItemInner(href="#")
@@ -176,49 +233,17 @@ mixin shop
         //-     a.shop__contactsItem(href="mailto:shop@tcmir.ru")
         //-       span shop@tcmir.ru
       +newCollection
-mixin newCollection
-  //- .newCollection__area.w0
-  //-   .newCollection__outer.w1
-  .newCollection
-    each item in newCollections
-      .newCollection__itemOuter(id=item.id)
-        a.newCollection__item(href="#")
-          span.newCollection__itemImg
-            img(src!=item.img1, alt="")
-            if item.discount 
-              span.newCollection__itemDiscount!=item.discount 
-          span.newCollection__itemInfo
-            span.newCollection__itemBrand!= item.content
-            span.newCollection__itemTitle!= item.title
-            span.newCollection__itemPriceArea
-              if item.oldPrice
-                span.newCollection__itemOldPrice!= item.oldPrice 
-                  span ₽
-                span.newCollection__itemPrice!= item.price 
-                  span ₽
-              else
-                span.newCollection__itemPrice!= item.price
-                  span ₽
 
 
-mixin newCollectionInMain
-  .newCollection.newCollection_inMain
-    each item in newCollections
-      .newCollection__itemOuter(id=item.id)
-        a.newCollection__item(href="#")
-          span.newCollection__itemImg.newCollection__itemImg_main
-            img(src!=item.img1, alt="")
-            if item.discount 
-              span.newCollection__itemDiscount!=item.discount 
-          span.newCollection__itemInfo
-            span.newCollection__itemBrand!= item.content
-            span.newCollection__itemTitle!= item.title
-            span.newCollection__itemPriceArea
-              if item.oldPrice
-                span.newCollection__itemOldPrice!= item.oldPrice 
-                  span ₽
-                span.newCollection__itemPrice!= item.price 
-                  span ₽
-              else
-                span.newCollection__itemPrice!= item.price
-                  span ₽
+
+
+mixin callActionBtnDiscount
+  .getDiscountBtn.getDiscountBtn_desktop
+    .getDiscountBtn__intro Получить скидку
+    .getDiscountBtn__promocode HRJHF65GGI759543
+      .getDiscountBtn__tooltipDesctop Условия акции - купи три вещи а плати за две!!! Только до 15 августа в нашем магазине!!!
+  .getDiscountBtn_mobileArea
+    .getDiscountBtn__tooltipMobile Условия акции - купи три вещи а плати за две!!! Только до 15 августа в нашем магазине!!!
+    .getDiscountBtn_mobile
+      .getDiscountBtn__intro_mobile Получить скидку
+      .getDiscountBtn__promocode_mobile HRJHF65GGI759543
