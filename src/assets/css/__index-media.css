@@ -5,6 +5,9 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .m1_mainBtn__outer {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -17,15 +20,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .julySlider__tovars {
-    display: none;
-  }
-  .m1_mainBtn__outer {
-    display: block;
-  }
-  /* .inIndexPage {
-    display: none;
-  } */
 }
 
 @media only screen and (max-width: 600px) {

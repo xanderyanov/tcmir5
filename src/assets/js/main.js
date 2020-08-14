@@ -2,6 +2,13 @@ $(function () {
   var orangeHeaderHeight = $(".orangeHeader").outerHeight();
   var searchWhite = $(".searchWhite__area");
   var searchWhiteHeight = $(".searchWhite__area").outerHeight();
+  if ($(this).scrollTop() > orangeHeaderHeight) {
+    searchWhite.css({ position: "fixed", top: "0", left: "0" });
+    $(".orangeHeader__areaFake").css({ height: searchWhiteHeight });
+  } else if ($(this).scrollTop() <= orangeHeaderHeight) {
+    searchWhite.css({ position: "relative", top: "auto", left: "auto" });
+    $(".orangeHeader__areaFake").css({ height: "0" });
+  }
   $(window).scroll(function () {
     if ($(this).scrollTop() > orangeHeaderHeight) {
       searchWhite.css({ position: "fixed", top: "0", left: "0" });
@@ -858,7 +865,7 @@ $(function () {
 
   // Adaptive filters js
   // Открытие фильтров
-  $(".adaptiveFilterOnBtn").click(function (e) {
+  $(".filtersBtn_filtr").click(function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
@@ -872,7 +879,7 @@ $(function () {
   });
   // Закрытие адаптивного меню по кнопке Close
   $(".aFilters__close").click(function () {
-    $(".adaptiveFilterOnBtn").removeClass("open");
+    $(".filtersBtn_filtr").removeClass("open");
     $(".overlay1").hide();
     $(".aFilters__wrapper").fadeOut(200);
   });

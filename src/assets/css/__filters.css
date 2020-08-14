@@ -98,3 +98,34 @@
   /* margin-left: -20px; */
   z-index: -1;
 }
+
+.filtersBtnsLine__area {
+  width: 100%;
+  padding: 10px 0 5px;
+  display: none;
+}
+
+.filtersBtnsLine__outer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.filtersBtn {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  padding: 10px 10px;
+  border: 1px solid var(--x1border);
+  border-radius: 7px;
+}
+.filtersBtn i {
+  font-size: 1rem;
+  color: #000;
+}
+.filtersBtn span {
+  font-size: 1rem;
+  color: #000;
+  margin-left: 10px;
+}

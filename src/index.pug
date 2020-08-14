@@ -1,11 +1,10 @@
 - var pageTitle = 'Главная страница'
 
-include __head
+include __const
 include __header
-include __slider-promo
+include __sliders
 include __shop
 include __footer
-include __scripts
 
 
 
@@ -18,13 +17,22 @@ body
     +header
 
   .site__center
-    
     +sliderSwiperInMain
-    +mainShopsBox
-    
 
+    +m1_mainBtn
+
+    .mainShopsBox__area.w0.inIndexPage
+      .mainShopsBox__outer.w1
+        .title0.indexShopCardTitle
+          h2 Наши магазины
+        +mainShopsBox
+ 
   .site__footer
+    
     +footer
 
+
   +scripts
+
+
   

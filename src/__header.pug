@@ -147,11 +147,8 @@ mixin m2_search
         button.m2_search__btn(type='submit')
           i.icon-search1
 
-mixin m2_header
-  .m2_headerFake
-  .m2_header
-    +m2_search
-    .m2_topMenu__area
+mixin m2_topMenu
+  .m2_topMenu__area
       .m2_topMenu__outer
         ul.m2_topMenu
           li.active
@@ -162,6 +159,13 @@ mixin m2_header
             a(href="#") Детям
           li
             a(href="#") Красота
+
+mixin m2_header
+  .m2_headerFake
+  .m2_header
+    +m2_search
+    +m2_topMenu
+    
 
 
 
@@ -182,3 +186,14 @@ mixin orangeHeader
           a(href="#")
             img(src="assets/img/logo-white.png", alt='Торговый комплекс МИР')
       +searchWhite
+
+mixin orangeHeader_inCatalog
+  .orangeHeader__areaFake
+  .orangeHeader__area
+    .orangeHeader__outer
+      .orangeHeader
+        .orangeLogo
+          a(href="#")
+            img(src="assets/img/logo-white.png", alt='Торговый комплекс МИР')
+      +searchWhite
+      +m2_topMenu

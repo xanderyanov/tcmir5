@@ -106,11 +106,11 @@
   background: transparent;
 }
 
-.searchWhite__btn:hover {
+/* .searchWhite__btn:hover {
   background: var(--redFillhover);
-}
+} */
 
 .searchWhite__btn i {
   font-size: 1rem;
-  color: var(--color2);
+  color: var(--orange);
 }
