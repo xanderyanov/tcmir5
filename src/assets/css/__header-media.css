@@ -5,6 +5,9 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .hideHeader {
+    display: none;
+  }
   .header {
     display: none;
   }

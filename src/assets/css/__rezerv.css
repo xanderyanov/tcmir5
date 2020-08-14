@@ -13,6 +13,7 @@
   cursor: pointer;
   color: #fff;
   background: var(--x1greyLight);
+  border: none;
 }
 
 .rezervBtn_inReserv {
@@ -49,4 +50,45 @@
 }
 
 .simpleReg__readPhoneSubmit {
+}
+
+.simpleReg .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.simpleReg .inputBox label {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.simpleReg .inputBox input {
+  width: 70%;
+}
+
+.simpleReg .inputBox button {
+  width: 25%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--x1border);
+  background: var(--x1border);
+  color: #000;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.simpleReg__codeLostSubmit {
+  margin-top: 10px;
+}
+
+.simpleReg__enterNewPhoneSubmit {
+  margin-top: 10px;
 }

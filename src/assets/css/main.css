@@ -22,6 +22,10 @@ body {
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 .xBlock__area {
   padding: 1.25rem 0;
 }

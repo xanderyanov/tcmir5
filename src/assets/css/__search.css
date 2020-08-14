@@ -59,6 +59,8 @@
   padding: 5px 0;
   background: var(--orange);
   z-index: 9500;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .searchWhite__outer {
@@ -72,7 +74,7 @@
   outline: none;
   box-sizing: border-box;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 7px;
   overflow: hidden;
   position: relative;
 }
@@ -86,7 +88,7 @@
   font-size: 1rem;
   color: var(--color2);
 
-  height: 1.875rem;
+  height: 2rem;
   width: 100%;
   background: transparent;
 }

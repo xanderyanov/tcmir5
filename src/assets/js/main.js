@@ -58,80 +58,20 @@ $(function () {
   });
 
   // Главный слайдер при верстке - надо закомментировать если в студию добавлять
-  setTimeout(function () {
-    if ($(".julySlider__outer").length) {
-      var galleryThumbs = new Swiper(".julySlider__tovars", {
-        spaceBetween: 10,
-        slidesPerView: 1,
-        loop: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        speed: 600,
-        nested: true,
-        allowTouchMove: false,
-      });
-
-      var galleryTop = new Swiper(".julySlider", {
-        preloadImages: true,
-        updateOnImagesReady: true,
-        speed: 600,
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 10,
-        loop: true,
-        slideToClickedSlide: true,
-        autoplay: {
-          delay: 5500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".julySlider__pagination",
-          type: "bullets",
-          dynamicBullets: false,
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".julySlider__Next",
-          prevEl: ".julySlider__Prev",
-        },
-        thumbs: {
-          swiper: galleryThumbs,
-        },
-        on: {
-          init: function () {
-            console.log("initialized.");
-          },
-          imagesReady: function () {
-            console.log("images ready.");
-          },
-        },
-      });
-      $(".swiper-container").mouseenter(function () {
-        galleryTop.autoplay.stop();
-      });
-      $(".swiper-container").mouseleave(function () {
-        galleryTop.autoplay.start();
-      });
-    }
-  }, 500);
-
-  // Главный слайдер в студии
-  // function StartSwipers(haveThumbs) {
+  // setTimeout(function () {
   //   if ($(".julySlider__outer").length) {
-  //     if (haveThumbs) {
-  //       var galleryThumbs = new Swiper(".julySlider__tovars", {
-  //         spaceBetween: 10,
-  //         slidesPerView: 1,
-  //         loop: true,
-  //         watchSlidesVisibility: true,
-  //         watchSlidesProgress: true,
-  //         speed: 600,
-  //         nested: true,
-  //         allowTouchMove: false,
-  //       });
-  //     }
+  //     var galleryThumbs = new Swiper(".julySlider__tovars", {
+  //       spaceBetween: 10,
+  //       slidesPerView: 1,
+  //       loop: true,
+  //       watchSlidesVisibility: true,
+  //       watchSlidesProgress: true,
+  //       speed: 600,
+  //       nested: true,
+  //       allowTouchMove: false,
+  //     });
 
-  //     var MainSwiperParams = {
+  //     var galleryTop = new Swiper(".julySlider", {
   //       preloadImages: true,
   //       updateOnImagesReady: true,
   //       speed: 600,
@@ -154,6 +94,9 @@ $(function () {
   //         nextEl: ".julySlider__Next",
   //         prevEl: ".julySlider__Prev",
   //       },
+  //       thumbs: {
+  //         swiper: galleryThumbs,
+  //       },
   //       on: {
   //         init: function () {
   //           console.log("initialized.");
@@ -162,13 +105,7 @@ $(function () {
   //           console.log("images ready.");
   //         },
   //       },
-  //     };
-  //     if (haveThumbs) {
-  //       MainSwiperParams.thumbs = {
-  //         swiper: galleryThumbs,
-  //       };
-  //     }
-  //     var galleryTop = new Swiper(".julySlider", MainSwiperParams);
+  //     });
   //     $(".swiper-container").mouseenter(function () {
   //       galleryTop.autoplay.stop();
   //     });
@@ -176,19 +113,82 @@ $(function () {
   //       galleryTop.autoplay.start();
   //     });
   //   }
-  // }
-  // setTimeout(function () {
-  //   var $window = $(window);
-  //   $.ajax("/ru/GetSwipers?w=" + $window.width() + "&h=" + $window.height(), {
-  //     method: "GET",
-  //     success: function (data) {
-  //       $(".julySlider__outer").html(data.html);
-  //       setTimeout(function () {
-  //         StartSwipers(data.haveThumbs);
-  //       }, 500);
-  //     },
-  //   });
-  // }, 10);
+  // }, 500);
+
+  // Главный слайдер в студии
+  function StartSwipers(haveThumbs) {
+    if ($(".julySlider__outer").length) {
+      if (haveThumbs) {
+        var galleryThumbs = new Swiper(".julySlider__tovars", {
+          spaceBetween: 10,
+          slidesPerView: 1,
+          loop: true,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+          speed: 600,
+          nested: true,
+          allowTouchMove: false,
+        });
+      }
+
+      var MainSwiperParams = {
+        preloadImages: true,
+        updateOnImagesReady: true,
+        speed: 600,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 10,
+        loop: true,
+        slideToClickedSlide: true,
+        autoplay: {
+          delay: 5500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".julySlider__pagination",
+          type: "bullets",
+          dynamicBullets: false,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".julySlider__Next",
+          prevEl: ".julySlider__Prev",
+        },
+        on: {
+          init: function () {
+            console.log("initialized.");
+          },
+          imagesReady: function () {
+            console.log("images ready.");
+          },
+        },
+      };
+      if (haveThumbs) {
+        MainSwiperParams.thumbs = {
+          swiper: galleryThumbs,
+        };
+      }
+      var galleryTop = new Swiper(".julySlider", MainSwiperParams);
+      $(".swiper-container").mouseenter(function () {
+        galleryTop.autoplay.stop();
+      });
+      $(".swiper-container").mouseleave(function () {
+        galleryTop.autoplay.start();
+      });
+    }
+  }
+  setTimeout(function () {
+    var $window = $(window);
+    $.ajax("/ru/GetSwipers?w=" + $window.width() + "&h=" + $window.height(), {
+      method: "GET",
+      success: function (data) {
+        $(".julySlider__outer").html(data.html);
+        setTimeout(function () {
+          StartSwipers(data.haveThumbs);
+        }, 500);
+      },
+    });
+  }, 10);
 
   // слайдер товара 7
 
@@ -1063,16 +1063,16 @@ $(function () {
     }
   });
 
-  // кнопка резерва товара на странице товара
-  $(".rezervBtn").on("click", function () {
-    if ($(this).hasClass("rezervBtn_inReserv")) {
-      $(this).removeClass("rezervBtn_inReserv");
-      $(".rezervYes").hide();
-      $(".rezervNo").show();
-    } else {
-      $(this).addClass("rezervBtn_inReserv");
-      $(".rezervNo").hide();
-      $(".rezervYes").show();
-    }
-  });
+  // кнопка резерва товара на странице товара - комментируем для студии - в верстке раскрыть
+  // $(".rezervBtn").on("click", function () {
+  //   if ($(this).hasClass("rezervBtn_inReserv")) {
+  //     $(this).removeClass("rezervBtn_inReserv");
+  //     $(".rezervYes").hide();
+  //     $(".rezervNo").show();
+  //   } else {
+  //     $(this).addClass("rezervBtn_inReserv");
+  //     $(".rezervNo").hide();
+  //     $(".rezervYes").show();
+  //   }
+  // });
 });

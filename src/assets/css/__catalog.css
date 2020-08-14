@@ -353,12 +353,14 @@
 }
 
 .m2_category__allBtn {
-  display: block;
-  width: 100%;
-  padding: 10px 5px;
+  display: inline-block;
   text-decoration: none;
   color: #000;
   font-weight: 700;
+  padding: 10px 10px;
+  border: 1px solid var(--x1border);
+  border-radius: 7px;
+  margin-bottom: 5px;
 }
 
 .m2_category {
@@ -433,4 +435,22 @@
 .m2_catalogArea {
   display: none;
   padding: 0 10px;
+}
+
+.addCartBtn__area {
+  width: 100%;
+}
+
+.addCartBtn__outer {
+  width: 100%;
+}
+
+.addCartBtn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 1.25rem;
 }

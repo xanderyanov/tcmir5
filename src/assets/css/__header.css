@@ -461,7 +461,7 @@
 
 .orangeHeader__outer {
   width: 100%;
-  background: var(--orange);
+  /* background: var(--orange); */
 }
 
 .orangeHeader {
