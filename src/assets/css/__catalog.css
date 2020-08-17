@@ -343,6 +343,11 @@
   color: #000;
 }
 
+.m2_catMenuItem__outer.active .m2_catMenuItem {
+  color: var(--tColor);
+  background: var(--colorGrey);
+}
+
 .m2_category__area {
   width: 100%;
   display: none;
