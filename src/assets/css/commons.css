@@ -328,6 +328,7 @@
   height: 2rem;
   /* background: #be3f46; */
   background: var(--orange);
+  border: 1px solid #fff;
 }
 
 .toTop:hover {

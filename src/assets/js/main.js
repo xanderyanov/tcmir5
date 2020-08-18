@@ -58,80 +58,20 @@ $(function () {
   });
 
   // Главный слайдер при верстке - надо закомментировать если в студию добавлять
-  // setTimeout(function () {
-  //   if ($(".julySlider__outer").length) {
-  //     var galleryThumbs = new Swiper(".julySlider__tovars", {
-  //       spaceBetween: 10,
-  //       slidesPerView: 1,
-  //       loop: true,
-  //       watchSlidesVisibility: true,
-  //       watchSlidesProgress: true,
-  //       speed: 600,
-  //       nested: true,
-  //       allowTouchMove: false,
-  //     });
-
-  //     var galleryTop = new Swiper(".julySlider", {
-  //       preloadImages: true,
-  //       updateOnImagesReady: true,
-  //       speed: 600,
-  //       slidesPerView: "auto",
-  //       centeredSlides: true,
-  //       spaceBetween: 10,
-  //       loop: true,
-  //       slideToClickedSlide: true,
-  //       autoplay: {
-  //         delay: 5500,
-  //         disableOnInteraction: false,
-  //       },
-  //       pagination: {
-  //         el: ".julySlider__pagination",
-  //         type: "bullets",
-  //         dynamicBullets: false,
-  //         clickable: true,
-  //       },
-  //       navigation: {
-  //         nextEl: ".julySlider__Next",
-  //         prevEl: ".julySlider__Prev",
-  //       },
-  //       thumbs: {
-  //         swiper: galleryThumbs,
-  //       },
-  //       on: {
-  //         init: function () {
-  //           console.log("initialized.");
-  //         },
-  //         imagesReady: function () {
-  //           console.log("images ready.");
-  //         },
-  //       },
-  //     });
-  //     $(".swiper-container").mouseenter(function () {
-  //       galleryTop.autoplay.stop();
-  //     });
-  //     $(".swiper-container").mouseleave(function () {
-  //       galleryTop.autoplay.start();
-  //     });
-  //   }
-  // }, 500);
-
-  // Главный слайдер в студии
-  function StartSwipers(haveThumbs) {
+  setTimeout(function () {
     if ($(".julySlider__outer").length) {
-      if (haveThumbs) {
-        var galleryThumbs = new Swiper(".julySlider__tovars", {
-          spaceBetween: 10,
-          slidesPerView: 1,
-          loop: true,
-          watchSlidesVisibility: true,
-          watchSlidesProgress: true,
-          speed: 600,
-          nested: true,
-          allowTouchMove: false,
-        });
-      }
+      var galleryThumbs = new Swiper(".julySlider__tovars", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        loop: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        speed: 600,
+        nested: true,
+        allowTouchMove: false,
+      });
 
-      var MainSwiperParams = {
+      var galleryTop = new Swiper(".julySlider", {
         preloadImages: true,
         updateOnImagesReady: true,
         speed: 600,
@@ -154,6 +94,9 @@ $(function () {
           nextEl: ".julySlider__Next",
           prevEl: ".julySlider__Prev",
         },
+        thumbs: {
+          swiper: galleryThumbs,
+        },
         on: {
           init: function () {
             console.log("initialized.");
@@ -162,13 +105,7 @@ $(function () {
             console.log("images ready.");
           },
         },
-      };
-      if (haveThumbs) {
-        MainSwiperParams.thumbs = {
-          swiper: galleryThumbs,
-        };
-      }
-      var galleryTop = new Swiper(".julySlider", MainSwiperParams);
+      });
       $(".swiper-container").mouseenter(function () {
         galleryTop.autoplay.stop();
       });
@@ -176,19 +113,82 @@ $(function () {
         galleryTop.autoplay.start();
       });
     }
-  }
-  setTimeout(function () {
-    var $window = $(window);
-    $.ajax("/ru/GetSwipers?w=" + $window.width() + "&h=" + $window.height(), {
-      method: "GET",
-      success: function (data) {
-        $(".julySlider__outer").html(data.html);
-        setTimeout(function () {
-          StartSwipers(data.haveThumbs);
-        }, 500);
-      },
-    });
-  }, 10);
+  }, 500);
+
+  // Главный слайдер в студии
+  // function StartSwipers(haveThumbs) {
+  //   if ($(".julySlider__outer").length) {
+  //     if (haveThumbs) {
+  //       var galleryThumbs = new Swiper(".julySlider__tovars", {
+  //         spaceBetween: 10,
+  //         slidesPerView: 1,
+  //         loop: true,
+  //         watchSlidesVisibility: true,
+  //         watchSlidesProgress: true,
+  //         speed: 600,
+  //         nested: true,
+  //         allowTouchMove: false,
+  //       });
+  //     }
+
+  //     var MainSwiperParams = {
+  //       preloadImages: true,
+  //       updateOnImagesReady: true,
+  //       speed: 600,
+  //       slidesPerView: "auto",
+  //       centeredSlides: true,
+  //       spaceBetween: 10,
+  //       loop: true,
+  //       slideToClickedSlide: true,
+  //       autoplay: {
+  //         delay: 5500,
+  //         disableOnInteraction: false,
+  //       },
+  //       pagination: {
+  //         el: ".julySlider__pagination",
+  //         type: "bullets",
+  //         dynamicBullets: false,
+  //         clickable: true,
+  //       },
+  //       navigation: {
+  //         nextEl: ".julySlider__Next",
+  //         prevEl: ".julySlider__Prev",
+  //       },
+  //       on: {
+  //         init: function () {
+  //           console.log("initialized.");
+  //         },
+  //         imagesReady: function () {
+  //           console.log("images ready.");
+  //         },
+  //       },
+  //     };
+  //     if (haveThumbs) {
+  //       MainSwiperParams.thumbs = {
+  //         swiper: galleryThumbs,
+  //       };
+  //     }
+  //     var galleryTop = new Swiper(".julySlider", MainSwiperParams);
+  //     $(".swiper-container").mouseenter(function () {
+  //       galleryTop.autoplay.stop();
+  //     });
+  //     $(".swiper-container").mouseleave(function () {
+  //       galleryTop.autoplay.start();
+  //     });
+  //   }
+  // }
+  // setTimeout(function () {
+  //   var $window = $(window);
+  //   $.ajax("/ru/GetSwipers?w=" + $window.width() + "&h=" + $window.height(), {
+  //     method: "GET",
+  //     success: function (data) {
+  //       $(".julySlider__outer").html(data.html);
+  //       setTimeout(function () {
+  //         StartSwipers(data.haveThumbs);
+  //       }, 500);
+  //     },
+  //   });
+  // }, 10);
 
   // слайдер товара 7
 
@@ -1075,4 +1075,71 @@ $(function () {
   //     $(".rezervYes").show();
   //   }
   // });
+
+  var bm = $(".m2_bottomMenu__area").outerHeight();
+  $(".m2_bottomMenu__areaFake").css({ height: bm });
+
+  // установливаем обработчик события resize
+  $(window).resize(function () {
+    var bm = $(".m2_bottomMenu__area").outerHeight();
+    $(".m2_bottomMenu__areaFake").css({ height: bm });
+
+    if ($(window).width() <= 1080) {
+      $(".cabTab__itemContent").hide();
+      $(".cabTab__item.active .cabTab__itemContent").show();
+      $(".cabTab__title_mobile").on("click", function () {
+        if ($(this).parent().hasClass("active")) {
+          // $(this).parent().removeClass("active");
+          // $(this).parent().find(".cabTab__itemContent").slideUp();
+        } else {
+          $(".cabTab__item").removeClass("active");
+          $(".cabTab__itemContent").slideUp();
+          $(this).parent().addClass("active");
+          $(this).parent().find(".cabTab__itemContent").slideDown();
+        }
+      });
+    } else {
+      // $(".cabTab__title_mobile").hide();
+      $(".cabTab__itemContent").show();
+      $(".cabTabHeader").each(function (i) {
+        var storage = localStorage.getItem("tab", i);
+        console.log(storage);
+        if (storage) {
+          $(this)
+            .find(".cabTab__title")
+            .removeClass("active")
+            .eq(storage)
+            .addClass("active")
+            .closest(".cabTab")
+            .find(".cabTab__item")
+            .removeClass("active")
+            .eq(storage)
+            .addClass("active");
+        }
+      });
+
+      $(".cabTabHeader").on("click", ".cabTab__title:not(.active)", function () {
+        $(this)
+          .addClass("active")
+          .siblings()
+          .removeClass("active")
+          .closest(".cabTab")
+          .find(".cabTab__item")
+          .removeClass("active")
+          .eq($(this).index())
+          .addClass("active");
+        // console.log($(this).index());
+        var ulIndex = $(".cabTab__title").index($(this).parents(".cabTabHeader"));
+        console.log(ulIndex);
+        localStorage.removeItem("tab");
+        localStorage.setItem("tab", $(this).index());
+      });
+    }
+  });
+
+  $(window).resize();
+
+  $(".order__itemTovarsCost").on("click", function () {
+    $(this).closest(".order__itemTovars").find(".order__itemTovarsArea").slideToggle();
+  });
 });
