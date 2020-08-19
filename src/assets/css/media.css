@@ -11,6 +11,10 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .toTop {
+    left: auto;
+    right: 10px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -22,10 +26,6 @@
 @media only screen and (max-width: 768px) {
   .gallery__item {
     width: 25%;
-  }
-  .toTop {
-    left: auto;
-    right: 10px;
   }
 }
 

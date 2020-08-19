@@ -95,7 +95,7 @@
 }
 
 .cabTab__itemContent {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .order__area {
@@ -116,6 +116,7 @@
   display: flex;
   width: 100%;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .order__itemInf1 {
@@ -136,7 +137,7 @@
 }
 
 .order__itemTovars {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -146,6 +147,7 @@
   text-decoration: underline;
   color: var(--tColor);
   min-height: 40px;
+  cursor: pointer;
 }
 
 .order__itemTovarsArea {
@@ -160,20 +162,25 @@
   margin-bottom: 5px;
 }
 
+.order__itemInf2 {
+  display: flex;
+  width: 30%;
+}
+
 .order__itemStatus {
-  width: 15%;
+  width: 50%;
   font-size: 1rem;
   color: var(--LimeGreen);
   font-weight: 700;
 }
 
 .order__itemDelivery {
-  width: 15%;
+  width: 50%;
   font-size: 1rem;
 }
 
 .order__itemTotalPrice {
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: flex-end;
 }
@@ -222,11 +229,16 @@
   color: #fff;
 }
 
+.profile__infoArea {
+  width: 70%;
+  display: flex;
+}
+
 .profile__info {
-  width: 20%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 30px;
 }
 
 .profile__info div {
@@ -241,10 +253,70 @@
 }
 
 .profile__status {
-  width: 30%;
+  width: 20%;
   padding: 0 0 0 20px;
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
   color: var(--LimeGreen);
+}
+
+.profil__info2 {
+  width: 40%;
+  padding: 0 0 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profil__info2 div {
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.profil__info2 div span {
+  font-size: 1rem;
+}
+
+.profil__correctBtn {
+  padding: 10px;
+  color: #000;
+  background: var(--colorGrey);
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.profil__correctBtn:hover {
+  background: var(--colorDarkGrey);
+  color: #fff;
+}
+
+.profil__exitArea {
+  width: 10%;
+  margin-left: auto;
+  text-align: right;
+}
+
+.profil__exit {
+  display: inline-block;
+  padding: 10px;
+  background: var(--colorGrey);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #000;
+}
+
+.profil__exit:hover {
+  background: var(--colorDarkGrey);
+  color: #fff;
+}
+
+.profil__exit i {
+  font-size: 1.5rem;
 }

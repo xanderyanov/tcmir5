@@ -20,6 +20,9 @@
   /* .cabTab__item.active .cabTab__itemContent {
     display: block;
   } */
+  .profil__info2 {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -29,15 +32,82 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .order__itemId {
+    font-size: 1rem;
+  }
+
+  .order__itemDate {
+    color: var(--colorDarkGrey);
+    font-size: 0.75rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .order__itemInf1 {
+    width: 20%;
+  }
+  .order__itemTovars {
+    width: 50%;
+  }
+  .order__itemInf2 {
+    flex-direction: column;
+    width: 15%;
+  }
+
+  .order__itemStatus {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .order__itemDelivery {
+    width: 100%;
+  }
+
+  .profile__infoArea {
+    flex-direction: column;
+  }
+  .profile__info,
+  .profil__info2 {
+    padding: 0 0 0 20px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
 }
 
 @media only screen and (max-width: 480px) {
+  .order__itemInf1 {
+    width: 30%;
+  }
+  .order__itemTovars {
+    width: 70%;
+  }
+  .order__itemInf2 {
+    flex-direction: row;
+    width: 60%;
+  }
+  .order__itemTotalPrice {
+    width: 40%;
+  }
+
+  .avatar__area {
+    width: 30%;
+    order: 0;
+  }
+  .profile__infoArea {
+    width: 100%;
+    order: 2;
+    padding-top: 20px;
+  }
+  .profile__info,
+  .profil__info2 {
+    padding: 0;
+  }
+  .profil__exitArea {
+    width: 15%;
+    order: 1;
+  }
 }
 
 @media only screen and (max-width: 400px) {

@@ -26,10 +26,10 @@
 .topLine__item {
   display: flex;
   align-items: center;
-  margin: 0 40px 0 0;
+  margin: 0 0 0 40px;
 }
 
-.topLine__item:last-child {
+.topLine__item:first-child {
   margin: 0;
 }
 
@@ -475,16 +475,19 @@
 
 .orangeLogo {
   position: relative;
+  width: 100%;
+  max-width: 152px;
 }
 
 .orangeLogo a {
   text-decoration: none;
+  width: 100%;
 }
 
 .orangeLogo img {
   width: 100%;
   display: block;
-  max-width: 220px;
+  max-width: 152px;
 }
 
 /* 0801000 */

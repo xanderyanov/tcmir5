@@ -9,6 +9,8 @@
 @import "../../../node_modules/slick-carousel/slick/slick.css";
 @import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
+/* @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
+
 @import "reset.css";
 
 @import "fonts.css";
@@ -46,6 +48,7 @@
 @import "__footer-media.css";
 
 @import "__breadcrumbs.css";
+@import "__breadcrumbs-media.css";
 
 @import "__leftMenu.css";
 @import "__leftMenu-media.css";
@@ -53,7 +56,7 @@
 @import "__catalog.css";
 @import "__catalog-media.css";
 
-@import "__filters-lib.css";
+/* @import "__filters-lib.css"; */
 @import "__filters.css";
 @import "__filters-adaptive.css";
 @import "__filters-media.css";

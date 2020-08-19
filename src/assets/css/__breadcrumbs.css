@@ -53,6 +53,10 @@
   padding: 2px 0;
 }
 
+.fakeBreadcrumbs h1 {
+  text-align: right;
+}
+
 .backBtn {
   display: flex;
   align-items: center;
