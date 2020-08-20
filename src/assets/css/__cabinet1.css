@@ -117,9 +117,66 @@
   width: 100%;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  background: var(--colorLightGrey);
+  padding: 5px;
 }
 
-.order__itemInf1 {
+.order__itemRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.order__itemRowTitle {
+  width: 15%;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.order__itemRowInfo {
+  width: 85%;
+}
+
+.order-status-0,
+.order-status-3,
+.order-status-4,
+.order-status-5 {
+  font-weight: 400;
+  color: #000;
+}
+.order-status-1,
+.order-status-2 {
+  font-weight: 700;
+  color: red;
+}
+.order-status-6 {
+  font-weight: 700;
+  color: #00b000;
+}
+
+.order__itemRow_red {
+  color: var(--redFill);
+}
+.order__itemRow_green {
+  color: var(--LimeGreen);
+}
+
+.order__itemRowInfo span {
+  font-style: 1rem;
+  font-weight: 700;
+}
+
+.order__itemDetals {
+  color: var(--blueLink);
+  text-decoration: underline;
+}
+.order__itemDetals:hover {
+  text-decoration: none;
+}
+
+/* .order__itemInf1 {
   display: flex;
   flex-direction: column;
   width: 15%;
@@ -183,6 +240,31 @@
   width: 15%;
   display: flex;
   justify-content: flex-end;
+} */
+
+.order__itemTovarsList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.order__itemTovarsListTitle {
+  font-size: 1.125rem;
+  color: var(--blueLink);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.order__itemTovarsListInfo {
+  margin-top: 10px;
+  width: 100%;
+  display: none;
+}
+
+.order__itemTovarsListInfoItem {
+  width: 100%;
+  font-size: 1rem;
+  padding-bottom: 5px;
 }
 
 .profile__area {

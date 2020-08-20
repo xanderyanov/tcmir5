@@ -52,31 +52,67 @@ mixin order
     .order__outer
       .order
         .order__item
-          .order__itemInf1
-            .order__itemId 7364rlkwhrf
-            .order__itemDate 05.08.2020
-          .order__itemTovars
-            .order__itemTovarsCost Товаров: 2
-            .order__itemTovarsArea
-              .order__itemTovar Куртка джинсовая
-              .order__itemTovar Ботинки мужские
-          .order__itemInf2
-            .order__itemStatus Выполнен
-            .order__itemDelivery Самовывоз
-          .order__itemTotalPrice 12800 р
+          .order__itemRow
+            .order__itemRowTitle Номер и дата:
+            .order__itemRowInfo 003563 / 2020-06-08 11:17:17
+          .order__itemRow
+            .order__itemRowTitle Состояние
+            .order__itemRowInfo Согласован
+          .order__itemRow
+            .order__itemRowTitle Сумма заказа:
+            .order__itemRowInfo 
+              span 12500 р
+          .order__itemRow
+            .order__itemRowTitle Товары:
+            .order__itemRowInfo
+              .order__itemTovarsList
+                .order__itemTovarsListTitle 2 шт
+                .order__itemTovarsListInfo 
+                  .order__itemTovarsListInfoItem Куртка джинсовая
+                  .order__itemTovarsListInfoItem Кроссовки беговые
+          .order__itemRow
+            .order__itemRowTitle Оплата:
+            .order__itemRowInfo В процессе1
+          .order__itemRow
+            .order__itemRowTitle
+            .order__itemRowInfo
+              a.order__itemDetals(href="#") Подробнее...
         .order__item
-          .order__itemInf1
-            .order__itemId lkug24i7r6i
-            .order__itemDate 06.08.2020
-          .order__itemTovars
-            .order__itemTovarsCost Товаров: 2
-            .order__itemTovarsArea
-              .order__itemTovar Очки солнцезащитные
-              .order__itemTovar Бейсболка
-          .order__itemInf2
-            .order__itemStatus Выполнен
-            .order__itemDelivery Самовывоз
-          .order__itemTotalPrice 3900 р
+          .order__itemRow
+            .order__itemRowTitle Номер и дата:
+            .order__itemRowInfo 003563 / 2020-06-08 11:17:17
+          .order__itemRow
+            .order__itemRowTitle Состояние
+            .order__itemRowInfo.order-status-1 Отменен пользователем
+          .order__itemRow
+            .order__itemRowTitle Сумма заказа:
+            .order__itemRowInfo 
+              span 12500 р
+          .order__itemRow
+            .order__itemRowTitle Оплата:
+            .order__itemRowInfo В процессе
+          .order__itemRow
+            .order__itemRowTitle
+            .order__itemRowInfo
+              a.order__itemDetals(href="#") Подробнее...
+        .order__item
+          .order__itemRow
+            .order__itemRowTitle Номер и дата:
+            .order__itemRowInfo 003563 / 2020-06-08 11:17:17
+          .order__itemRow
+            .order__itemRowTitle Состояние
+            .order__itemRowInfo.order-status-6 Согласован
+          .order__itemRow
+            .order__itemRowTitle Сумма заказа:
+            .order__itemRowInfo 
+              span 12500 р
+          .order__itemRow
+            .order__itemRowTitle Оплата:
+            .order__itemRowInfo В процессе
+          .order__itemRow
+            .order__itemRowTitle
+            .order__itemRowInfo
+              a.order__itemDetals(href="#") Подробнее...
 
 mixin profile
   .profile__area

@@ -1,0 +1,80 @@
+.orderDetails__outer {
+  margin-top: 10px;
+}
+
+.orderDetails__title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.orderDetails__title h1 {
+  margin: 0;
+}
+
+.orderDetails {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.orderDetails__item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.orderDetails__itemTitle {
+  width: 15%;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.orderDetails__itemInfo {
+  width: 85%;
+  font-size: 1.125rem;
+}
+
+.orderDetails__itemInfoVariants {
+  margin-bottom: 10px;
+}
+
+.orderDetails__itemActions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.orderDetails__itemActionsText {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.orderDetails__itemActionsForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.orderDetails__itemActionsForm span {
+  max-width: 40%;
+  padding-right: 20px;
+}
+
+.orderDetails__itemActionsForm input {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #e5e5e5;
+  border: none;
+  outline: none;
+}
+
+.orderDetails__itemActionsForm input:hover {
+  text-decoration: underline;
+}
+
+input.order__action_color {
+  background: var(--orange);
+  color: #fff;
+}

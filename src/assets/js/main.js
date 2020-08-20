@@ -1140,7 +1140,7 @@ $(function () {
 
   $(window).resize();
 
-  $(".order__itemTovarsCost").on("click", function () {
-    $(this).closest(".order__itemTovars").find(".order__itemTovarsArea").slideToggle();
+  $(".order__itemTovarsListTitle").on("click", function () {
+    $(this).closest(".order__itemTovarsList").find(".order__itemTovarsListInfo").slideToggle();
   });
 });

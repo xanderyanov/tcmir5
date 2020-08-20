@@ -1,0 +1,55 @@
+mixin orderDetails
+  .orderDetails__area.w0
+    .orderDetails__outer.w1
+      .orderDetails__title
+        h1 Заказ 000010 от 2020-08-10 17:57:08
+      .orderDetails
+        .orderDetails__item
+          .orderDetails__itemTitle Состояние:
+          .orderDetails__itemInfo Подтвержден модератором
+        .orderDetails__item
+          .orderDetails__itemTitle Сумма:
+          .orderDetails__itemInfo 
+            strong 4169 р
+        .orderDetails__item
+          .orderDetails__itemTitle Состав заказа:
+          .orderDetails__itemInfo
+            
+            //- +cart
+        .orderDetails__item
+          .orderDetails__itemTitle Контактное лицо:
+          .orderDetails__itemInfo Пупкин Василий
+        .orderDetails__item
+          .orderDetails__itemTitle Контактный телефон:
+          .orderDetails__itemInfo +7 927 310 88 10
+        .orderDetails__item
+          .orderDetails__itemTitle Email:
+          .orderDetails__itemInfo vasilypupkin@tcmir.ru
+        .orderDetails__item
+          .orderDetails__itemTitle Действия:
+          .orderDetails__itemInfo 
+            .orderDetails__itemInfoVariants
+              +orderDetails__itemActions
+            .orderDetails__itemInfoVariants
+              +orderDetails__itemActions2
+
+
+mixin orderDetails__itemActions
+  .orderDetails__itemActions
+    .orderDetails__itemActionsText Какой-то заголовок для действия, если нужно вставить текст
+    form.orderDetails__itemActionsForm(action="", method="post")
+      span Вы также можете:
+      input.order__action_color(type="submit", value="Оплатить заказ")
+
+mixin orderDetails__itemActions2
+  .orderDetails__itemActions
+    //- .orderDetails__itemActionsText Какой-то заголовок для действия, если нужно вставить текст
+    form.orderDetails__itemActionsForm(action="", method="post")
+      span Вы также можете:
+      input(type="submit", value="Редактировать заказ")
+        
+
+
+
+
+

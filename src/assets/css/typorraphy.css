@@ -44,7 +44,7 @@ h6 {
 }
 
 a {
-  text-decoration: none !important;
+  /* text-decoration: none !important; */
 }
 
 .content p,
@@ -194,4 +194,8 @@ table.clear td {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
 }

@@ -56,7 +56,7 @@
 @import "__catalog.css";
 @import "__catalog-media.css";
 
-/* @import "__filters-lib.css"; */
+@import "__filters-lib.css";
 @import "__filters.css";
 @import "__filters-adaptive.css";
 @import "__filters-media.css";
@@ -93,6 +93,9 @@
 
 @import "__cabinet1.css";
 @import "__cabinet1-media.css";
+
+@import "__orderDetails.css";
+@import "__orderDetails-media.css";
 
 @import "__content.css";
 

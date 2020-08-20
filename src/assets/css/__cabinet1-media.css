@@ -23,6 +23,13 @@
   .profil__info2 {
     width: 60%;
   }
+  .order__itemRowTitle {
+    width: 20%;
+  }
+
+  .order__itemRowInfo {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -69,6 +76,14 @@
   .profile__info,
   .profil__info2 {
     padding: 0 0 0 20px;
+    width: 100%;
+  }
+  .order__itemRowTitle {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .order__itemRowInfo {
     width: 100%;
   }
 }
