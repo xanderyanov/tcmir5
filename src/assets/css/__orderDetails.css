@@ -26,13 +26,14 @@
 
 .orderDetails__itemTitle {
   width: 15%;
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
   font-weight: 700;
 }
 
 .orderDetails__itemInfo {
   width: 85%;
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
+  padding-left: 20px;
 }
 
 .orderDetails__itemInfoVariants {
@@ -77,4 +78,50 @@
 input.order__action_color {
   background: var(--orange);
   color: #fff;
+}
+
+.orderDetailsTab {
+  /* width: 100%; */
+
+  max-width: 100%;
+  overflow: auto;
+}
+
+.orderDetailsTab table {
+  min-width: 400px;
+  width: 100%;
+}
+
+.orderDetailsTab table tr {
+  border-bottom: 2px solid var(--colorLightGrey);
+}
+
+.orderDetailsTab table tr th,
+.orderDetailsTab table tr td {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.orderDetailsTab table tr th {
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: var(--colorLightGrey);
+}
+
+.orderDetailsTab table tr th span {
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: var(--colorLightGrey);
+}
+
+.orderDetailsTab table tr th span.mb {
+  display: none;
+}
+
+.orderDetailsTab img {
+  width: 50px;
+}
+
+.text-right {
+  text-align: right;
 }

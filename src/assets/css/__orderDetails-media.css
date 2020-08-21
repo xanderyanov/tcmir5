@@ -31,10 +31,20 @@
 
   .orderDetails__itemInfo {
     width: 100%;
+    padding: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .orderDetailsTab table tr th span.dt {
+    display: none;
+  }
+  .orderDetailsTab table tr th span.mb {
+    display: block;
+  }
+  .orderDetailsTab img {
+    width: 30px;
+  }
 }
 
 @media only screen and (max-width: 480px) {

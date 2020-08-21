@@ -32,7 +32,7 @@
 @media only screen and (max-width: 600px) {
   html,
   body {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .gallery__item {
     width: 33.333%;

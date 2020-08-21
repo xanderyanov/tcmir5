@@ -60,6 +60,7 @@
 
 .topLine__item3 {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .topLine__item3:hover i {
