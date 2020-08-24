@@ -5,6 +5,12 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .dt {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -46,6 +52,60 @@
 }
 
 @media only screen and (max-width: 920px) {
+  .cartTab__header {
+    display: none;
+  }
+  .cartTab1 {
+    width: 20%;
+    padding-right: 10px;
+  }
+  .tovarImgInTab {
+    max-width: none;
+  }
+  .cartTab__info {
+    width: 80%;
+  }
+  .cartTab__info {
+    flex-direction: column;
+  }
+  .cartTab2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .cartTab3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .cartTab4 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .cartTab5 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .cartTab6 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .cartTab7 {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .tovarLinkInTab {
+    /* flex-direction: row;
+    align-items: center; */
+  }
+  .tovarLinkInTab span:first-child {
+    margin-right: 10px;
+  }
+  .text-right {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .cartInTabPriceArea {
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -53,6 +113,12 @@
 
 @media only screen and (max-width: 768px) {
   .orderForm__wrapper {
+    width: 70%;
+  }
+  .cartTab1 {
+    width: 30%;
+  }
+  .cartTab__info {
     width: 70%;
   }
 }

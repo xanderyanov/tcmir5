@@ -357,8 +357,8 @@
   text-align: center;
   border: none;
   outline: none;
-  border-top: 2px solid #a6a6a6;
-  border-bottom: 2px solid #a6a6a6;
+  /* border-top: 2px solid #a6a6a6;
+  border-bottom: 2px solid #a6a6a6; */
   color: var(--redFillhover);
   font-size: 1.125rem;
   font-weight: 700;
@@ -377,8 +377,9 @@
   justify-content: center;
   align-items: center;
   width: 28px;
-  height: 26px;
-  border: 2px solid #a6a6a6;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #a6a6a6;
   cursor: pointer;
   outline: none;
   color: var(--redFillhover);

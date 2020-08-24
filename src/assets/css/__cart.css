@@ -339,3 +339,176 @@ span.orderCart__totalTitle {
 .radioBox input {
   margin: 0 10px 0 0;
 }
+
+.cartTab__area {
+  width: 100%;
+}
+
+.cartTab__outer {
+  width: 100%;
+}
+
+.cartTab {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartTab__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cartTab__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cartTab__item {
+  display: flex;
+}
+
+.cartTabH12 {
+  width: 40%;
+}
+.cartTabH3 {
+  width: 13%;
+  text-align: right;
+}
+.cartTabH4 {
+  width: 13%;
+  text-align: right;
+}
+.cartTabH5 {
+  text-align: right;
+  width: 17%;
+}
+.cartTabH6 {
+  width: 12%;
+}
+.cartTabH7 {
+  width: 5%;
+}
+
+.dt {
+  display: block;
+}
+.mb {
+  display: none;
+}
+
+.cartTab12 {
+  width: 30%;
+  text-align: center;
+}
+.cartTab1 {
+  order: 0;
+  width: 15%;
+}
+.cartTab__info {
+  order: 1;
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+.cartTab2 {
+  order: 2;
+  width: 30%;
+}
+.cartTab3 {
+  order: 3;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cartTab4 {
+  order: 4;
+  width: 15%;
+}
+.cartTab5 {
+  order: 5;
+  width: 20%;
+}
+.cartTab6 {
+  order: 6;
+  width: 15%;
+}
+.cartTab7 {
+  order: 7;
+  width: 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.cartTab1 a {
+  text-decoration: none;
+}
+
+.tovarImgInTab {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+}
+
+.tovarLinkInTab {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.tovarLinkInTab span {
+  font-size: 1.125rem;
+  color: var(--blueLink);
+}
+
+.tovarLinkInTab span:last-child {
+  font-size: 0.875rem;
+  color: #a6a6a6;
+}
+
+.cartInTabPriceArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.oldPriceInTab {
+  margin-bottom: 0.3125rem;
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #a6a6a6;
+}
+
+.discountInTab {
+  color: var(--redFill);
+  font-size: 1rem;
+  margin-bottom: 0.3125rem;
+}
+
+.priceInTab {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.delete-svg {
+  width: 100%;
+  max-width: 24px;
+  display: block;
+}
+
+.cartTabTotalItemPrice {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
