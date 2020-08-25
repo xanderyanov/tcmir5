@@ -1,4 +1,23 @@
 $(function () {
+  window.addEventListener("pageshow", function (event) {
+    var historyTraversal =
+      event.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2);
+    if (historyTraversal) {
+      window.location.reload();
+    }
+  });
+
+  // $(document).on("click", ".backBtn", function (e) {
+  //   e.preventDefault();
+  //   window.history.back();
+  //   console.log("Кнопка назад");
+  // });
+
+  $(".backBtn").on("click", function () {
+    window.history.back();
+    console.log("Кнопка назад");
+  });
+
   var orangeHeaderHeight = $(".orangeHeader").outerHeight();
   var searchWhite = $(".searchWhite__area");
   var searchWhiteHeight = $(".searchWhite__area").outerHeight();
@@ -51,11 +70,6 @@ $(function () {
       }, 500);
     });
   }
-
-  $(".backBtn").on("click", function (e) {
-    window.history.back();
-    console.log("Кнопка назад");
-  });
 
   // Главный слайдер при верстке - надо закомментировать если в студию добавлять
   // setTimeout(function () {
@@ -591,35 +605,37 @@ $(function () {
   }
 
   //минус и плюс в количестве товара на одной карточке
-  $(".minus").click(function () {
-    var $input = $(this).parent().find("input");
-    var count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
-    $input.val(count);
-    $input.change();
-    return false;
-  });
-  $(".plus").click(function () {
-    var $input = $(this).parent().find("input");
-    $input.val(parseInt($input.val()) + 1);
-    $input.change();
-    return false;
-  });
+  //в студии раблотает другой скрипт Арсения
+  // $(".minus").click(function () {
+  //   var $input = $(this).parent().find("input");
+  //   var count = parseInt($input.val()) - 1;
+  //   count = count < 1 ? 1 : count;
+  //   $input.val(count);
+  //   $input.change();
+  //   return false;
+  // });
+  // $(".plus").click(function () {
+  //   var $input = $(this).parent().find("input");
+  //   $input.val(parseInt($input.val()) + 1);
+  //   $input.change();
+  //   return false;
+  // });
   //минус и плюс в количестве товара в таблице для одной строки
-  $(".minus_tab").click(function () {
-    var $input = $(this).parent().find("input");
-    var count = parseInt($input.val()) - 1;
-    count = count < 0 ? 0 : count;
-    $input.val(count);
-    $input.change();
-    return false;
-  });
-  $(".plus_tab").click(function () {
-    var $input = $(this).parent().find("input");
-    $input.val(parseInt($input.val()) + 1);
-    $input.change();
-    return false;
-  });
+  //в студии раблотает другой скрипт Арсения
+  // $(".minus_tab").click(function () {
+  //   var $input = $(this).parent().find("input");
+  //   var count = parseInt($input.val()) - 1;
+  //   count = count < 0 ? 0 : count;
+  //   $input.val(count);
+  //   $input.change();
+  //   return false;
+  // });
+  // $(".plus_tab").click(function () {
+  //   var $input = $(this).parent().find("input");
+  //   $input.val(parseInt($input.val()) + 1);
+  //   $input.change();
+  //   return false;
+  // });
 
   // $(".catalogMenu li:has(ul)").addClass("fw600");
 
@@ -1084,6 +1100,7 @@ $(function () {
   $(window).resize(function () {
     var bm = $(".m2_bottomMenu__area").outerHeight();
     $(".m2_bottomMenu__areaFake").css({ height: bm });
+    $(".rezerv__area").css({ bottom: bm });
 
     if ($(window).width() <= 1080) {
       $(".cabTab__itemContent").hide();

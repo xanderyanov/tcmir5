@@ -118,7 +118,7 @@
   text-decoration: underline;
 }
 
-.tovarCard {
+a.tovarCard {
   z-index: 10;
   width: 100%;
   display: flex;
@@ -129,8 +129,9 @@
   box-sizing: border-box;
   padding: 10px;
 }
-.tovarCard__area:hover .tovarCard {
+.tovarCard__area:hover a.tovarCard {
   border: 1px solid transparent;
+  text-decoration: none;
 }
 
 .tovarCard__img {
@@ -427,7 +428,7 @@
   padding: 5px;
 }
 
-.m2_innerCategory__item {
+a.m2_innerCategory__item {
   display: block;
   padding: 5px 10px;
   background: var(--x1greySuperLight);
@@ -435,6 +436,9 @@
   color: #000;
   border-radius: 5px;
   white-space: nowrap;
+}
+a.m2_innerCategory__item:hover {
+  text-decoration: none;
 }
 
 .m2_catalogArea {

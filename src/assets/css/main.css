@@ -25,6 +25,10 @@ body {
   margin-top: auto;
 }
 
+.site__center a:hover {
+  text-decoration: none;
+}
+
 .hidden {
   display: none;
 }

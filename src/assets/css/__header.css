@@ -87,6 +87,19 @@
   color: var(--color2);
 }
 
+.topLine__item_active span,
+.topLine__item_active:hover span {
+  color: #fff;
+}
+.topLine__item_active {
+  background: #ff6600;
+  padding: 5px 10px;
+}
+.topLine__item_active i,
+.topLine__item_active:hover i {
+  color: #fff;
+}
+
 .headerLine__area {
   background: #fff;
 }

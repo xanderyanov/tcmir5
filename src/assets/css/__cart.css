@@ -368,6 +368,11 @@ span.orderCart__totalTitle {
 
 .cartTab__item {
   display: flex;
+  margin-bottom: 20px;
+}
+
+.cartTab__item:last-child {
+  margin-bottom: 0;
 }
 
 .cartTabH12 {
@@ -501,7 +506,6 @@ span.orderCart__totalTitle {
 .delete-svg {
   width: 100%;
   max-width: 24px;
-  display: block;
 }
 
 .cartTabTotalItemPrice {

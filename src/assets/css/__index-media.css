@@ -23,9 +23,6 @@
   .m1_mainBtn {
     height: 80px;
   }
-}
-
-@media only screen and (max-width: 600px) {
   .m2_bottomMenu__outer {
     padding: 10px 0;
   }
@@ -42,6 +39,9 @@
   .m2_bottomMenu__areaFake {
     height: 60px;
   }
+}
+
+@media only screen and (max-width: 600px) {
 }
 
 @media only screen and (max-width: 480px) {

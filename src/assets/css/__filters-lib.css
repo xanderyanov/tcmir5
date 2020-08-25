@@ -50,14 +50,14 @@
 .xcheckbox label::after {
   content: "";
   display: block;
-  height: 2px;
+  height: 4px;
   width: 6px;
   border-left: 2px solid;
   border-bottom: 2px solid;
   transform: rotate(-45deg);
   position: absolute;
   left: 3px;
-  top: 5px;
+  top: 4px;
   color: #ff4141;
 }
 

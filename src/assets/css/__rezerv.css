@@ -12,8 +12,17 @@
   padding: 10px 10px;
   cursor: pointer;
   color: #fff;
-  background: var(--x1greyLight);
+  background: var(--orange);
   border: none;
+  transition: all 0.3s;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.rezervBtn:hover {
+  background: var(--redFill);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .rezervBtn_inReserv {
