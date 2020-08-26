@@ -4,7 +4,8 @@
   order: 90;
 }
 
-.rezervBtn {
+.rezervBtn,
+#purchaseBtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +19,8 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-.rezervBtn:hover {
+.rezervBtn:hover,
+#purchaseBtn:hover {
   background: var(--redFill);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);

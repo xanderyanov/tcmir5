@@ -151,9 +151,21 @@
   font-weight: 700;
   color: red;
 }
-.order-status-6 {
+.order-status-6,
+.order-status-7,
+.order-status-10 {
   font-weight: 700;
   color: #00b000;
+}
+.order-status-8,
+.order-status-9 {
+  font-weight: 700;
+  color: #592004;
+}
+.order-status-11,
+.order-status-12 {
+  font-weight: 700;
+  color: #346ca6;
 }
 
 .order__itemRow_red {

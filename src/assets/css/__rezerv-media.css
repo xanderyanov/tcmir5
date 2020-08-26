@@ -11,7 +11,8 @@
     bottom: 0;
     z-index: 501;
   }
-  .rezervBtn {
+  .rezervBtn,
+  #purchaseBtn {
     padding: 20px 10px;
   }
 }
@@ -29,13 +30,15 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .rezervBtn {
+  .rezervBtn,
+  #purchaseBtn {
     padding: 15px 10px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .rezervBtn {
+  .rezervBtn,
+  #purchaseBtn {
     padding: 10px 10px;
   }
 }
