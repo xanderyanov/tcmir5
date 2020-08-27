@@ -18,6 +18,20 @@ $(function () {
     console.log("Кнопка назад");
   });
 
+  // var topLineHeight = $(".topLine__area").outerHeight();
+  // if ($(this).scrollTop() > topLineHeight) {
+  //   $(".topLine__area").css({ position: "fixed", top: "0", left: "0" });
+  // } else if ($(this).scrollTop() <= topLineHeight) {
+  //   $(".topLine__area").css({ position: "relative", top: "auto", left: "auto" });
+  // }
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > topLineHeight) {
+  //     $(".topLine__area").css({ position: "fixed", top: "0", left: "0" });
+  //   } else if ($(this).scrollTop() <= topLineHeight) {
+  //     $(".topLine__area").css({ position: "relative", top: "auto", left: "auto" });
+  //   }
+  // });
+
   var orangeHeaderHeight = $(".orangeHeader").outerHeight();
   var searchWhite = $(".searchWhite__area");
   var searchWhiteHeight = $(".searchWhite__area").outerHeight();
@@ -40,6 +54,11 @@ $(function () {
 
   var m2_headerHeight = $(".m2_header").outerHeight();
   $(".m2_headerFake").css({ height: m2_headerHeight });
+
+  if ($(".catalogFilter1__area").length) {
+    var catalogFilter1Height = $(".catalogFilter1__area").outerHeight();
+    $(".catalogMenu__outer").css({ marginTop: catalogFilter1Height });
+  }
 
   //resolution screen info
   // var wWidth = $(window).width();

@@ -23,7 +23,7 @@ mixin m2_catMenu
   .m2_catMenu__area
     .m2_catMenu__outer
       .m2_catMenu
-        .m2_catMenuItem__outer
+        .m2_catMenuItem__outer.active
           a.m2_catMenuItem
             .m2_catMenuItemImg
               img(src="assets/img/m2/clothes.jpg", alt="")
@@ -118,7 +118,7 @@ mixin m2_innerCategory
 mixin m2_category
   .m2_category__area
     .m2_category__outer
-      a.m2_category__allBtn(href="#") Все товары
+      //- a.m2_category__allBtn(href="#") Все товары
       .m2_category
         .m2_category__itemOuter
           a.m2_category__item(href="#")

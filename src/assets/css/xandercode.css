@@ -7,8 +7,9 @@
   --color1: rgba(65, 51, 40, 0.6);
   --color2: rgba(65, 51, 40, 0.8);
   /* --redFill: #f76060; */
-  --redFill: #ff4141;
-  --redFillhover: #ff2525;
+  /* --redFill: #ff4141; */
+  --redFill: #ff8000;
+  --redFillhover: #ff8000;
   --tColor: #413328;
   --x1dark: #4b4b4b;
   --x1grey: #929292;

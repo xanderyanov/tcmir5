@@ -1,13 +1,16 @@
 @media only screen and (max-width: 1280px) {
-  .m1_catalog {
+  /* .m1_catalog {
     margin: 0;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1140px) {
 }
 
 @media only screen and (max-width: 1080px) {
+  .m1_catalog__area {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -20,21 +23,25 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .m1_catalog {
+    margin: 5px -5px 0;
+  }
+
+  .m1_catalog__itemOuter {
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .m1_catalog__itemOuter {
-    height: 35vh;
-  }
   .m1_catalog__item span {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    padding: 5px 10px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .m1_catalog__item span {
-    padding: 5px 10px;
-    font-size: 1.375rem;
+    font-size: 1.125rem;
   }
 }
 

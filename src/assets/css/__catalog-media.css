@@ -129,10 +129,12 @@
   .m2_catMenuItem__outer {
     width: 100%;
   }
-  .m2_topMenu li a {
-    font-size: 1.125rem;
-    padding: 5px 10px;
-    border-radius: 5px;
+  .m2_catMenuItemImg {
+    width: 20%;
+  }
+
+  .m2_catMenuItemInfo {
+    width: 80%;
   }
 }
 

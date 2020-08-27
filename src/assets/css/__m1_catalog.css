@@ -1,3 +1,8 @@
+.m1_catalog__area {
+  display: none;
+  margin-top: 5px;
+}
+
 .m1_catalog__outer {
   width: 100%;
   max-width: 1280px;
@@ -7,13 +12,13 @@
 .m1_catalog {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  margin: 0 -5px;
 }
 
 .m1_catalog__itemOuter {
   width: 50%;
-  padding: 10px;
-  height: 40vh;
+  padding: 5px;
+  height: 20vh;
 }
 
 .m1_catalog__item {
@@ -26,6 +31,8 @@
   text-decoration: none;
   background-position: center center;
   background-size: cover;
+  border-radius: 7px;
+  border: 1px solid var(--x1border);
 }
 
 .m1_catalog__item span {
@@ -34,6 +41,7 @@
   align-items: center;
   padding: 10px 20px;
   background: #fff;
-  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
   color: var(--tColor);
 }

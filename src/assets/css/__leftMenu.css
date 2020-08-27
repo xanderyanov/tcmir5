@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 20%;
-  padding: 0.625rem 1.25rem 0 0;
+  padding: 5px 1.25rem 0 0;
+  margin-top: 55px;
 }
 
 .catalogMenuTopLink {
@@ -42,8 +43,7 @@
 .catalogMenu li a {
   text-decoration: none;
   display: inline-block;
-  padding: 0.3125rem 0.625rem;
-  padding: 2px 15px;
+  padding: 2px 15px 2px 20px;
   border-radius: 0.3125rem;
   position: relative;
   width: 100%;
@@ -85,24 +85,28 @@
   position: absolute;
   content: "";
   top: 50%;
-  left: 3px;
-  margin-top: -4px;
-  width: 8px;
-  height: 8px;
-  background: url(../img/plus_black51.svg);
+  left: 2px;
+  margin-top: -7px;
+  width: 14px;
+  height: 14px;
+  /* background: url(../img/plus_black51.svg); */
+  background: url(../img/i/filter-arrow-black.svg) center center no-repeat;
   background-size: cover;
   /* border: 1px solid #000; */
 }
 
 .catalogMenu li.hasInner > a:hover:before {
-  background-image: url(../img/plus_red51.svg);
+  /* background-image: url(../img/plus_red51.svg); */
+  background-image: url(../img/i/filter-arrow-primary.svg);
 }
 
 .catalogMenu li.hasInner.active > a:before {
-  background-image: url(../img/plus_white51.svg);
+  /* background-image: url(../img/plus_white51.svg); */
+  background-image: url(../img/i/filter-arrow-white.svg);
 }
 .catalogMenu li.hasInner.active > a:hover:before {
-  background-image: url(../img/plus_white51.svg);
+  /* background-image: url(../img/plus_white51.svg); */
+  background-image: url(../img/i/filter-arrow-white.svg);
 }
 
 .catalogMenu li.lmLev0 > a:before {

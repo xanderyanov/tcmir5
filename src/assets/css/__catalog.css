@@ -128,6 +128,7 @@ a.tovarCard {
   border: 1px solid var(--x1border);
   box-sizing: border-box;
   padding: 10px;
+  text-decoration: none;
 }
 .tovarCard__area:hover a.tovarCard {
   border: 1px solid transparent;
@@ -317,13 +318,14 @@ a.tovarCard {
   padding: 5px;
 }
 
-.m2_catMenuItem {
+a.m2_catMenuItem {
   width: 100%;
   display: flex;
   align-items: center;
   border: 1px solid var(--colorGrey);
   border-radius: 5px;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .m2_catMenuItemImg {
@@ -345,8 +347,11 @@ a.tovarCard {
 }
 
 .m2_catMenuItem__outer.active .m2_catMenuItem {
-  color: var(--tColor);
-  background: var(--colorGrey);
+  background: var(--orange);
+}
+
+.m2_catMenuItem__outer.active .m2_catMenuItemInfo {
+  color: #fff;
 }
 
 .m2_category__area {
