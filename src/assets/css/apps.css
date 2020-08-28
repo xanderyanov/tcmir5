@@ -100,6 +100,9 @@
 @import "__orderDetails.css";
 @import "__orderDetails-media.css";
 
+@import "__popUp.css";
+@import "__popUp-media.css";
+
 @import "__content.css";
 
 @import "main.css";

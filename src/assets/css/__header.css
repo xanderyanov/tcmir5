@@ -483,6 +483,19 @@
 .orangeHeader__area {
   width: 100%;
   display: none;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.orangeHeader__area_fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.orangeHeader__areaFake2 {
+  width: 100%;
+  height: 0;
 }
 
 .orangeHeader__outer {
@@ -495,8 +508,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 0;
+  padding: 5px 10px;
   background: var(--orange);
+  z-index: 50;
+  position: relative;
 }
 
 .orangeLogo {

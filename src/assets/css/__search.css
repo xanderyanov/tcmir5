@@ -61,6 +61,7 @@
   z-index: 500;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
+  position: relative;
 }
 
 .searchWhite__outer {

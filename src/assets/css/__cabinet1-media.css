@@ -82,9 +82,21 @@
     width: 100%;
     margin-bottom: 5px;
   }
+  .order__itemRowTitle50 {
+    width: 50%;
+  }
 
   .order__itemRowInfo {
     width: 100%;
+  }
+  .order__itemRowInfo50 {
+    width: 50%;
+  }
+  .orderDetails__title {
+    margin-bottom: 10px;
+  }
+  .orderDetails__title h1 {
+    font-size: 1.375rem;
   }
 }
 
@@ -122,6 +134,9 @@
   .profil__exitArea {
     width: 15%;
     order: 1;
+  }
+  .orderDetails__outer {
+    margin-top: 0;
   }
 }
 

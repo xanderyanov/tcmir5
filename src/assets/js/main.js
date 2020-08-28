@@ -60,6 +60,30 @@ $(function () {
     $(".catalogMenu__outer").css({ marginTop: catalogFilter1Height });
   }
 
+  ////////////////////////////////////
+
+  var orangeHeaderAreaHeight = $(".orangeHeader__area").outerHeight();
+  var bottomMenuHeight = $(".m2_bottomMenu__area").outerHeight();
+  $(".menuButton1__areaJS").click(function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(".menuButton1").removeClass("open");
+      $(".orangeHeader__area").removeClass("orangeHeader__area_fixed");
+      $(".orangeHeader__areaFake2").css({ height: "0" });
+      $(".upBox__area").slideUp(200);
+      $("body").removeClass("stop");
+    } else {
+      $("body,html").animate({ scrollTop: 0 }, 400);
+      $(this).addClass("open");
+      $(".menuButton1").addClass("open");
+      $(".orangeHeader__area").addClass("orangeHeader__area_fixed");
+      $(".orangeHeader__areaFake2").css({ height: orangeHeaderAreaHeight });
+      $(".upBox__area").css({ paddingTop: orangeHeaderAreaHeight, paddingBottom: bottomMenuHeight }).slideDown(200);
+      $("body").addClass("stop");
+    }
+  });
+
   //resolution screen info
   // var wWidth = $(window).width();
   // var wHeight = $(window).height();

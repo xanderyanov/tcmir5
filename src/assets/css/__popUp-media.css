@@ -5,9 +5,6 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  .breadcrumbs__area {
-    margin-top: 5px;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -23,9 +20,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .breadcrumbs__area {
-    margin-top: 0;
-  }
 }
 
 @media only screen and (max-width: 480px) {

@@ -68,7 +68,8 @@
 }
 
 .orderDetails__itemInfo input.btn-primary {
-  background: rgb(42, 159, 48);
+  /* background: rgb(42, 159, 48); */
+  background: var(--orange);
   color: #fff;
 }
 

@@ -33,6 +33,21 @@
     width: 100%;
     padding: 0;
   }
+  .orderDetails__itemTitle50 {
+    width: 50%;
+  }
+
+  .orderDetails__itemInfo50 {
+    width: 50%;
+  }
+
+  .orderDetails__itemInfo form {
+    width: 100%;
+  }
+
+  .orderDetails__itemInfo input {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -45,6 +60,10 @@
   /* .orderDetailsTab img {
     width: 30px;
   } */
+  .orderDetailsTab img {
+    width: 70px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {

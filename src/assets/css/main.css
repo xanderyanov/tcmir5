@@ -29,8 +29,8 @@ body {
   text-decoration: none;
 }
 
-.hidden {
-  display: none;
+.stop {
+  overflow: hidden;
 }
 
 .xBlock__area {

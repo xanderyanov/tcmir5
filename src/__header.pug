@@ -1,4 +1,5 @@
 include __search
+include __popUpBlocks
 
 mixin header
   +orangeHeader
@@ -179,13 +180,17 @@ mixin searchWhite
 
 mixin orangeHeader
   .orangeHeader__areaFake
+  .orangeHeader__areaFake2
   .orangeHeader__area
     .orangeHeader__outer
+      +upBox
       .orangeHeader
         .orangeLogo
           a(href="#")
             img(src="assets/img/logo-white.svg", alt='Торговый комплекс МИР')
+        +menuButton1
       +searchWhite
+      
 
 mixin orangeHeader_inCatalog
   .orangeHeader__areaFake
