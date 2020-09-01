@@ -810,30 +810,30 @@ $(function () {
   });
 
   //скрипт визуального добавления атрибута checked для чекбокса обычного
-  if ($(".filterBox__checkbox").length) {
-    //сам выбор
-    // $(".xcheckbox").click(function (e) {
-    //   e.preventDefault();
-    //   if ($(this).hasClass("checked")) {
-    //     $(this).removeClass("checked");
-    //     $(this).children("input").removeAttr("checked");
-    //   } else {
-    //     $(this).addClass("checked");
-    //     $(this).children("input").attr("checked", "checked");
-    //   }
-    // });
-    //Кнопка сброса обычных чекбоксов (не цвета) внутри одного блока фильта *найти  checked  false
-    $(".filter__checkboxReset").click(function () {
-      console.log("сброс фильтров");
-      $(this)
-        .closest(".filterBox")
-        .find("input[type=checkbox]")
-        .each(function (i) {
-          this.checked = false;
-        });
-      // $(this).closest(".filterBox").find(".xcheckbox").removeClass("checked");
-    });
-  }
+  // if ($(".filterBox__checkbox").length) {
+  //сам выбор
+  // $(".xcheckbox").click(function (e) {
+  //   e.preventDefault();
+  //   if ($(this).hasClass("checked")) {
+  //     $(this).removeClass("checked");
+  //     $(this).children("input").removeAttr("checked");
+  //   } else {
+  //     $(this).addClass("checked");
+  //     $(this).children("input").attr("checked", "checked");
+  //   }
+  // });
+  //Кнопка сброса обычных чекбоксов (не цвета) внутри одного блока фильта *найти  checked  false
+  // $(".filter__checkboxReset").click(function () {
+  //   console.log("сброс фильтров");
+  //   $(this)
+  //     .closest(".filterBox")
+  //     .find("input[type=checkbox]")
+  //     .each(function (i) {
+  //       this.checked = false;
+  //     });
+  //   $(this).closest(".filterBox").find(".xcheckbox").removeClass("checked");
+  // });
+  // }
 
   //Выбор чекбоксов с цветами - применение эффекта по клику на пункт
   if ($(".filter__checkboxColor").length) {
@@ -962,31 +962,35 @@ $(function () {
     $(".overlay2").hide();
   });
 
-  $(".aFilterBoxEnterBtn").on("click", function () {
-    var filtrItemParent = $(this).closest(".aFilterBox__inner");
+  ////////////////////////////////////////////////////////////
 
-    if (filtrItemParent.find("input").is(":checked")) {
-      console.log("Выбрано");
-      filtrItemParent.closest(".aFilterBox").find(".aFilterBox__title").addClass("choose").removeClass("open");
-      filtrItemParent.slideUp(200);
-      $(".overlay2").hide();
-    } else {
-      console.log("не выбрано");
-      filtrItemParent.closest(".aFilterBox").find(".aFilterBox__title").removeClass("choose").removeClass("open");
-      filtrItemParent.slideUp(200);
-      $(".overlay2").hide();
-    }
-  });
-  $(".aFilterBox__Reset").click(function () {
-    console.log("сброс фильтров");
-    $(this)
-      .closest(".aFilterBox__innerContent")
-      .find("input[type=checkbox]")
-      .each(function (i) {
-        this.checked = false;
-      });
-    // $(this).closest(".filterBox").find(".xcheckbox").removeClass("checked");
-  });
+  // $(".aFilterBoxEnterBtn").on("click", function () {
+  //   var filtrItemParent = $(this).closest(".aFilterBox__inner");
+
+  //   if (filtrItemParent.find("input").is(":checked")) {
+  //     console.log("Выбрано");
+  //     filtrItemParent.closest(".aFilterBox").find(".aFilterBox__title").addClass("choose").removeClass("open");
+  //     filtrItemParent.slideUp(200);
+  //     $(".overlay2").hide();
+  //   } else {
+  //     console.log("не выбрано");
+  //     filtrItemParent.closest(".aFilterBox").find(".aFilterBox__title").removeClass("choose").removeClass("open");
+  //     filtrItemParent.slideUp(200);
+  //     $(".overlay2").hide();
+  //   }
+  // });
+  // $(".aFilterBox__Reset").click(function () {
+  //   console.log("сброс фильтров");
+  //   $(this)
+  //     .closest(".aFilterBox__innerContent")
+  //     .find("input[type=checkbox]")
+  //     .each(function (i) {
+  //       this.checked = false;
+  //     });
+  //   $(this).closest(".filterBox").find(".xcheckbox").removeClass("checked");
+  // });
+
+  ////////////////////////////////////////////////////////////
 
   $(".aFilter__footerReset").on("click", function () {
     $(this)

@@ -184,6 +184,10 @@
 }
 
 .filterEnterBtn {
+  position: relative;
+}
+
+.filterEnterBtnStyle {
   padding: 0.3125rem 0.625rem;
   display: flex;
   justify-content: center;
@@ -196,7 +200,7 @@
   transition: all 0.2s;
 }
 
-.filterEnterBtn:hover {
+.filterEnterBtnStyle:hover {
   background: var(--x1grey);
 }
 
@@ -254,6 +258,10 @@
 }
 
 .filter__checkboxReset {
+  position: relative;
+}
+
+.filter__checkboxResetBtn {
   padding: 0.3125rem 0.625rem;
   display: flex;
   justify-content: center;
@@ -266,7 +274,7 @@
   transition: all 0.2s;
   margin-bottom: 0.625rem;
 }
-.filter__checkboxReset:hover {
+.filter__checkboxResetBtn:hover {
   background: var(--x1greyLight);
 }
 
