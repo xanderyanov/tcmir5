@@ -3,6 +3,10 @@
   padding: 0.25rem 0;
 }
 
+.topSearch__area100 {
+  width: 100%;
+}
+
 .topSearch {
   display: flex;
   align-items: center;
@@ -11,7 +15,7 @@
   outline: none;
   box-sizing: border-box;
   width: 100%;
-  border-radius: 7px;
+  border-radius: 5px;
   overflow: hidden;
   position: relative;
 }
@@ -22,7 +26,7 @@
   display: flex;
   align-items: center;
   padding: 0 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: var(--color2);
 
   height: 1.875rem;
@@ -38,20 +42,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 1.625rem;
   cursor: pointer;
   transition: all 0.3s;
   background: transparent;
 }
 
-.topSearch__btn:hover {
-  background: var(--redFillhover);
-}
-
 .topSearch__btn i {
   font-size: 1rem;
   color: var(--color2);
+  transition: all 0.3s;
+}
+
+.topSearch__btn:hover i {
+  color: var(--orange);
 }
 
 .searchWhite__area {

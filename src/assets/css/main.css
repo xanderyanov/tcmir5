@@ -31,6 +31,7 @@ body {
 
 .stop {
   overflow: hidden;
+  padding-right: 15px;
 }
 
 .xBlock__area {

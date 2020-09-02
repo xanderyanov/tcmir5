@@ -750,6 +750,15 @@ $(function () {
   //   $(location).attr("href", "http://mir.deltal.beget.tech/category.html/" + parameters);
   // });
 
+  var windowForScroll = $(window).height() - 250;
+  $(".filterBox__content").each(function (i, elem) {
+    var scrollBoxHeight = $(elem).outerHeight();
+    console.log(scrollBoxHeight);
+    if (scrollBoxHeight > windowForScroll) {
+      $(elem).addClass("filterBox__content_scroll");
+    }
+  });
+
   //Раскрытие фильтра в каталоге по клику на его заголовке
   $(".catalogFilter1__itemTitle").on("click", function () {
     var fCont = $(this).closest(".catalogFilter1__item").find(".catalogFilter1__itemContent");
@@ -758,12 +767,16 @@ $(function () {
       $(this).removeClass("open1");
       fAll.find(".catalogFilter1__itemContent").removeClass("visible");
       $(".catalogFilter1__overlay").hide();
+      $("body").removeClass("stop");
+      $(".topLine__area").removeClass("stop");
     } else {
       fAll.find(".catalogFilter1__itemTitle").removeClass("open1");
       fAll.find(".catalogFilter1__itemContent").removeClass("visible");
       $(this).addClass("open1");
       fCont.addClass("visible");
       $(".catalogFilter1__overlay").show();
+      $("body").addClass("stop");
+      $(".topLine__area").addClass("stop");
     }
   });
 
@@ -789,6 +802,8 @@ $(function () {
     $(".catalogFilter1__overlay").hide();
     $(".catalogFilter1__itemContent").removeClass("visible");
     $(".catalogFilter1__itemTitle").removeClass("open1");
+    $("body").removeClass("stop");
+    $(".topLine__area").removeClass("stop");
   });
 
   $(".filterEnterBtn").on("click", function () {
@@ -931,10 +946,12 @@ $(function () {
       $(this).removeClass("open");
       $(".overlay1").hide();
       $(".aFilters__wrapper").fadeOut(200);
+      $("body").removeClass("stop");
     } else {
       $(this).addClass("open");
       $(".overlay1").show();
       $(".aFilters__wrapper").fadeIn(200);
+      $("body").addClass("stop");
     }
   });
   // Закрытие адаптивного меню по кнопке Close
@@ -942,6 +959,7 @@ $(function () {
     $(".filtersBtn_filtr").removeClass("open");
     $(".overlay1").hide();
     $(".aFilters__wrapper").fadeOut(200);
+    $("body").removeClass("stop");
   });
 
   $(".aFilterBox__title").on("click", function () {

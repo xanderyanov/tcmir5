@@ -86,3 +86,13 @@ a.hover {
   clear: both;
   display: table;
 }
+
+.h20 {
+  height: 1.25rem;
+  width: 100%;
+}
+
+.detailed {
+  color: var(--orange);
+  font-weight: 700;
+}

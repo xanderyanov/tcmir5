@@ -30,7 +30,7 @@
   z-index: 1;
 }
 .tovarCard__area:hover {
-  z-index: 3000;
+  z-index: 480;
 }
 
 .catalog_fav .tovarCard__area {

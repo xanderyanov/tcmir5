@@ -126,7 +126,7 @@
 
 .julySlider__Prev:hover,
 .julySlider__Next:hover {
-  background: #be3f46;
+  background: var(--orange);
 }
 
 .julySlider__outer .swiper-button-disabled {

@@ -6,6 +6,23 @@
   height: 100%;
 }
 
+.filterBox__content {
+  margin-bottom: 10px;
+}
+
+.filterBox__content_scroll {
+  max-height: calc(60vh - 150px);
+  overflow-y: scroll;
+}
+
+/* .filterBox__content::-webkit-scrollbar {
+  width: 0;
+} */
+
+.scrollHide::-webkit-scrollbar {
+  width: 0;
+}
+
 .filterBox__title {
   font-size: 1rem;
   margin-bottom: 15px;
