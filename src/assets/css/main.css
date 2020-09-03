@@ -109,3 +109,7 @@ body {
 .indexShopCardTitle h2 {
   font-size: 1.625rem;
 }
+
+.content_inRightTovarArea {
+  order: 110;
+}

@@ -123,6 +123,9 @@
   .difColorLink__area {
     margin: 10px 0 0;
   }
+  .tovarTitle__text {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 400px) {

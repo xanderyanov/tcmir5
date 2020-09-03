@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
   color: var(--tColor);
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   /* font-family: "Roboto", sans-serif; */
   margin: 0 0 10px 0;
   font-weight: 600;
