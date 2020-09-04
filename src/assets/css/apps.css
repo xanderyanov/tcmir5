@@ -103,6 +103,9 @@
 @import "__popUp.css";
 @import "__popUp-media.css";
 
+@import "__arendator.css";
+@import "__arendator-media.css";
+
 @import "__content.css";
 
 @import "main.css";

@@ -1,0 +1,51 @@
+.arHeader {
+}
+
+.logo2 {
+}
+
+.logo2 a {
+  text-decoration: none;
+}
+
+.logo2 img {
+  display: block;
+  width: 100%;
+}
+
+.arHeader__btns {
+  display: flex;
+  align-items: center;
+}
+
+.logout {
+  display: block;
+}
+
+.login {
+  display: block;
+}
+
+.arHeader__item {
+  position: relative;
+}
+
+.arHeader__item a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.arHeader__item a:hover {
+  color: var(--orange);
+}
+
+.arHeader__item i {
+  font-size: 1.5rem;
+}
+
+.arHeader__item span {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}

@@ -10,7 +10,7 @@
   }
 
   .orderDetails__itemInfo {
-    width: 80%;
+    /* width: 80%; */
   }
 }
 
@@ -33,6 +33,9 @@
     width: 100%;
     padding: 0;
   }
+  .orderDetails__itemInfo_actions {
+    flex-direction: column;
+  }
   .orderDetails__itemTitle50 {
     width: 50%;
   }
@@ -47,6 +50,10 @@
 
   .orderDetails__itemInfo input {
     width: 100%;
+  }
+
+  .orderDetails__itemInfo50right {
+    text-align: right;
   }
 }
 
