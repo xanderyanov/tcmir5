@@ -154,3 +154,72 @@
 .catalogMenu li.fw600 > a span:first-child {
   font-weight: 600;
 }
+
+.leftMenuTreePath {
+  display: flex;
+  flex-direction: column;
+}
+
+.lmtp {
+  display: flex;
+  width: 100%;
+  padding: 2px 5px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.collapser {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.indent0 {
+  margin-left: 0;
+}
+.indent1 {
+  margin-left: 1rem;
+}
+.indent2 {
+  margin-left: 2rem;
+}
+.indent3 {
+  margin-left: 3rem;
+}
+.indent4 {
+  margin-left: 4rem;
+}
+.indent5 {
+  margin-left: 5rem;
+}
+
+.lmtp span {
+  color: var(--tColor);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.lmtp.active {
+  background: var(--x1greyLight);
+  color: #fff;
+}
+
+.lmtp.active span {
+  color: #fff;
+}
+
+.lmtp:hover {
+  color: var(--orange);
+}
+
+.lmtp:hover span {
+  color: var(--orange);
+}
+
+.lmtp.active:hover {
+  background: var(--x1greyLight);
+  color: #fff;
+}
+
+.lmtp.active:hover span {
+  color: #fff;
+}

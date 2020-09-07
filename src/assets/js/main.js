@@ -1,4 +1,58 @@
 $(function () {
+  function CollapserClick(ev) {
+    var a = $(ev.target);
+    var p = a.closest("[data-treepath]"); //.parent().parent();
+    var k = p.data("treepath");
+    var subitems = $('.lmtp[data-treepath^="' + k + '-"]');
+    var caption = a.html();
+    if (caption === "&nbsp;") return;
+    if (subitems.length === 0) {
+      a.html("&nbsp;");
+      return;
+    }
+    if (caption === "–") {
+      a.html("+");
+      subitems.hide();
+    } else {
+      a.html("–");
+      var protector = "_";
+      var i;
+      for (i = 0; i < subitems.length; i++) {
+        var ii = $(subitems[i]);
+        if (ii.data("treepath").startsWith(protector)) continue;
+        if (ii.find(".collapser").html() === "+") protector = ii.data("treepath") + "-";
+        ii.show();
+      }
+    }
+  }
+
+  function CollapseAll() {
+    $(".lmtp[data-treepath]")
+      .each(function (index, item) {
+        $(item).find(".collapser").first().html("+");
+      })
+      .filter("[data-treepath*=-]")
+      .hide();
+  }
+
+  CollapseAll();
+
+  function ExpandAll() {
+    var alltr = $(".lmtp[data-treepath]");
+    alltr.show().each(function (index, item) {
+      var $item = $(item);
+      var k = $item.data("treepath");
+      var subitems = alltr.filter('[data-treepath^="' + k + '-"]');
+      $item
+        .find(".collapser")
+        .first()
+        .html(subitems.length > 0 ? "–" : "&nbsp;");
+    });
+  }
+
+  $(".collapser").click(CollapserClick);
+  ExpandAll();
+
   window.addEventListener("pageshow", function (event) {
     var historyTraversal =
       event.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2);

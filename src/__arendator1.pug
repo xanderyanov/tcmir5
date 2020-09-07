@@ -1,11 +1,11 @@
 mixin arHeader
-  header.arHeader.d-flex.flex-column.flex-md-row.align-items-center.justify-content-md-between.p-2.p-md-3.shadow-sm
-    .container-xxl
+  .container-fluid.shadow-sm
+    header.container-xxl.arHeader.flex-md-row.justify-content-md-between.p-2.p-md-3
       .logo2
         a(href='#')
           img(src='assets/img/logotry2.svg', alt='Торговый комплекс МИР')
-      .arHeader__btns
-        .arHeader__item.ml-4.logout
+      .arHeader__btns.pt-3.pt-md-0
+        .arHeader__item.ml-4.logout.d-none
           a(href="")
             i.icon-avatar1
             span Войти

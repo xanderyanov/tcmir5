@@ -1,4 +1,7 @@
 .arHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo2 {
