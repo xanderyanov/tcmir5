@@ -1,10 +1,22 @@
+.header__area {
+  width: 100%;
+  background: #f7f7f7;
+}
+
+.header__outer {
+  position: relative;
+}
+
 .arHeader {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .logo2 {
+  width: 100%;
+  max-width: 175px;
 }
 
 .logo2 a {
@@ -22,7 +34,7 @@
 }
 
 .logout {
-  display: block;
+  display: none;
 }
 
 .login {
@@ -51,4 +63,175 @@
 .arHeader__item span {
   font-size: 1.25rem;
   margin-left: 1rem;
+}
+
+.arMain__area {
+  padding-top: 1rem;
+}
+
+.arMain__outer {
+  position: relative;
+}
+
+.arMain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.arMain__left {
+  width: 70%;
+  padding-right: 1rem;
+}
+
+.arMain__right {
+  width: 30%;
+  background: #f7f7f7;
+}
+
+.arLogin__area {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: var(--colorGrey);
+}
+
+.arLogin__title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.arLogin {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.arLogin__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.arLogin label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.arLogin input {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  color: var(--color2);
+  background: #fff;
+  height: 2.25rem;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.arLogin button {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  font-size: 1.25rem;
+  color: var(--color2);
+  background: #fff;
+  height: 3rem;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.arInstructions__area {
+  padding-top: 20px;
+}
+
+.arInstructions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.arInstructions__itemOuter {
+  width: 33.333%;
+  padding: 10px;
+}
+
+.arInstructions__item {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--colorGrey);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.arInstructions__itemImg {
+  width: 30%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.arInstructions__itemImg img {
+  display: block;
+  width: 100%;
+}
+
+.arInstructions__itemInfo {
+  width: 70%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+.arInstructions__itemInfo span {
+  font-size: 1rem;
+  color: #000;
+}
+
+.arInstructions__item:hover span {
+  /* text-decoration: underline; */
+}
+
+.arInstructions__item:hover {
+  background: var(--colorLightGrey);
+}
+
+.arBoxLinks__area {
+  padding-top: 1rem;
+}
+
+.arBoxLinks {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.arBoxLink__outer {
+  width: 50%;
+  padding: 10px;
+}
+
+.arBoxLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: var(--colorLightGrey);
+  border: 1px solid var(--colorGrey);
+  border-radius: 5px;
 }
