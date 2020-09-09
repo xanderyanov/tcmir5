@@ -12,7 +12,7 @@ mixin arHeader
               span Войти
           .arHeader__item.login
             a(href="")
-              i.icon-avatar1
+              i.icon-exit
               span Выйти
 
     
@@ -149,18 +149,91 @@ mixin arBoxLinks
       .arBoxLinks
         .arBoxLink__outer
           a.arBoxLink(href="#")
-            span.arBoxLink__title  Мои товары
-            span.arBoxLink__desc  Загрузка и редактирование товаров
+            span.arBoxLinkCover(style="background-image: url(assets/img/ar/001.jpg)")
+            span.arBoxLink__info
+              span.arBoxLink__title  Мои товары
+              span.arBoxLink__desc  Загрузка и редактирование товаров
+            
         .arBoxLink__outer
           a.arBoxLink(href="#")
-            span.arBoxLink__title  Лента продаж
-            span.arBoxLink__desc  Просмотр продаж по дням
+            span.arBoxLinkCover(style="background-image: url(assets/img/ar/002.jpg)")
+            span.arBoxLink__info
+              span.arBoxLink__title  Лента продаж
+              span.arBoxLink__desc  Просмотр продаж по дням
         .arBoxLink__outer
           a.arBoxLink(href="#")
-            span.arBoxLink__title  Оффлайн-продажи
-            span.arBoxLink__desc  Корректировка продаж 
+            span.arBoxLinkCover(style="background-image: url(assets/img/ar/003.jpg)")
+            span.arBoxLink__info
+              span.arBoxLink__title  Корректировка остатков
+              span.arBoxLink__desc  Актуализация состояния склада
         .arBoxLink__outer
           a.arBoxLink(href="#")
-            span.arBoxLink__title  Мой магазин
-            span.arBoxLink__desc  Коррекция информации о магазине
+            span.arBoxLinkCover(style="background-image: url(assets/img/ar/004.jpg)")
+            span.arBoxLink__info
+              span.arBoxLink__title  Мой магазин
+              span.arBoxLink__desc  Коррекция информации о магазине
 
+mixin skladTab__category
+  .skladTab__categoryArea
+    .w1
+      .title
+        h1 Мои товары
+    .skladTab__categoryOuter.w1
+      .skladTab__category
+        .skladTab__categoryItemOuter
+          a.skladTab__categoryItem(href="#") Куртки
+        .skladTab__categoryItemOuter
+          a.skladTab__categoryItem(href="#") Пальто
+        .skladTab__categoryItemOuter
+          a.skladTab__categoryItem(href="#") Джинсовые куртки
+        .skladTab__categoryItemOuter
+          a.skladTab__categoryItem(href="#") Куртки
+        .skladTab__categoryItemOuter
+          a.skladTab__categoryItem(href="#") Пальто
+        .skladTab__categoryItemOuter
+          a.skladTab__categoryItem(href="#") Джинсовые куртки
+
+mixin skladTab
+  .skladTab__area
+    .skladTab__outer.w1
+      .skladTab
+        .skladTab__item
+          .skladTab__itemMain.container-fluid
+            .row
+              .col-2
+                .skladTab__itemMainInfo
+                  .openBtn
+                    span.openBtnPlus +
+                    span.openBtnMinus -
+                  .skladTab__img
+                    img(src="assets/img/tovar/017.jpeg", alt="")
+              .col-1 4-20155961
+              .col-5 
+                .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
+              .col-2 32, 34, 36
+              .col-1 5 шт
+              .col-1
+                .skladTabPrice__area
+                  span.skladTabOldPrice 10000 Р
+                  span.skladTabDiscount 5%
+                  span.skladTabPrice 9500 Р
+          .skladTab__itemDetail.container-fluid
+            .row
+              .col-2 
+              .col-1 4-20155961
+              .col-5 
+                .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
+              .col-2 32
+              .col-1 3 шт
+              .col-1
+                .enterBtn Применить
+            .row
+              .col-2
+              .col-1 4-20155961
+              .col-5 
+                .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
+              .col-2 34
+              .col-1 3 шт
+              .col-1
+                .enterBtn Применить
+        

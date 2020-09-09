@@ -50,6 +50,7 @@
   text-decoration: none;
   color: #000;
   transition: all 0.3s;
+  align-items: center;
 }
 
 .arHeader__item a:hover {
@@ -214,6 +215,13 @@
   padding-top: 1rem;
 }
 
+.arBoxLinks__outer {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+}
+
 .arBoxLinks {
   display: flex;
   flex-wrap: wrap;
@@ -234,4 +242,241 @@
   background: var(--colorLightGrey);
   border: 1px solid var(--colorGrey);
   border-radius: 5px;
+  padding: 2rem 1rem;
+  transition: all 0.3s;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.arBoxLinkCover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.8s;
+  opacity: 0.8;
+}
+
+.arBoxLink:hover .arBoxLinkCover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.arBoxLink__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.arBoxLink__title {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.arBoxLink__desc {
+  font-size: 1rem;
+  color: var(--colorDarkGrey);
+  text-align: center;
+  line-height: 1.4;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.arBoxLink:hover .arBoxLink__title {
+  color: var(--orange);
+}
+
+.arBoxLink:hover .arBoxLink__desc {
+  color: var(--orange);
+}
+.arBoxLink:hover .arBoxLink__info {
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1);
+}
+
+/* ***********************   skladTab */
+
+.skladTab__categoryArea {
+  position: relative;
+  padding-top: 10px;
+}
+
+.skladTab__categoryOuter {
+  width: 100%;
+}
+
+.skladTab__category {
+  display: flex;
+  align-items: center;
+  margin: 0 -5px;
+}
+
+.skladTab__categoryItemOuter {
+  padding: 5px;
+}
+
+a.skladTab__categoryItem {
+  display: block;
+  padding: 5px 10px;
+  background: var(--x1greySuperLight);
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+a.skladTab__categoryItem:hover {
+  text-decoration: none;
+}
+
+.skladTab__area {
+  padding-top: 10px;
+}
+
+.skladTab__outer {
+  position: relative;
+}
+
+.skladTab {
+  display: flex;
+  flex-direction: column;
+}
+
+.skladTab__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2px;
+}
+
+.skladTab__itemMain {
+  background: var(--colorLightGrey);
+  padding: 5px;
+}
+
+.skladTab__itemMainInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skladTab__img {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  max-width: 90px;
+}
+
+.skladTab__img img {
+  display: block;
+  width: 100%;
+}
+
+.openBtn {
+  width: 2rem;
+  height: 2rem;
+  background: var(--colorGrey);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.openBtn:hover {
+  background: var(--colorDarkGrey);
+  color: #fff;
+}
+
+.openBtnPlus {
+  display: block;
+}
+
+.openBtnMinus {
+  display: none;
+}
+
+.skladTab__itemMain .row {
+  align-items: center;
+}
+
+.skladTab__itemMainTitle {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.skladTabPrice__area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skladTabPrice__area span {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.skladTabPrice__area span:last-child {
+  margin-bottom: 0;
+}
+
+.skladTabOldPrice {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.skladTabDiscount {
+  white-space: nowrap;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 5px;
+  background: var(--orange);
+  color: #fff;
+  margin: 0 auto;
+}
+
+.skladTabPrice {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.skladTab__itemDetail {
+  display: none;
+}
+
+.skladTab__itemDetail .row {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--colorGrey);
+}
+
+.enterBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background: var(--colorGrey);
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.enterBtn:hover {
+  background: var(--x1grey);
+  color: #fff;
 }

@@ -1,4 +1,19 @@
 $(function () {
+  $(".openBtn").click(function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(this).children(".openBtnMinus").hide();
+      $(this).children(".openBtnPlus").show();
+      $(this).closest(".skladTab__item").find(".skladTab__itemDetail").slideUp();
+    } else {
+      $(this).addClass("open");
+      $(this).children(".openBtnMinus").show();
+      $(this).children(".openBtnPlus").hide();
+      $(this).closest(".skladTab__item").find(".skladTab__itemDetail").slideDown();
+    }
+  });
+
   function CollapserClick(ev) {
     var a = $(ev.target);
     var p = a.closest("[data-treepath]"); //.parent().parent();
