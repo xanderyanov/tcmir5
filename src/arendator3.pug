@@ -1,6 +1,7 @@
-- var pageTitle = 'Кабинет арендатора'
+- var pageTitle = 'Остатки'
 
 include __const
+include __breadcrumbs
 include __header
 include __arendator
 
@@ -20,6 +21,7 @@ body.d-flex.flex-column.h-100
     +arHeader
 
   .site__center
+    +fake-breadcrumbs_inBrand
     +skladTab__category
     +skladTab
 

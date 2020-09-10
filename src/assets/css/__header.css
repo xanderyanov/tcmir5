@@ -426,8 +426,8 @@
 }
 
 .m2_topMenu li.active a {
-  color: var(--tColor);
-  background: var(--colorGrey);
+  color: #fff;
+  background: var(--orange);
 }
 
 .m2_header__action {

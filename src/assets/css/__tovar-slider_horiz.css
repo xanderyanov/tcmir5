@@ -137,7 +137,7 @@
 
 .tovarSlider7__Prev:hover,
 .tovarSlider7__Next:hover {
-  background: #be3f46;
+  background: var(--orange);
 }
 
 .tovarSlider7 .swiper-button-disabled {

@@ -198,42 +198,153 @@ mixin skladTab
     .skladTab__outer.w1
       .skladTab
         .skladTab__item
-          .skladTab__itemMain.container-fluid
-            .row
-              .col-2
+          .skladTab__itemMain
+            .skladTab__row
+              .skladTab__col_1
                 .skladTab__itemMainInfo
                   .openBtn
                     span.openBtnPlus +
                     span.openBtnMinus -
-                  .skladTab__img
-                    img(src="assets/img/tovar/017.jpeg", alt="")
-              .col-1 4-20155961
-              .col-5 
-                .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
-              .col-2 32, 34, 36
-              .col-1 5 шт
-              .col-1
+              .skladTab__col_2
+                .skladTab__img
+                  img(src="assets/img/tovar/017.jpeg", alt="")
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4
+                .skladTab__itemMainTitle.skladTab__itemMainTitle_bold Ботинки мужские из кожи крокодила
+              .skladTab__col_5 32, 34, 36, 38, 40, 42, 44, 45
+              .skladTab__col_6 5 шт
+              .skladTab__col_7
                 .skladTabPrice__area
                   span.skladTabOldPrice 10000 Р
                   span.skladTabDiscount 5%
                   span.skladTabPrice 9500 Р
-          .skladTab__itemDetail.container-fluid
-            .row
-              .col-2 
-              .col-1 4-20155961
-              .col-5 
+          .skladTab__itemDetail
+            .skladTab__row
+              .skladTab__col_1
+              .skladTab__col_2 
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4 
                 .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
-              .col-2 32
-              .col-1 3 шт
-              .col-1
+              .skladTab__col_5 Размер 32
+              .skladTab__col_6
+                .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                  span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                  input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                  span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+              .skladTab__col_7
                 .enterBtn Применить
-            .row
-              .col-2
-              .col-1 4-20155961
-              .col-5 
+            .skladTab__row
+              .skladTab__col_1
+              .skladTab__col_2 
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4 
                 .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
-              .col-2 34
-              .col-1 3 шт
-              .col-1
+              .skladTab__col_5 Размер 32
+              .skladTab__col_6
+                .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                  span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                  input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                  span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+              .skladTab__col_7
+                .enterBtn Применить
+        .skladTab__item
+          .skladTab__itemMain
+            .skladTab__row
+              .skladTab__col_1
+                .skladTab__itemMainInfo
+                  .openBtn
+                    span.openBtnPlus +
+                    span.openBtnMinus -
+              .skladTab__col_2
+                .skladTab__img
+                  img(src="assets/img/tovar/017.jpeg", alt="")
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4
+                .skladTab__itemMainTitle.skladTab__itemMainTitle_bold Ботинки мужские из кожи крокодила
+              .skladTab__col_5 32, 34, 36, 38, 40, 42, 44, 45
+              .skladTab__col_6 5 шт
+              .skladTab__col_7
+                .skladTabPrice__area
+                  span.skladTabOldPrice 10000 Р
+                  span.skladTabDiscount 5%
+                  span.skladTabPrice 9500 Р
+          .skladTab__itemDetail
+            .skladTab__row
+              .skladTab__col_1
+              .skladTab__col_2 
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4 
+                .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
+              .skladTab__col_5 Размер 32
+              .skladTab__col_6
+                .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                  span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                  input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                  span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+              .skladTab__col_7
+                .enterBtn Применить
+            .skladTab__row
+              .skladTab__col_1
+              .skladTab__col_2 
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4 
+                .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
+              .skladTab__col_5 Размер 32
+              .skladTab__col_6
+                .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                  span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                  input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                  span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+              .skladTab__col_7
+                .enterBtn Применить
+        .skladTab__item
+          .skladTab__itemMain
+            .skladTab__row
+              .skladTab__col_1
+                .skladTab__itemMainInfo
+                  .openBtn
+                    span.openBtnPlus +
+                    span.openBtnMinus -
+              .skladTab__col_2
+                .skladTab__img
+                  img(src="assets/img/tovar/017.jpeg", alt="")
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4
+                .skladTab__itemMainTitle.skladTab__itemMainTitle_bold Ботинки мужские из кожи крокодила
+              .skladTab__col_5 32, 34, 36, 38, 40, 42, 44, 45
+              .skladTab__col_6 5 шт
+              .skladTab__col_7
+                .skladTabPrice__area
+                  span.skladTabOldPrice 10000 Р
+                  span.skladTabDiscount 5%
+                  span.skladTabPrice 9500 Р
+          .skladTab__itemDetail
+            .skladTab__row
+              .skladTab__col_1
+              .skladTab__col_2 
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4 
+                .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
+              .skladTab__col_5 Размер 32
+              .skladTab__col_6
+                .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                  span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                  input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                  span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+              .skladTab__col_7
+                .enterBtn Применить
+            .skladTab__row
+              .skladTab__col_1
+              .skladTab__col_2 
+              .skladTab__col_3 4-20155961
+              .skladTab__col_4 
+                .skladTab__itemMainTitle Ботинки мужские из кожи крокодила
+              .skladTab__col_5 Размер 32
+              .skladTab__col_6
+                .cart2number.number.number_inTab(data-wareid='xxx', data-mode='qcont')
+                  span.minus_tab(data-wareid='xxx', data-change='-1', title='Уменьшить количество') -
+                  input.cartCountInput(type='text', name='count', value='0', min='0', data-wareid='xxx')
+                  span.plus_tab(data-wareid='xxx', data-change='1', title='Увеличить количество') +
+              .skladTab__col_7
                 .enterBtn Применить
         

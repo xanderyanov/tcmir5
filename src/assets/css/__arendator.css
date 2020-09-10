@@ -360,6 +360,42 @@ a.skladTab__categoryItem:hover {
   margin-bottom: 2px;
 }
 
+.skladTab__row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.skladTab__col_1 {
+  width: 4%;
+  display: flex;
+}
+.skladTab__col_2 {
+  width: 10%;
+}
+.skladTab__col_3 {
+  width: 10%;
+  font-size: 0.875em;
+}
+.skladTab__col_4 {
+  width: 35%;
+  font-size: 1em;
+  padding-right: 10px;
+}
+.skladTab__col_5 {
+  width: 10%;
+}
+.skladTab__col_6 {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+.skladTab__col_7 {
+  width: 15%;
+}
+
 .skladTab__itemMain {
   background: var(--colorLightGrey);
   padding: 5px;
@@ -384,8 +420,8 @@ a.skladTab__categoryItem:hover {
 }
 
 .openBtn {
-  width: 2rem;
-  height: 2rem;
+  width: 1.75em;
+  height: 1.75em;
   background: var(--colorGrey);
   color: #000;
   display: flex;
@@ -415,6 +451,10 @@ a.skladTab__categoryItem:hover {
 .skladTab__itemMainTitle {
   font-size: 1.25rem;
   line-height: 1.3;
+}
+
+.skladTab__itemMainTitle_bold {
+  font-weight: 700;
 }
 
 .skladTabPrice__area {
@@ -459,7 +499,7 @@ a.skladTab__categoryItem:hover {
   display: none;
 }
 
-.skladTab__itemDetail .row {
+.skladTab__itemDetail .skladTab__row {
   padding: 10px 0;
   border-bottom: 1px solid var(--colorGrey);
 }
