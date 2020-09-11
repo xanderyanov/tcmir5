@@ -336,9 +336,18 @@ a.skladTab__categoryItem {
   color: #000;
   border-radius: 5px;
   white-space: nowrap;
+  transition: all 0.2s;
 }
 a.skladTab__categoryItem:hover {
   text-decoration: none;
+  background: var(--x1grey);
+  color: #fff;
+}
+
+a.skladTab__categoryItem.active,
+a.skladTab__categoryItem.active:hover {
+  background: var(--orange);
+  color: #fff;
 }
 
 .skladTab__area {

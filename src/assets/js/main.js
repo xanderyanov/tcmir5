@@ -1,4 +1,8 @@
 $(function () {
+  // aCatalog
+
+  //aCatalog
+
   $(".openBtn").click(function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
@@ -1231,65 +1235,65 @@ $(function () {
   $(".m2_bottomMenu__areaFake").css({ height: bm });
 
   // установливаем обработчик события resize
-  $(window).resize(function () {
-    var bm = $(".m2_bottomMenu__area").outerHeight();
-    $(".m2_bottomMenu__areaFake").css({ height: bm });
-    $(".rezerv__area").css({ bottom: bm });
+  // $(window).resize(function () {
+  var bm = $(".m2_bottomMenu__area").outerHeight();
+  $(".m2_bottomMenu__areaFake").css({ height: bm });
+  $(".rezerv__area").css({ bottom: bm });
 
-    if ($(window).width() <= 1080) {
-      $(".cabTab__itemContent").hide();
-      $(".cabTab__item.active .cabTab__itemContent").show();
-      $(".cabTab__title_mobile").on("click", function () {
-        if ($(this).parent().hasClass("active")) {
-          // $(this).parent().removeClass("active");
-          // $(this).parent().find(".cabTab__itemContent").slideUp();
-        } else {
-          $(".cabTab__item").removeClass("active");
-          $(".cabTab__itemContent").slideUp();
-          $(this).parent().addClass("active");
-          $(this).parent().find(".cabTab__itemContent").slideDown();
-        }
-      });
-    } else {
-      // $(".cabTab__title_mobile").hide();
-      $(".cabTab__itemContent").show();
-      $(".cabTabHeader").each(function (i) {
-        var storage = localStorage.getItem("tab", i);
-        console.log(storage);
-        if (storage) {
-          $(this)
-            .find(".cabTab__title")
-            .removeClass("active")
-            .eq(storage)
-            .addClass("active")
-            .closest(".cabTab")
-            .find(".cabTab__item")
-            .removeClass("active")
-            .eq(storage)
-            .addClass("active");
-        }
-      });
+  if ($(window).width() <= 1080) {
+    $(".cabTab__itemContent").hide();
+    $(".cabTab__item.active .cabTab__itemContent").show();
 
-      $(".cabTabHeader").on("click", ".cabTab__title:not(.active)", function () {
+    $(".cabTab__title_mobile").on("click", function (e) {
+      e.stopPropagation();
+      $(".cabTab__itemContent").slideUp();
+      if ($(this).parent().hasClass("active")) {
+        $(".cabTab__item").removeClass("active");
+        $(this).parent().find(".cabTab__itemContent").slideUp();
+      } else {
+        $(".cabTab__item").removeClass("active");
+        $(this).parent().addClass("active");
+        $(this).parent().find(".cabTab__itemContent").slideDown();
+      }
+    });
+  } else {
+    $(".cabTab__itemContent").show();
+    $(".cabTabHeader").each(function (i) {
+      var storage = localStorage.getItem("tab", i);
+      console.log(storage);
+      if (storage) {
         $(this)
-          .addClass("active")
-          .siblings()
+          .find(".cabTab__title")
           .removeClass("active")
+          .eq(storage)
+          .addClass("active")
           .closest(".cabTab")
           .find(".cabTab__item")
           .removeClass("active")
-          .eq($(this).index())
+          .eq(storage)
           .addClass("active");
-        // console.log($(this).index());
-        var ulIndex = $(".cabTab__title").index($(this).parents(".cabTabHeader"));
-        console.log(ulIndex);
-        localStorage.removeItem("tab");
-        localStorage.setItem("tab", $(this).index());
-      });
-    }
-  });
+      }
+    });
 
-  $(window).resize();
+    $(".cabTabHeader").on("click", ".cabTab__title:not(.active)", function () {
+      $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active")
+        .closest(".cabTab")
+        .find(".cabTab__item")
+        .removeClass("active")
+        .eq($(this).index())
+        .addClass("active");
+      var ulIndex = $(".cabTab__title").index($(this).parents(".cabTabHeader"));
+      console.log(ulIndex);
+      localStorage.removeItem("tab");
+      localStorage.setItem("tab", $(this).index());
+    });
+  }
+  // });
+
+  // $(window).resize();
 
   $(".order__itemTovarsListTitle").on("click", function () {
     $(this).closest(".order__itemTovarsList").find(".order__itemTovarsListInfo").slideToggle();

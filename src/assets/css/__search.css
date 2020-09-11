@@ -60,11 +60,11 @@
 
 .searchWhite__area {
   width: 100%;
-  padding: 5px 0;
+  padding: 5px 0 10px;
   background: var(--orange);
-  z-index: 500;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
+  z-index: 480;
+  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 13px;
   position: relative;
 }
 

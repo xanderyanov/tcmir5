@@ -397,6 +397,7 @@
 .m2_topMenu__area {
   width: 100%;
   display: none;
+  margin-top: 5px;
 }
 
 .m2_topMenu__outer {

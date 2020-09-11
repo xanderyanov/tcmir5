@@ -106,6 +106,9 @@
 @import "__arendator.css";
 @import "__arendator-media.css";
 
+@import "__aCatalog.css";
+@import "__aCatalog-media.css";
+
 @import "__content.css";
 
 @import "main.css";
