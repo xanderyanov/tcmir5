@@ -30,6 +30,9 @@
   .order__itemRowInfo {
     width: 80%;
   }
+  .order__outer {
+    padding-top: 5px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

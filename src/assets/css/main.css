@@ -58,6 +58,9 @@ body {
   align-items: baseline;
   margin: 10px auto 0;
 }
+.title1_bgw {
+  background: transparent;
+}
 
 .title1 h1,
 .title1 h2,

@@ -68,7 +68,7 @@
 
 .cabTab__item {
   display: none;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 .cabTab__item.active {
   display: block;
@@ -76,17 +76,19 @@
 
 .cabTab__title_mobile {
   display: none;
-  padding: 12px 10px;
-  background: var(--colorGrey);
+  padding: 30px 10px;
+  /* background: var(--colorGrey); */
   color: #fff;
   align-items: center;
   border-radius: 5px;
   text-decoration: none;
   transition: all 0.2s;
+  border: 1px solid var(--colorGrey);
 }
 
 .cabTab__item.active .cabTab__title_mobile {
   background: var(--orange);
+  border: 1px solid var(--orange);
 }
 
 .cabTab__title_mobile i {

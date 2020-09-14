@@ -1,6 +1,38 @@
 $(function () {
-  // aCatalog
+  // aCatalog - скрипт перенесен в студию
+  // $(".aCatalogOpenBtn").click(function (e) {
+  //   e.preventDefault;
+  //   if ($(this).hasClass("active")) {
+  //     $(this).removeClass("active");
+  //     $("body").removeClass("stop");
+  //     $(".aCatalog__area").hide();
+  //   } else {
+  //     $(this).addClass("active");
+  //     $("body").addClass("stop");
+  //     $(".aCatalog__area").show();
+  //   }
+  // });
 
+  // var m2_menuHeight = $(".m2_bottomMenu__area").outerHeight();
+  // $(".aCatalog__area").css({ bottom: m2_menuHeight });
+  // $(window).resize(function () {
+  //   var m2_menuHeight = $(".m2_bottomMenu__area").outerHeight();
+  //   $(".aCatalog__area").css({ bottom: m2_menuHeight });
+  //   if ($(window).width() > 1080) {
+  //     $(".aCatalog__area").hide();
+  //   }
+  // });
+
+  // $(".aCatalog__close").click(function (e) {
+  //   e.preventDefault();
+  //   $(this).parent().parent().parent(".aCatalog__wrapper").hide();
+  //   if ($(this).hasClass("aCatalog__close_main")) {
+  //     $(".aCatalog__area").hide();
+  //     $(".aC_level0").show();
+  //     $("body").removeClass("stop");
+  //     $(".aCatalogOpenBtn").removeClass("active");
+  //   }
+  // });
   //aCatalog
 
   $(".openBtn").click(function (e) {
