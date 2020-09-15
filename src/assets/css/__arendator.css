@@ -457,13 +457,21 @@ a.skladTab__categoryItem.active:hover {
   align-items: center;
 }
 
-.skladTab__itemMainTitle {
-  font-size: 1.25rem;
+.skladTab__itemMainTitleBrand {
+  font-size: 1rem;
   line-height: 1.3;
+}
+
+.skladTab__itemMainTitle {
+  font-size: 1rem;
+  line-height: 1.3;
+  padding-left: 20px;
 }
 
 .skladTab__itemMainTitle_bold {
   font-weight: 700;
+  font-size: 1.25rem;
+  padding-left: 0;
 }
 
 .skladTabPrice__area {
