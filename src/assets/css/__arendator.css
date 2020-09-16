@@ -538,7 +538,43 @@ a.skladTab__categoryItem.active:hover {
   color: #fff;
 }
 
-
-
 /* addTovar */
 
+.addTovar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.addTovar__imgReadyAreaTitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.addTovar__imgReadyArea {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px -5px 0;
+}
+
+.imgReady__itemOuter {
+  padding: 5px;
+}
+
+.imgReady__item img {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--colorGrey);
+  border-radius: 4px;
+}
+
+.addTovar__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.addTovar__input {
+  width: 100%;
+}

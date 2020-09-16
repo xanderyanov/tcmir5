@@ -354,6 +354,55 @@ mixin skladTab
 
 mixin addTovar
   .addTovar__area
-    .addTovar__outer
-      .addTovar 
-        input.addTovarInput.addTovarInput_file(type="file" placeholder="Добавить фото товара")
+    .addTovar__outer.w1
+      .addTovar
+        .addTovar__img
+          .form-file.col-12.col-md-8.mx-auto
+            input#addTovarImg.form-file-input(type='file')
+            label.form-file-label(for='addTovarImg')
+              span.form-file-text Выберите фото товара...
+              span.form-file-button Обзор
+        .addTovar__imgReadyAreaTitle Добавлены:
+        .addTovar__imgReadyArea
+            .imgReady__itemOuter.col-4.col-md-3.col-lg-2
+              .imgReady__item
+                img(src="assets/img/tovar2/001.jpeg", alt="")
+            .imgReady__itemOuter.col-4.col-md-3.col-lg-2
+              .imgReady__item
+                img(src="assets/img/tovar2/001.jpeg", alt="")
+            .imgReady__itemOuter.col-4.col-md-3.col-lg-2
+              .imgReady__item
+                img(src="assets/img/tovar2/001.jpeg", alt="")
+            .imgReady__itemOuter.col-4.col-md-3.col-lg-2
+              .imgReady__item
+                img(src="assets/img/tovar2/001.jpeg", alt="")
+            .imgReady__itemOuter.col-4.col-md-3.col-lg-2
+              .imgReady__item
+                img(src="assets/img/tovar2/001.jpeg", alt="")
+            .imgReady__itemOuter.col-4.col-md-3.col-lg-2
+              .imgReady__item
+                img(src="assets/img/tovar2/001.jpeg", alt="")
+        .addTovar__info
+          .addTovar__input.mb-3
+            label.form-label(for='addTovar_article') Артикул товара
+            input#addTovar_article.form-control(type='text', placeholder='Артикул')
+          .addTovar__input.mb-3
+            label.form-label(for='addTovar_title') Название товара
+            input#addTovar_title.form-control(type='text', placeholder='Название товара')
+          .addTovar__input.mb-3
+            label.form-label(for="addTovar_catLev0") В какой раздел добавляется товар
+            select#addTovar_catLev0.form-select(aria-label='Default select example')
+              option(selected='') Укажите раздел
+              option(value='1') Женщинам
+              option(value='2') Мужчинам
+              option(value='3') Детям
+              option(value='4') Красота
+          .addTovar__input.mb-3
+            label.form-label(for="addTovar_catLev0") Категория товара (появляется после выбора раздела)
+            select#addTovar_catLev0.form-select(aria-label='Default select example')
+              option(selected='') Укажите категорию
+              option(value='1') Одежда
+              option(value='2') Обувь
+              option(value='3') Аксессуары
+
+        
