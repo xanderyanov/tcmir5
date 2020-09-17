@@ -56,7 +56,7 @@
 }
 
 .active.catalogFilter1__itemTitle {
-  background: var(--x1grey);
+  background: var(--orange);
   color: #fff;
 }
 .active.catalogFilter1__itemTitle:after {

@@ -66,7 +66,7 @@
 }
 
 .topLine__item a:hover {
-  color: var(--redFillhover);
+  color: var(--orange);
 }
 
 .topLine__item3 {
@@ -75,11 +75,11 @@
 }
 
 .topLine__item3:hover i {
-  color: var(--redFillhover);
+  color: var(--orange);
 }
 
 .topLine__item3:hover span {
-  color: var(--redFillhover);
+  color: var(--orange);
 }
 
 .topLine__right {
@@ -103,7 +103,7 @@
   color: #fff;
 }
 .topLine__item_active {
-  background: #ff6600;
+  background: var(--orange);
   padding: 5px 10px;
 }
 .topLine__item_active i,
@@ -152,7 +152,7 @@
 
 .x1menu li a:hover,
 .x1menu li.active a {
-  background: var(--x1grey);
+  background: var(--orange);
   color: #fff;
 }
 
@@ -207,7 +207,7 @@
 
 .topFavBtn i {
   font-size: 1.5rem;
-  color: var(--redFillhover);
+  color: var(--orange);
 }
 
 .topFavBtn_notFav {
@@ -250,7 +250,7 @@
   z-index: 2;
   width: 36px;
   height: 22px;
-  background: var(--redFill);
+  background: var(--orange);
   border: 2px solid #fff;
   display: flex;
   align-items: center;
@@ -307,19 +307,19 @@
   font-size: 1.125rem;
   color: var(--tColor);
   font-weight: 400;
-  padding: 5px 8px;
+  padding: 3px 8px;
   border-radius: 5px;
   background: #fff;
   text-decoration: none;
 }
 
 .topMenu li a:hover {
-  background: var(--x1grey);
+  background: var(--orange);
   color: #fff;
 }
 
 .topMenu li.active a {
-  background: var(--x1grey);
+  background: var(--orange);
   color: #fff;
 }
 

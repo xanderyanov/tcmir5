@@ -1,6 +1,7 @@
 .breadcrumbs__area {
   /* padding: 10px 0 10px; */
-  background-color: #e5e5e5;
+  /* background-color: #e5e5e5; */
+  background-color: var(--colorLightGrey);
 }
 .breadcrumbs {
   display: block;

@@ -559,8 +559,8 @@
 }
 
 .sizeToPrice__selectorItem.active {
-  border: 1px solid var(--redFill);
-  color: var(--redFill);
+  border: 1px solid var(--orange);
+  color: var(--orange);
 }
 
 .sizeToPrice__result {

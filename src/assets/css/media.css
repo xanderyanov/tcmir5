@@ -19,6 +19,9 @@
     overflow: hidden;
     padding-right: 0;
   }
+  :root {
+    --orange: #ff6600;
+  }
 }
 
 @media only screen and (max-width: 920px) {

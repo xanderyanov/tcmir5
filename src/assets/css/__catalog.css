@@ -198,12 +198,12 @@ a.tovarCard {
 }
 
 .tovarCard__fav i.icon-favorit2 {
-  color: var(--redFill);
+  color: var(--orange);
   display: none;
 }
 
 .tovarCard__fav:hover i {
-  color: var(--redFillhover);
+  color: var(--orange);
 }
 
 .tovarCard__info {
@@ -233,7 +233,7 @@ a.tovarCard {
 
 .tovarCard__priceDiscount {
   padding: 3px;
-  background: var(--redFill);
+  background: var(--orange);
   color: #fff;
   font-size: 0.75rem;
   position: absolute;
@@ -254,7 +254,7 @@ a.tovarCard {
 }
 
 .tovarCard__price_red {
-  color: var(--redFill);
+  color: var(--orange);
 }
 
 .tovarCard__priceOld {

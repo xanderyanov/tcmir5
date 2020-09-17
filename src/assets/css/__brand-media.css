@@ -20,6 +20,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .aBrands__itemOuter {
+    width: 33.333%;
+  }
 }
 
 @media only screen and (max-width: 480px) {

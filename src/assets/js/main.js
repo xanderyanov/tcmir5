@@ -1,4 +1,44 @@
 $(function () {
+  //brandMobile
+  $(".aBrandOpenBtn").on("click", function (e) {
+    e.preventDefault;
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $("body").removeClass("stop");
+      // $(".aBrands__overlay").hide(); раскомментировать, если надо кликать по нижнему меню для закрытия брендов
+      $(".aBrands__area").hide();
+    } else {
+      $(this).addClass("active");
+      $("body").addClass("stop");
+      // $(".aBrands__overlay").show();  раскомментировать, если надо кликать по нижнему меню для закрытия брендов
+      $(".aBrands__area").show();
+    }
+  });
+  //раскомментировать, если надо кликать по нижнему меню для закрытия брендов
+  // $(".aBrands__overlay").on("click", function (e) {
+  //   e.preventDefault;
+  //   $(".aBrandOpenBtn").removeClass("active");
+  //   $("body").removeClass("stop");
+  //   $(".aBrands__overlay").hide();
+  //   $(".aBrands__area").hide();
+  // });
+
+  var m2_menuHeight2 = $(".m2_bottomMenu__area").outerHeight();
+
+  $(".aBrands__area").css({ bottom: m2_menuHeight2 });
+  $(window).resize(function () {
+    var m2_menuHeight2 = $(".m2_bottomMenu__area").outerHeight();
+
+    $(".aBrands__area").css({ bottom: m2_menuHeight2 });
+    if ($(window).width() > 1080) {
+      $(".aBrands__area").hide();
+      $("body").removeClass("stop");
+      $(".aBrandOpenBtn").removeClass("active");
+    }
+  });
+
+  // end brandMobile
+
   // aCatalog - скрипт перенесен в студию
   // $(".aCatalogOpenBtn").click(function (e) {
   //   e.preventDefault;

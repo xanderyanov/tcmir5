@@ -139,10 +139,10 @@
 }
 
 .catalogMenu li a:hover span {
-  color: var(--redFill);
+  color: var(--orange);
 }
 .catalogMenu li.active > a {
-  background: var(--x1greyLight);
+  background: var(--orange);
 }
 .catalogMenu li.active > a span {
   color: #fff;
