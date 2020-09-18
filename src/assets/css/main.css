@@ -114,5 +114,12 @@ body {
 }
 
 .content_inRightTovarArea {
-  order: 110;
+  order: 120;
+}
+
+.deliveryInfo {
+  font-size: 0.875rem;
+  color: var(--x1greyDark);
+  line-height: 1.4;
+  margin-bottom: 10px;
 }

@@ -199,7 +199,7 @@
 }
 
 .lmtp.active {
-  background: var(--x1greyLight);
+  background: var(--orange);
   color: #fff;
 }
 
@@ -216,7 +216,7 @@
 }
 
 .lmtp.active:hover {
-  background: var(--x1greyLight);
+  background: var(--orange);
   color: #fff;
 }
 

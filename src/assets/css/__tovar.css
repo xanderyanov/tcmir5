@@ -637,3 +637,61 @@
   background: var(--redFill);
   padding: 3px 2px;
 }
+
+.aboutDelivery__area {
+  width: 100%;
+  order: 110;
+  margin-bottom: 20px;
+}
+
+.aboutDelyvery__title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.aboutDelyvery__title span {
+  font-size: 1.125rem;
+  color: var(--tColor);
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.aboutDelyvery__title i {
+  font-size: 2rem;
+  color: var(--tColor);
+}
+
+.aboutDelyvery__title:hover span {
+  color: var(--orange);
+}
+.aboutDelyvery__title:hover i {
+  color: var(--orange);
+}
+
+.aboutDelyvery__content {
+  display: none;
+  margin-top: 10px;
+}
+.aboutDelyvery__content span {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.newShopLink__area {
+  width: 100%;
+  order: 120;
+}
+
+.newShopLink__area span {
+  font-size: 1.125rem;
+  color: #000;
+}
+
+.newShopLink__area a {
+  font-size: 1.125rem;
+  color: var(--orange);
+  font-weight: 700;
+}
