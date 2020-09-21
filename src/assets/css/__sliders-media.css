@@ -11,6 +11,9 @@
   .julySlider__tovars {
     display: none;
   }
+  .septSlider__area {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -28,6 +31,9 @@
 @media only screen and (max-width: 600px) {
   .julySlider.swiper-container {
     height: 210px;
+  }
+  .septSliderCardSmall__itemOuter {
+    border: none;
   }
 }
 

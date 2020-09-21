@@ -432,3 +432,305 @@
   opacity: 1;
   background-color: var(--redFill);
 }
+
+/* товарные слайдеры на главной */
+
+.septSlider__area {
+  width: 100%;
+  display: none;
+  margin-bottom: 10px;
+  /* border-top: 2px solid var(--colorLightGrey); */
+}
+
+.septSlider__title {
+  /* width: 100%;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  background: var(--orange);
+  color: #fff; */
+  /* border-top: 2px solid var(--colorLightGrey); */
+  width: 100%;
+  padding: 10px 5px 10px;
+  font-size: 1.5rem;
+  /* background: var(--orange); */
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+}
+
+.septSlider__outer {
+  position: relative;
+  padding: 0 3rem;
+}
+
+.septSlider__outer_gray {
+  background: var(--colorLightGrey);
+}
+
+.septSlider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* height: 350px; */
+  width: 100%;
+}
+.septSlider.swiper-container {
+  /* height: 350px; */
+}
+
+.septSlider .swiper-wrapper {
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.septSlider__item {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.septSlider__item a {
+  position: relative;
+  display: flex;
+  width: auto;
+  /* height: 400px; */
+  height: 100%;
+  width: 300px;
+  justify-content: center;
+  padding: 0 20px;
+}
+.septSlider__item a img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+}
+
+.septSlider__pag div {
+  background: #a6a6a6;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -1rem;
+  border-radius: 3px;
+  transform: none;
+  z-index: 100;
+}
+
+.septSlider__pag div:focus {
+  border: none;
+  outline: none;
+}
+
+.septSlider__Prev {
+  left: 10px;
+}
+
+.septSlider__Next {
+  right: 10px;
+}
+
+.septSlider__pag i {
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.septSlider__pag div:hover {
+  background: var(--orange);
+}
+
+.septSlider__pag:hover i {
+  color: #fff;
+}
+
+/*карточка товара в этом слайдере*/
+
+a.septSliderCardBig__item {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  padding: 0.3125rem;
+  border: 1px solid transparent;
+}
+
+.septSliderCardBig__itemImg {
+  width: 100%;
+  margin-bottom: 0.3125rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 50px;
+}
+.septSliderCardBig__itemImg_main {
+  padding: 0 50px;
+}
+
+.septSliderCardBig__itemImg img {
+  display: block;
+  width: 100%;
+}
+
+.septSliderCardBig__itemDiscount {
+  padding: 2px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 0.625rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.septSliderCardBig__itemInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.septSliderCardBig__itemBrand {
+  font-weight: 400;
+  color: var(--tColor);
+  margin-bottom: 0.3125rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.septSliderCardBig__itemTitle {
+  font-weight: 600;
+  color: var(--tColor);
+  margin-bottom: 0.3125rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.septSliderCardBig__itemPriceArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.septSliderCardBig__itemOldPrice {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1;
+  color: var(--tColor);
+  opacity: 0.6;
+  margin: 0 0.3125rem 0 0;
+  text-decoration: line-through;
+}
+
+.septSliderCardBig__itemPrice {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  color: var(--tColor);
+}
+
+/*septSliderCardSmall*/
+
+.septSliderCardSmall__itemOuter {
+  /* border-top: 3px solid var(--colorLightGrey);
+  border-bottom: 3px solid var(--colorLightGrey); */
+  border-right: 2px solid var(--colorLightGrey);
+  padding: 0 5px;
+  background: var(--colorLightGrey);
+}
+
+a.septSliderCardSmall__item {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  padding: 0.3125rem;
+}
+
+.septSliderCardSmall__itemLeft {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.septSliderCardSmall__itemRight {
+  width: 50%;
+}
+
+.septSliderCardSmall__itemImg {
+  width: 100%;
+  margin-bottom: 0.3125rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+}
+.septSliderCardSmall__itemImg_main {
+  padding: 0 10px;
+}
+
+.septSliderCardSmall__itemImg img {
+  display: block;
+  width: 100%;
+}
+
+.septSliderCardSmall__itemDiscount {
+  margin-right: auto;
+  padding: 2px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 0.625rem;
+  z-index: 50;
+}
+
+.septSliderCardSmall__itemInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.septSliderCardSmall__itemBrand {
+  font-weight: 400;
+  color: var(--tColor);
+  margin-bottom: 0.625rem;
+  font-size: 0.75rem;
+  /* text-align: center; */
+}
+
+.septSliderCardSmall__itemTitle {
+  font-weight: 600;
+  color: var(--tColor);
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  /* text-align: center; */
+}
+
+.septSliderCardSmall__itemPriceArea {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+}
+
+.septSliderCardSmall__itemOldPrice {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1;
+  color: var(--tColor);
+  opacity: 0.6;
+  margin: 0 0.3125rem 0 0;
+  text-decoration: line-through;
+}
+
+.septSliderCardSmall__itemPrice {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  color: var(--tColor);
+}

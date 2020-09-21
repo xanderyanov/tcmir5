@@ -1,7 +1,59 @@
 $(function () {
+  // товарные слайдеры ны главной
+  if ($(".septSlider1__outer").length) {
+    var mySwiper1 = new Swiper(".septSlider1", {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 337000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".septSlider1__outer .septSlider__Next",
+        prevEl: ".septSlider1__outer .septSlider__Prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        600: {
+          slidesPerView: 2,
+        },
+        900: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
+  if ($(".septSlider2__outer").length) {
+    var mySwiper1 = new Swiper(".septSlider2", {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".septSlider2__outer .septSlider__Next",
+        prevEl: ".septSlider2__outer .septSlider__Prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        600: {
+          slidesPerView: 2,
+        },
+        900: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
+
   // aboutDelivery
-  $(".aboutDelyvery__title").on("click", function () {
-    $(".aboutDelyvery__content").slideToggle();
+  $(".infoTitle_js").on("click", function () {
+    $(this).closest(".infoArea_js").find(".infoContent_js").slideToggle();
   });
   // end-aboutDelivery
 
@@ -453,7 +505,7 @@ $(function () {
   }
 
   // Открытие и закрытие адаптивного меню по кнопке
-  $(".am__JS").click(function (e) {
+  $(".am__JS").on("click", function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
@@ -589,12 +641,12 @@ $(function () {
   });
   */
 
-  $(".adaptiveSearchOn__btn").click(function () {
+  $(".adaptiveSearchOn__btn").on("click", function () {
     $(this).toggleClass("open");
     $(".adaptiveSearch__area").slideToggle(200);
   });
 
-  $(".adaptiveSearch__areaClose").click(function () {
+  $(".adaptiveSearch__areaClose").on("click", function () {
     $(".adaptiveSearchOn__btn").toggleClass("open");
     $(".adaptiveSearch__area").slideToggle(200);
   });

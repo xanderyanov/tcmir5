@@ -8,6 +8,9 @@
   .m1_mainBtn__outer {
     display: block;
   }
+  .mainShopsBox__area {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

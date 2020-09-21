@@ -1,6 +1,7 @@
 .m1_catalog__area {
   display: none;
   margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .m1_catalog__outer {
@@ -18,7 +19,7 @@
 .m1_catalog__itemOuter {
   width: 50%;
   padding: 5px;
-  height: 20vh;
+  height: 15vh;
 }
 
 .m1_catalog__item {
