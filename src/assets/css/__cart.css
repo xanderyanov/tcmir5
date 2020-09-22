@@ -257,7 +257,7 @@ span.orderCart__totalTitle {
 .orderForm__orderBtn {
   display: flex;
   align-items: center;
-  background: var(--redFill);
+  background: var(--orange);
   border: none;
   outline: none;
   transition: all 0.3s;
@@ -267,7 +267,7 @@ span.orderCart__totalTitle {
 }
 
 .orderForm__orderBtn:hover {
-  background: var(--redFillhover);
+  background: var(--xGreen);
 }
 
 .orderForm__orderBtn i {

@@ -109,7 +109,7 @@ a.callActionBtnGoToShop:active {
   /* width: 300px; */
 
   height: 38px;
-  background: var(--redFill);
+  background: var(--orange);
   margin-left: auto;
   /* padding: 10px 0; */
   padding: 0 10px;

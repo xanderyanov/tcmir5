@@ -139,7 +139,7 @@ $(function () {
   // });
   //aCatalog
 
-  $(".openBtn").click(function (e) {
+  $(".openBtn").on("click", function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
@@ -205,7 +205,7 @@ $(function () {
     });
   }
 
-  $(".collapser").click(CollapserClick);
+  $(".collapser").on("click", CollapserClick);
   ExpandAll();
 
   window.addEventListener("pageshow", function (event) {
