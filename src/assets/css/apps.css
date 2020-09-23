@@ -10,6 +10,7 @@
 @import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 /* @import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
+@import "../../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 
 @import "reset.css";
 
@@ -69,6 +70,9 @@
 
 @import "__tovar.css";
 @import "__tovar-media.css";
+
+@import "__variants.css";
+@import "__variants-media.css";
 
 /* @import "__sizeSelector.css"; */
 @import "__sizeSelector-media.css";
