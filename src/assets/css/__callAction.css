@@ -137,7 +137,8 @@ a.callActionBtnGoToShop:active {
   /* display: none; */
 }
 
-.callAction__link {
+.callAction__link,
+.callAction__link:hover {
   display: none;
   /* display: flex; */
   align-items: center;
@@ -160,6 +161,9 @@ a.callActionBtnGoToShop:active {
 
 .callActionBtn_open .callAction__link {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
 }
 
 .getDiscountBtn {

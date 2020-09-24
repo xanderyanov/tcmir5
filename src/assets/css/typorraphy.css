@@ -113,7 +113,7 @@ h6 {
 }
 
 .content a {
-  color: var(--redFill);
+  color: var(--orange);
   text-decoration: underline;
 }
 

@@ -21,6 +21,10 @@
   margin: 0 -5px;
 }
 
+.catalog__bottomText {
+  padding: 10px 0;
+}
+
 .tovarCard__area {
   width: 25%;
   padding: 5px;
