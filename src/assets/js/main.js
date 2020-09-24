@@ -208,13 +208,13 @@ $(function () {
   $(".collapser").on("click", CollapserClick);
   ExpandAll();
 
-  window.addEventListener("pageshow", function (event) {
-    var historyTraversal =
-      event.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2);
-    if (historyTraversal) {
-      window.location.reload();
-    }
-  });
+    window.addEventListener("pageshow", function (event) {
+        var historyTraversal =
+            event.persisted || (typeof window.performance !== "undefined" && window.performance.navigation.type === 2);
+        if (historyTraversal) {
+            CartRequest("loadCart", "0", "0");
+        }
+    });
 
   // $(document).on("click", ".backBtn", function (e) {
   //   e.preventDefault();
@@ -460,7 +460,7 @@ $(function () {
   // слайдер товара 7
 
   if ($(".tovarSlider7").length) {
-    if ($(".tovarSlider7__img .tovarSlider7__imgItem").length == 1) {
+    if ($(".tovarSlider7__img .tovarSlider7__imgItem").length === 1) {
       $("tovarSlider7__imgItem .swiper-wrapper").addClass("disabled");
       $(".tovarSlider7__pagination").addClass("disabled");
       $(".tovarSlider7__Prev").addClass("disabled");
@@ -1313,7 +1313,7 @@ $(function () {
   });
 
   $("#formBoxInputConfirmPhone").on("input", function (e) {
-    if ($(this).val().length == 4) {
+    if ($(this).val().length === 4) {
       $(".sendPhoneCodeBtn").addClass("sendPhoneCodeBtn_enabled");
     } else {
       $(".sendPhoneCodeBtn").removeClass("sendPhoneCodeBtn_enabled");
@@ -1326,7 +1326,6 @@ $(function () {
       setTimeout(function () {
         $(".inputBox_confirmPhoneArea").slideUp(200);
       }, 500);
-    } else {
     }
   });
 
@@ -1350,7 +1349,6 @@ $(function () {
       $(this).removeClass("changePhoneBtn_visible");
       $("#formBoxInputConfirmPhone").val("");
       $(".sendPhoneCodeBtn").removeClass("sendPhoneCodeBtn_enabled");
-    } else {
     }
   });
 
@@ -1366,9 +1364,6 @@ $(function () {
   //     $(".rezervYes").show();
   //   }
   // });
-
-  var bm = $(".m2_bottomMenu__area").outerHeight();
-  $(".m2_bottomMenu__areaFake").css({ height: bm });
 
   // установливаем обработчик события resize
   // $(window).resize(function () {

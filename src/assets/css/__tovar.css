@@ -683,6 +683,9 @@
 .newShopLink__area {
   width: 100%;
   order: 120;
+  margin-bottom: 2rem;
+  background: var(--colorLightGrey);
+  padding: 10px;
 }
 
 .newShopLink__area span {
