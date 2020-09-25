@@ -28,17 +28,30 @@
   color: var(--tColor);
 }
 
+.backBtn:hover i {
+  color: var(--orange);
+}
+
 .backBtn span {
   font-size: 1rem;
   line-height: 1;
   margin-right: 0.6125rem;
   color: var(--tColor) !important;
 }
+.backBtn:hover span {
+  color: var(--orange) !important;
+}
 
 .backLine__linkTitle {
   color: var(--tColor);
   font-size: 1rem !important;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.backLine__linkTitle:hover,
+.backLine__linkTitle:focus {
+  color: var(--orange);
 }
 
 .backLine__title {

@@ -80,6 +80,7 @@ h6 {
 .content ul li {
   margin: 0 0 5px 0;
   padding: 0 0 5px 0;
+  line-height: 1.5;
 }
 .content ul li:last-child {
   margin: 0 0 0 0;
@@ -88,6 +89,7 @@ h6 {
 .content ol li {
   margin: 0 0 5px 0;
   padding: 0 0 5px 23px;
+  line-height: 1.5;
 }
 .content ol li:last-child {
   margin: 0 0 0 0;
@@ -233,4 +235,14 @@ strong {
 
 .content ol ul li:before {
   display: none;
+}
+
+.content_small {
+  position: relative;
+}
+
+.content_small p,
+.content_small li {
+  font-size: 0.875rem;
+  line-height: 1.4;
 }

@@ -113,6 +113,9 @@
 @import "__aCatalog.css";
 @import "__aCatalog-media.css";
 
+@import "__pagination.css";
+@import "__pagination-media.css";
+
 @import "__content.css";
 
 @import "main.css";

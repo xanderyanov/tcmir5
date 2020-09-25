@@ -53,6 +53,21 @@
   .xBlock__area {
     padding: 0.625rem 0;
   }
+
+  .content ul,
+  .content ol {
+    padding: 0 0 5px 20px;
+    list-style-position: outside;
+  }
+  .content ul li {
+    margin: 0;
+    padding: 0 0 5px 0;
+  }
+  .content p,
+  .content blockquote,
+  .content table {
+    margin: 0 0 5px 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {

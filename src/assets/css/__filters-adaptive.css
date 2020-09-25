@@ -25,7 +25,7 @@
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 15;
+  z-index: 9005;
   display: none;
 }
 
@@ -39,13 +39,23 @@
   display: none;
 }
 
-.aFilters__area {
+/* .aFilters__area {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-
   z-index: 9010;
+  -----------Это фильтры снизу
+} */
+
+.aFilters__area {
+  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
+  top: 50%;
+  z-index: 9010;
+  min-width: 60vw;
+  max-width: 90vw;
+  position: absolute;
 }
 
 .aFilters__titleArea {
@@ -89,16 +99,17 @@
 
 .aFilterBox__title {
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1;
   color: var(--tColor);
 }
 .aFilterBox__title.choose {
   color: #fff;
-  background: var(--x1grey);
+  /* background: var(--x1grey); */
+  background: var(--orange);
 }
 
-.aFilterBox__inner {
+/* .aFilterBox__inner {
   display: none;
   position: fixed;
   width: 100%;
@@ -106,6 +117,18 @@
   bottom: 0;
   z-index: 20;
   max-height: 100vh;
+  overflow-y: scroll;
+} */
+.aFilterBox__inner {
+  position: fixed;
+  display: none;
+  z-index: 9006;
+  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
+  top: 50%;
+  min-width: 60vw;
+  max-width: 90vw;
+  max-height: calc(100vh - 50px);
   overflow-y: scroll;
 }
 
@@ -135,6 +158,8 @@
 .aFilterBox__innerContent {
   background: rgba(255, 255, 255, 1);
   padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .aFilterBox__chooseArea {
@@ -169,7 +194,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--x1greyLight);
+  /* background: var(--x1greyLight); */
+  background: var(--orange);
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
@@ -188,10 +214,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .aFilter__footerReset {
-  border: 1px solid var(--x1greyLight);
+  /* border: 1px solid var(--x1greyLight); */
+  border: 1px solid var(--orange);
   padding: 10px 10px;
   color: var(--tColor);
   width: 49%;
@@ -199,8 +229,10 @@
 }
 
 .aFilter__footerEnter {
-  border: 1px solid var(--x1greyLight);
-  background: var(--x1greyLight);
+  /* border: 1px solid var(--x1greyLight); */
+  border: 1px solid var(--orange);
+  /* background: var(--x1greyLight); */
+  background: var(--orange);
   padding: 10px 10px;
   color: #fff;
   width: 49%;

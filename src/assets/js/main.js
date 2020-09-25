@@ -208,13 +208,13 @@ $(function () {
   $(".collapser").on("click", CollapserClick);
   ExpandAll();
 
-    window.addEventListener("pageshow", function (event) {
-        var historyTraversal =
-            event.persisted || (typeof window.performance !== "undefined" && window.performance.navigation.type === 2);
-        if (historyTraversal) {
-            CartRequest("loadCart", "0", "0");
-        }
-    });
+  window.addEventListener("pageshow", function (event) {
+    var historyTraversal =
+      event.persisted || (typeof window.performance !== "undefined" && window.performance.navigation.type === 2);
+    if (historyTraversal) {
+      CartRequest("loadCart", "0", "0");
+    }
+  });
 
   // $(document).on("click", ".backBtn", function (e) {
   //   e.preventDefault();
@@ -976,7 +976,7 @@ $(function () {
       $(this).removeClass("open1");
       fAll.find(".catalogFilter1__itemContent").removeClass("visible");
       $(".catalogFilter1__overlay").hide();
-      $("body").removeClass("stop");
+      // $("body").removeClass("stop");
       $(".topLine__area").removeClass("stop");
     } else {
       fAll.find(".catalogFilter1__itemTitle").removeClass("open1");
@@ -984,7 +984,7 @@ $(function () {
       $(this).addClass("open1");
       fCont.addClass("visible");
       $(".catalogFilter1__overlay").show();
-      $("body").addClass("stop");
+      // $("body").addClass("stop");
       $(".topLine__area").addClass("stop");
     }
   });
