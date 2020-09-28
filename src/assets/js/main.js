@@ -1255,14 +1255,14 @@ $(function () {
   }
 
   $(".toTop").hide();
-  $(window).scroll(function () {
+  $(window).on("scroll", function () {
     if ($(this).scrollTop() > 0) {
       $(".toTop").fadeIn();
     } else {
       $(".toTop").fadeOut();
     }
   });
-  $(".toTop").click(function () {
+  $(".toTop").on("click", function () {
     $("body,html").animate({ scrollTop: 0 }, 400);
     return false;
   });

@@ -101,23 +101,6 @@ mixin m2_bottomMenu
           span Профиль
   
 
-mixin m2_innerCategory
-  .m2_innerCategory__area
-    .m2_innerCategory__outer
-      .m2_innerCategory
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Куртки
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Пальто
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Джинсовые куртки
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Куртки
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Пальто
-        .m2_innerCategory__itemOuter
-          a.m2_innerCategory__item(href="#") Джинсовые куртки
-
 mixin m2_category
   .m2_category__area
     .m2_category__outer
@@ -133,7 +116,7 @@ mixin m2_category
             .m2_category__itemImg
               img(src="assets/img/m2cat/02.jpg", alt="")
             .m2_category__itemInfo Брюки
-        .m2_category__itemOuter
+        .m2_category__itemOuter.active
           a.m2_category__item(href="#")
             .m2_category__itemImg
               img(src="assets/img/m2cat/03.jpg", alt="")
@@ -184,6 +167,25 @@ mixin m2_category
               img(src="assets/img/m2cat/03.jpg", alt="")
             .m2_category__itemInfo Верхняя одежда
 
+
+mixin m2_innerCategory
+  .m2_innerCategory__area
+    .m2_innerCategory__outer
+      .m2_innerCategory
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Куртки
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Пальто
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Дубленки
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Желетки
+        .m2_innerCategory__itemOuter.active
+          a.m2_innerCategory__item(href="#") Джинсовые куртки
+        .m2_innerCategory__itemOuter
+          a.m2_innerCategory__item(href="#") Плащи
+  .m2_innerCategory__arrow
+    i.icon-left-and-right-arrows
 
 mixin catalogArea  
   //- импорт из data.json (подключается через gulp task)

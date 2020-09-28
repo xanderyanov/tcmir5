@@ -115,7 +115,7 @@
 .filtersBtn {
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 0.625rem;
   padding: 10px 10px;
   border: 1px solid var(--x1border);
   border-radius: 7px;
@@ -128,4 +128,14 @@
   font-size: 1rem;
   color: #000;
   margin-left: 10px;
+}
+
+.filtersBtn_brand {
+  background: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.filtersBtn_brand i,
+.filtersBtn_brand span {
+  color: #fff;
 }
