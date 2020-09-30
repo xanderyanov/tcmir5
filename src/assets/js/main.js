@@ -96,6 +96,7 @@ $(function () {
     $(".aBrands__area").css({ bottom: m2_menuHeight2 });
     if ($(window).width() > 1080) {
       $(".aBrands__area").hide();
+      $(".aBrands__overlay").hide();
       $("body").removeClass("stop");
       $(".aBrandOpenBtn").removeClass("active");
     }
@@ -504,6 +505,43 @@ $(function () {
     }
   }
 
+  //новая кнопка адаптивного каталога
+
+  $(".aCatalogOpenBtn2").on("click", function (e) {
+    e.preventDefault;
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $("body").removeClass("stop");
+      $(".am__area").hide();
+      $(".am__ovarlay").hide();
+    } else {
+      $(this).addClass("active");
+      $("body").addClass("stop");
+      $(".am__area").show();
+      $(".am__ovarlay").show();
+    }
+  });
+  $(".am__ovarlay").on("click", function (e) {
+    e.preventDefault;
+    $(".aCatalogOpenBtn2").removeClass("active");
+    $("body").removeClass("stop");
+    $(".am__ovarlay").hide();
+    $(".am__area").hide();
+  });
+  var am__area_bottom = $(".m2_bottomMenu__area").outerHeight();
+  $(".am__area").css({ bottom: am__area_bottom });
+
+  $(window).resize(function () {
+    var am__area_bottom = $(".m2_bottomMenu__area").outerHeight();
+    $(".am__area").css({ bottom: am__area_bottom });
+    if ($(window).width() > 1080) {
+      $(".am__area").hide();
+      $(".am__ovarlay").hide();
+      $("body").removeClass("stop");
+      $(".aCatalogOpenBtn2").removeClass("active");
+    }
+  });
+
   // Открытие и закрытие адаптивного меню по кнопке
   $(".am__JS").on("click", function (e) {
     e.preventDefault();
@@ -521,10 +559,13 @@ $(function () {
     }
   });
   // Закрытие адаптивного меню по кнопке Close
-  $(".am__close").click(function () {
+  $(".am__close").on("click", function () {
     $(".am__JS").removeClass("open");
     $(".menuButton1").removeClass("open");
     $(".am__area").slideUp(200);
+    $(".am__ovarlay").hide();
+    $("body").removeClass("stop");
+    $(".aCatalogOpenBtn2").removeClass("active");
   });
 
   $(".am__BackBtn").on("click", function (e) {

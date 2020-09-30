@@ -39,17 +39,12 @@ a.pag__item.active {
   background: var(--orange);
 }
 
-.pag__itemInput {
-  height: 2rem;
-  width: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+a.pag__item i {
   font-size: 1rem;
-  background: var(--colorLightGrey);
-  margin: 3px;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
+  color: #000;
+}
+
+a.pag__item.active i,
+a.pag__item:hover i {
+  color: #fff;
 }

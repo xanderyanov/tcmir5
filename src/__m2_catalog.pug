@@ -83,9 +83,9 @@ mixin m2_bottomMenu
         a.m2_bottomMenu__item(href="#")
           i.icon-home
           span Главная
-        //- a.m2_bottomMenu__item.aCatalogOpenBtn(href="#")
-        //-   i.icon-search
-        //-   span Каталог
+        a.m2_bottomMenu__item.aCatalogOpenBtn.aCatalogOpenBtn2(href="#")
+          i.icon-search
+          span Каталог
         a.m2_bottomMenu__item.aBrandOpenBtn(href="#")
           i.icon-flyers
           span Бренды
@@ -93,9 +93,9 @@ mixin m2_bottomMenu
           i.icon-cart1
           span Корзина
           span.cartCounter 5
-        a.m2_bottomMenu__item(href="#")
-          i.icon-favorit1
-          span Избранное
+        //- a.m2_bottomMenu__item(href="#")
+        //-   i.icon-favorit1
+        //-   span Избранное
         a.m2_bottomMenu__item(href="#")
           i.icon-avatar1
           span Профиль
@@ -170,7 +170,7 @@ mixin m2_category
 
 mixin m2_innerCategory
   .m2_innerCategory__area
-    .m2_innerCategory__outer
+    .m2_innerCategory__outer.xScroll
       .m2_innerCategory
         .m2_innerCategory__itemOuter
           a.m2_innerCategory__item(href="#") Куртки
@@ -184,8 +184,8 @@ mixin m2_innerCategory
           a.m2_innerCategory__item(href="#") Джинсовые куртки
         .m2_innerCategory__itemOuter
           a.m2_innerCategory__item(href="#") Плащи
-  .m2_innerCategory__arrow
-    i.icon-left-and-right-arrows
+  //- .m2_innerCategory__arrow
+  //-   i.icon-left-and-right-arrows
 
 mixin catalogArea  
   //- импорт из data.json (подключается через gulp task)
