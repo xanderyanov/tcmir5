@@ -25,6 +25,20 @@
   z-index: 100;
 }
 
+.brandBtnDT {
+  position: relative;
+  margin: 5px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  color: #fff;
+  border-radius: 5px;
+  background: var(--orange);
+  cursor: pointer;
+}
+
 .catalogFilter1__item {
   position: relative;
   margin: 5px;

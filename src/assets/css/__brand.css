@@ -36,10 +36,9 @@
 
 .aBrands__overlay {
   position: fixed;
-  height: 60vh;
   top: 0;
   right: 0;
-
+  bottom: 0;
   left: 0;
   z-index: 505;
   display: none;
@@ -48,15 +47,16 @@
 
 .aBrands__area {
   position: fixed;
-  height: 60vh;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  max-width: 1080px;
+  height: 70vh;
+  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
+  top: 50%;
   background: #fff;
   z-index: 506;
   display: none;
-  border-top-right-radius: 13px;
-  border-top-left-radius: 13px;
+  border-radius: 15px;
   /* padding: 10px; */
 }
 
@@ -97,7 +97,7 @@
 }
 
 .aBrands__itemOuter {
-  width: 16.666%;
+  width: 10%;
   padding: 10px;
   border-bottom: 1px solid var(--x1greySuperLight);
 }
@@ -108,7 +108,7 @@
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 15vw;
+  height: 10vh;
 }
 
 .aBrands__item img {
