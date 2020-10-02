@@ -28,7 +28,7 @@
 .brandBtnDT {
   position: relative;
   margin: 5px;
-  padding: 0 10px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,6 +142,17 @@
   font-size: 1rem;
   color: #000;
   margin-left: 10px;
+}
+
+.filtersBtn.active {
+  border: 1px solid var(--orange);
+  background: var(--orange);
+}
+.filtersBtn.active i {
+  color: #fff;
+}
+.filtersBtn.active span {
+  color: #fff;
 }
 
 .filtersBtn_brand {

@@ -1,4 +1,20 @@
 $(function () {
+  //табы
+  $(".aBrandsTabs__title").on("click", function (e) {
+    e.preventDefault();
+    var tabNumber;
+    if (!$(this).hasClass("active")) {
+      tabNumber = $(this).data("tab");
+      $(".aBrandsTabs__title").removeClass("active");
+      $(".aBrandsTabs__widget").hide().removeClass("active");
+      $(this).addClass("active");
+      $(".aBrandsTabs__widgets")
+        .find("[data-widget='" + tabNumber + "']")
+        .fadeIn(400)
+        .addClass("active");
+    }
+  });
+
   // товарные слайдеры ны главной
   if ($(".septSlider1__outer").length) {
     var mySwiper1 = new Swiper(".septSlider1", {
@@ -58,34 +74,34 @@ $(function () {
   // end-aboutDelivery
 
   //brandDesktop
-  $(".brandBtnDT").on("click", function (e) {
-    e.preventDefault;
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $("body").removeClass("stop");
-      $(".aBrands__overlay").hide();
-      $(".aBrands__area").hide();
-    } else {
-      $(this).addClass("active");
-      $("body").addClass("stop");
-      $(".aBrands__overlay").show();
-      $(".aBrands__area").show();
-    }
-  });
-  $(".aBrands__overlay").on("click", function (e) {
-    e.preventDefault;
-    $(".brandBtnDT").removeClass("active");
-    $("body").removeClass("stop");
-    $(".aBrands__overlay").hide();
-    $(".aBrands__area").hide();
-  });
-  $(".aBrands__close").on("click", function (e) {
-    e.preventDefault;
-    $(".brandBtnDT").removeClass("active");
-    $("body").removeClass("stop");
-    $(".aBrands__overlay").hide();
-    $(".aBrands__area").hide();
-  });
+  // $(".brandBtnDT").on("click", function (e) {
+  //   e.preventDefault;
+  //   if ($(this).hasClass("active")) {
+  //     $(this).removeClass("active");
+  //     $("body").removeClass("stop");
+  //     $(".aBrands__overlay").hide();
+  //     $(".aBrands__area").hide();
+  //   } else {
+  //     $(this).addClass("active");
+  //     $("body").addClass("stop");
+  //     $(".aBrands__overlay").show();
+  //     $(".aBrands__area").show();
+  //   }
+  // });
+  // $(".aBrands__overlay").on("click", function (e) {
+  //   e.preventDefault;
+  //   $(".brandBtnDT").removeClass("active");
+  //   $("body").removeClass("stop");
+  //   $(".aBrands__overlay").hide();
+  //   $(".aBrands__area").hide();
+  // });
+  // $(".aBrands__close").on("click", function (e) {
+  //   e.preventDefault;
+  //   $(".brandBtnDT").removeClass("active");
+  //   $("body").removeClass("stop");
+  //   $(".aBrands__overlay").hide();
+  //   $(".aBrands__area").hide();
+  // });
 
   // end brandDesktop
 
