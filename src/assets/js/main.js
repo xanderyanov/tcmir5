@@ -1,4 +1,58 @@
 $(function () {
+  //index2_sliders
+  var swiper = new Swiper(".s1-container", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".ss1__right",
+      prevEl: ".ss1__left",
+    },
+    pagination: {
+      el: ".s1-pagination",
+      clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+
+    // containerModifierClass: "s1-container-",
+    // slideClass: "ss1",
+    // slideActiveClass: "ss1-active",
+    // slideDuplicateActiveClass: "ss1-duplicate-active",
+    // slideVisibleClass: "ss1-visible",
+    // slideDuplicateClass: "ss1-duplicate",
+    // slideNextClass: "ss1-next",
+    // slideDuplicateNextClass: "ss1-duplicate-next",
+    // slidePrevClass: "ss1-prev",
+    // slideDuplicatePrevClass: "ss1-duplicate-prev",
+    // slideBlankClass: "ss1-invisible-blank",
+    // wrapperClass: "s1-wrapper",
+  });
+
+  var swiper = new Swiper(".s2-container", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".ss2__right",
+      prevEl: ".ss2__left",
+    },
+    pagination: {
+      el: ".s2-pagination",
+      clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+
   //табы
   $(".aBrandsTabs__title").on("click", function (e) {
     e.preventDefault();

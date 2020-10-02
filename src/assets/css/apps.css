@@ -118,5 +118,8 @@
 
 @import "__content.css";
 
+@import "__index2.css";
+@import "__index2-media.css";
+
 @import "main.css";
 @import "media.css";
