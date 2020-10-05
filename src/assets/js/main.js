@@ -4,6 +4,7 @@ $(function () {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 0,
+    speed: 600,
     autoplay: {
       delay: 7000,
       disableOnInteraction: true,
@@ -37,6 +38,7 @@ $(function () {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 0,
+    speed: 600,
     autoplay: {
       delay: 7000,
       disableOnInteraction: true,
@@ -48,6 +50,40 @@ $(function () {
     pagination: {
       el: ".s2-pagination",
       clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+
+  var swiper = new Swiper(".best2-container", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    speed: 600,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".best2__right",
+      prevEl: ".best2__left",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+
+  var swiper = new Swiper(".best3-container", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    speed: 600,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".best3__right",
+      prevEl: ".best3__left",
     },
     mousewheel: true,
     keyboard: true,
