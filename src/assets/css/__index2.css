@@ -213,7 +213,8 @@
 
 .ss1__pag {
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
+  top: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -224,6 +225,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  display: none;
 }
 
 .s1-pagination span {
@@ -275,11 +277,34 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  line-height: 0;
+}
+
+.ss1_info {
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 0;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
 .ss1_cover {
   height: 453px;
   width: 100%;
+  transition: all 0.8s;
+}
+
+.ss1:hover .ss1_cover {
+  transform: scale(1.05);
 }
 
 .s2-container {
@@ -288,7 +313,7 @@
 
 .ss2__pag {
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -299,6 +324,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  display: none;
 }
 
 .s2-pagination span {
@@ -350,6 +376,8 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  line-height: 0;
+  text-decoration: none;
 }
 
 /* .ss2 img {
@@ -545,7 +573,7 @@
 }
 
 .linkBox2__item img {
-  transition: all 0.3s;
+  transition: all 0.8s;
 }
 
 .linkBox2__item:hover img {
@@ -973,4 +1001,114 @@
 
 .footer2__menu li a:hover:after {
   opacity: 1;
+}
+
+.footer2__paySystems {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer2__paySystemsItem {
+  margin-right: 2rem;
+}
+.footer2__paySystemsItem:last-child {
+  margin-right: 0;
+}
+
+.footer2__links {
+  margin-top: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer2__link {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-right: 4rem;
+}
+
+.footer2__link:hover {
+  text-decoration: underline;
+}
+
+.bottomWide__area {
+  width: 100%;
+}
+
+.bottomWide__outer {
+  width: 100%;
+}
+
+.bottomWide {
+  display: flex;
+}
+
+.bottomWide__item {
+  width: 25%;
+}
+
+.bottomWide__item a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.bottomWide__item a:after {
+  content: "";
+  position: absolute;
+  width: 7.5rem;
+  height: 7.5rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -3.75em;
+  margin-left: -3.75rem;
+  background-image: url(../img/index2/play2.svg);
+  background-size: cover;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.bottomWide__item a:hover:after {
+  opacity: 1;
+}
+
+.bottomWide__item a img {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  position: relative;
+  transition: all 0.5s;
+}
+.bottomWide__item a:hover img {
+  transform: scale(1.05);
+}
+
+.bottomWide__item a span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 2rem;
+  transition: all 0.5s;
+}
+
+.bottomWide__item a:hover span {
+  background: rgba(0, 0, 0, 0.65);
 }

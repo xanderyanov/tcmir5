@@ -17,7 +17,7 @@ $(function () {
       el: ".s1-pagination",
       clickable: true,
     },
-    mousewheel: true,
+    // mousewheel: true,
     keyboard: true,
 
     // containerModifierClass: "s1-container-",
@@ -51,7 +51,7 @@ $(function () {
       el: ".s2-pagination",
       clickable: true,
     },
-    mousewheel: true,
+    // mousewheel: true,
     keyboard: true,
   });
 
@@ -68,7 +68,7 @@ $(function () {
       nextEl: ".best2__right",
       prevEl: ".best2__left",
     },
-    mousewheel: true,
+    // mousewheel: true,
     keyboard: true,
   });
 
@@ -85,7 +85,7 @@ $(function () {
       nextEl: ".best3__right",
       prevEl: ".best3__left",
     },
-    mousewheel: true,
+    // mousewheel: true,
     keyboard: true,
   });
 
