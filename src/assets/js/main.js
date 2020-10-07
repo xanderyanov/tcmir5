@@ -1,4 +1,20 @@
 $(function () {
+  $(".header2__search_jsEvent").on("click", function (e) {
+    e.preventDefault;
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(".header2__searchArea").hide();
+    } else {
+      $(this).addClass("active");
+      $(".header2__searchArea").show();
+    }
+  });
+  $(".header2_searchClose").on("click", function (e) {
+    e.preventDefault;
+    $(".header2__search_jsEvent").removeClass("active");
+    $(".header2__searchArea").hide();
+  });
+
   //index2_sliders
   var swiper = new Swiper(".s1-container", {
     slidesPerView: 1,
@@ -56,12 +72,12 @@ $(function () {
   });
 
   var swiper = new Swiper(".best2-container", {
-    slidesPerView: 1,
+    slidesPerView: 6,
     loop: true,
     spaceBetween: 0,
     speed: 600,
     autoplay: {
-      delay: 7000,
+      delay: 177000,
       disableOnInteraction: true,
     },
     navigation: {
