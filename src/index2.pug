@@ -1,6 +1,7 @@
 - var pageTitle = 'Главная страница'
 
 include __const
+include __header
 
 include __footer
 
@@ -73,7 +74,9 @@ mixin best2-1
   .best2__itemOuter
     a.best2__item(href="#")
       .best2__itemImg
-        img(src="assets/img/ss1/t7.jpg", alt="")
+        img(src="assets/img/ss1/best2cover.png", alt="")
+        .best2__itemImgInner
+          img(src="assets/img/ss1/t7.jpg", alt="")
       .best2__itemInfo
         .best2__itemTitle Rinachimento
         .best2__itemDesc Брюки
@@ -85,7 +88,9 @@ mixin best2-2
   .best2__itemOuter
     a.best2__item(href="#")
       .best2__itemImg
-        img(src="assets/img/ss1/t8.jpg", alt="")
+        img(src="assets/img/ss1/best2cover.png", alt="")
+        .best2__itemImgInner
+          img(src="assets/img/ss1/t8.jpg", alt="")
       .best2__itemInfo
         .best2__itemTitle Rinachimento
         .best2__itemDesc Пиджак  
@@ -97,9 +102,11 @@ mixin best2-3
   .best2__itemOuter
     a.best2__item(href="#")
       .best2__itemImg
-        img(src="assets/img/ss1/t9.jpg", alt="")
+        img(src="assets/img/ss1/best2cover.png", alt="")
+        .best2__itemImgInner
+          img(src="assets/img/ss1/t9.jpg", alt="")
       .best2__itemInfo
-        .best2__itemTitle Rinachimento Rinachimento
+        .best2__itemTitle Rinachimento
         .best2__itemDesc Брюки 
       .best2__itemPriceArea
         .best2__itemOldPrice 6800
@@ -109,7 +116,9 @@ mixin best2-4
   .best2__itemOuter
     a.best2__item(href="#")
       .best2__itemImg
-        img(src="assets/img/ss1/t10.jpg", alt="")
+        img(src="assets/img/ss1/best2cover.png", alt="")
+        .best2__itemImgInner
+          img(src="assets/img/ss1/t10.jpg", alt="")
       .best2__itemInfo
         .best2__itemTitle Rinachimento
         .best2__itemDesc Жилет 
@@ -121,10 +130,12 @@ mixin best2-5
   .best2__itemOuter
     a.best2__item(href="#")
       .best2__itemImg
-        img(src="assets/img/ss1/t11.jpg", alt="")
+        img(src="assets/img/ss1/best2cover.png", alt="")
+        .best2__itemImgInner
+          img(src="assets/img/ss1/t11.jpg", alt="")
       .best2__itemInfo
-        .best2__itemTitle Rinachimento Rinachimento
-        .best2__itemDesc Платье Платье Платье Платье Платье Платье Платье Платье Платье  
+        .best2__itemTitle Rinachimento
+        .best2__itemDesc Платье 
       .best2__itemPriceArea
         //- .best2__itemOldPrice 6800
         .best2__itemPrice 11900 ₽
@@ -133,7 +144,9 @@ mixin best2-6
   .best2__itemOuter
     a.best2__item(href="#")
       .best2__itemImg
-        img(src="assets/img/ss1/t12.jpg", alt="")
+        img(src="assets/img/ss1/best2cover.png", alt="")
+        .best2__itemImgInner
+          img(src="assets/img/ss1/t12.jpg", alt="")
       .best2__itemInfo
         .best2__itemTitle Rinachimento
         .best2__itemDesc Пиджак 
@@ -213,6 +226,7 @@ body
           .topLine2__item
             i.icon-phone
             a(href="tel:+78452759933") +7 (8452) 75 99 33
+    +orangeHeader
     .header2__area.p1280
       .header2__searchArea
         .header2__searchOuter
@@ -258,50 +272,61 @@ body
                 .miniCart2__area
                   i.icon-bag
                   .miniCart2__counter 25
-  .site__center 
+  .site__center.site__center_fdc
     .dubleSliders__area.p1280
       .dubleSliders__outer
         .dubleSliders
           .dubleSliders__small
-            .swiper-container.s1-container
-              .swiper-wrapper.s1-wrapper
-                a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
-                  span.ss1_info Маникюр премиум класса
-                a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
-                  span.ss1_info Маникюр премиум класса
-                a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
-                  span.ss1_info Маникюр премиум класса
-                a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
-                  span.ss1_info Маникюр премиум класса
-                a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
-                  span.ss1_info Маникюр премиум класса
-              .ss1__pag
-                .ss1__buttons
-                  .ss1__left
-                    i.icon-leftss2
-                  .ss1__right
-                    i.icon-rightss2
-                .s1-pagination
+            .firstPromo__outer
+              a.firstPromo(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+
+                span 
+                  p Только сегодня!
+                  p Скидка на обувь
+                  p 20%
+                //- img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+              
+              
+              //- span.ss1_info Маникюр премиум класса
+            //- .swiper-container.s1-container
+            //-   .swiper-wrapper.s1-wrapper
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-     a.swiper-slide.ss1(href="#" style="background-image: url(assets/img/ss1/ss01.jpg)")
+            //-       img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+            //-       span.ss1_info Маникюр премиум класса
+            //-   .ss1__pag
+            //-     .ss1__buttons
+            //-       .ss1__left
+            //-         i.icon-leftss2
+            //-       .ss1__right
+            //-         i.icon-rightss2
+            //-     .s1-pagination
           .dubleSliders__big
             .swiper-container.s2-container
               .swiper-wrapper.s2-wrapper
-                a.swiper-slide.ss2(href="#" style="background-image: url(assets/img/ss1/ss02.png)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+                a.swiper-slide.ss2(href="#")
+                  img.ss2_cover(src="assets/img/ss1/ss02.png", alt="")
                   span.ss2_info Мужская классика
-                a.swiper-slide.ss2(href="#" style="background-image: url(assets/img/ss1/babor.jpg)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+                a.swiper-slide.ss2(href="#")
+                  img.ss2_cover(src="assets/img/ss1/ss02.png", alt="")
                   span.ss2_info Профессиональный уход за кожей
-                a.swiper-slide.ss2(href="#" style="background-image: url(assets/img/ss1/ss02.png)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
-                  span.ss2_info Мужская классика
-                a.swiper-slide.ss2(href="#" style="background-image: url(assets/img/ss1/babor.jpg)")
-                  img.ss1_cover(src="assets/img/ss1cover.png", alt="")
-                  span.ss2_info Профессиональный уход за кожей
+                //- a.swiper-slide.ss2(href="#" style="background-image: url(assets/img/ss1/ss02.png)")
+                //-   img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+                //-   span.ss2_info Мужская классика
+                //- a.swiper-slide.ss2(href="#" style="background-image: url(assets/img/ss1/babor.jpg)")
+                //-   img.ss1_cover(src="assets/img/ss1cover.png", alt="")
+                //-   span.ss2_info Профессиональный уход за кожей
               //- .ss2__pag
               //-   .ss2__buttons
               .ss2__left

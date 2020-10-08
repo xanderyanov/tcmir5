@@ -20,6 +20,11 @@ body {
   position: relative;
 }
 
+.site__center_fdc {
+  display: flex;
+  flex-direction: column;
+}
+
 .site__footer {
   position: relative;
   margin-top: auto;

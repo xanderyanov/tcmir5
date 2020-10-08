@@ -1,6 +1,42 @@
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1320px) {
+  .linkBox2 {
+    padding: 20px 0 30px;
+    margin: 0;
+  }
+  .linkBox2__itemOuter {
+    margin: 0;
+    padding: 5px;
+  }
+  .linkBox2__item {
+    width: 100%;
+  }
+  .linkBox2__group {
+    width: 25%;
+  }
+  .linkBox2__item img {
+    width: 305px;
+    height: 305px;
+    object-fit: cover;
+  }
+  .linkBox2__group_col {
+    flex-direction: row;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
   .p1280 {
     padding: 0 10px;
+  }
+  .best2slider {
+    padding: 10px 2rem 20px;
+  }
+  .best2__left {
+    left: 0;
+  }
+
+  .best2__right {
+    right: 0;
   }
 }
 
@@ -8,6 +44,25 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .best2__itemInfo {
+    align-items: center;
+  }
+  .best2__itemPriceArea {
+    justify-content: center;
+  }
+  .topLine2__area {
+    display: none;
+  }
+  .header2__area {
+    display: none;
+  }
+  .dubleSliders__area {
+    margin-top: 1rem;
+  }
+
+  .firstPromo span p {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -20,15 +75,78 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .dubleSliders__small {
+    width: 100%;
+    padding: 0;
+    order: 1;
+  }
+
+  .dubleSliders__big {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    order: 0;
+  }
+  .firstPromo {
+    padding: 10px;
+  }
+  .firstPromo span {
+    display: flex;
+    flex-direction: row;
+  }
+  .firstPromo span p {
+    margin: 0 5px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .best2slider {
+    padding: 10px 1rem 1rem;
+  }
+  .best2__left,
+  .best2__right {
+    width: 3rem;
+    height: 3rem;
+    margin-top: -1.5rem;
+  }
+  .firstPromo span p {
+    font-size: 1rem;
+  }
+  .ss2_info {
+    height: 4rem;
+    font-size: 1rem;
+  }
+  .ss2__left,
+  .ss2__right {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .dubleSliders__big {
+    margin-bottom: 1rem;
+  }
+
+  .firstPromo {
+    padding: 5px;
+  }
+  .firstPromo span {
+    padding: 5px;
+  }
+  .firstPromo span p {
+    font-size: 0.875rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
+  .best2slider {
+    padding: 10px 0 1rem;
+  }
+  .best2__left,
+  .best2__right {
+    top: 30%;
+  }
 }
 
 @media only screen and (max-width: 320px) {

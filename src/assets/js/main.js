@@ -16,39 +16,26 @@ $(function () {
   });
 
   //index2_sliders
-  var swiper = new Swiper(".s1-container", {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 0,
-    speed: 600,
-    autoplay: {
-      delay: 7000,
-      disableOnInteraction: true,
-    },
-    navigation: {
-      nextEl: ".ss1__right",
-      prevEl: ".ss1__left",
-    },
-    pagination: {
-      el: ".s1-pagination",
-      clickable: true,
-    },
-    // mousewheel: true,
-    keyboard: true,
-
-    // containerModifierClass: "s1-container-",
-    // slideClass: "ss1",
-    // slideActiveClass: "ss1-active",
-    // slideDuplicateActiveClass: "ss1-duplicate-active",
-    // slideVisibleClass: "ss1-visible",
-    // slideDuplicateClass: "ss1-duplicate",
-    // slideNextClass: "ss1-next",
-    // slideDuplicateNextClass: "ss1-duplicate-next",
-    // slidePrevClass: "ss1-prev",
-    // slideDuplicatePrevClass: "ss1-duplicate-prev",
-    // slideBlankClass: "ss1-invisible-blank",
-    // wrapperClass: "s1-wrapper",
-  });
+  // Маленький слайдер убрали - заменили на статичный баннер
+  // var swiper = new Swiper(".s1-container", {
+  //   slidesPerView: 1,
+  //   loop: true,
+  //   spaceBetween: 0,
+  //   speed: 600,
+  //   autoplay: {
+  //     delay: 7000,
+  //     disableOnInteraction: true,
+  //   },
+  //   navigation: {
+  //     nextEl: ".ss1__right",
+  //     prevEl: ".ss1__left",
+  //   },
+  //   pagination: {
+  //     el: ".s1-pagination",
+  //     clickable: true,
+  //   },
+  //   keyboard: true,
+  // });
 
   var swiper = new Swiper(".s2-container", {
     slidesPerView: 1,
@@ -69,6 +56,19 @@ $(function () {
     },
     // mousewheel: true,
     keyboard: true,
+
+    // containerModifierClass: "s1-container-",
+    // slideClass: "ss1",
+    // slideActiveClass: "ss1-active",
+    // slideDuplicateActiveClass: "ss1-duplicate-active",
+    // slideVisibleClass: "ss1-visible",
+    // slideDuplicateClass: "ss1-duplicate",
+    // slideNextClass: "ss1-next",
+    // slideDuplicateNextClass: "ss1-duplicate-next",
+    // slidePrevClass: "ss1-prev",
+    // slideDuplicatePrevClass: "ss1-duplicate-prev",
+    // slideBlankClass: "ss1-invisible-blank",
+    // wrapperClass: "s1-wrapper",
   });
 
   var swiper = new Swiper(".best2-container", {
@@ -84,8 +84,27 @@ $(function () {
       nextEl: ".best2__right",
       prevEl: ".best2__left",
     },
-    // mousewheel: true,
     keyboard: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      400: {
+        slidesPerView: 2,
+      },
+      600: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1080: {
+        slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
+      },
+    },
   });
 
   var swiper = new Swiper(".best3-container", {
@@ -433,7 +452,7 @@ $(function () {
 
   var orangeHeaderAreaHeight = $(".orangeHeader__area").outerHeight();
   var bottomMenuHeight = $(".m2_bottomMenu__area").outerHeight();
-  $(".menuButton1__areaJS").click(function (e) {
+  $(".menuButton1__areaJS").on("click", function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
