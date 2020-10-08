@@ -1,4 +1,12 @@
 $(function () {
+  var x = $(".linkBox3__itemWrapper_1").outerWidth();
+  var big = x * 2;
+  var small = x;
+  $(".linkBox3__itemWrapper_1").css({ height: small });
+  $(".linkBox3__itemWrapper_2").css({ height: big });
+  $(".linkBox3__itemWrapper_3").css({ height: small });
+  $(".linkBox3__itemWrapper_4").css({ height: small });
+
   $(".header2__search_jsEvent").on("click", function (e) {
     e.preventDefault;
     if ($(this).hasClass("active")) {
