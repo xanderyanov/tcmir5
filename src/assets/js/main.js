@@ -1,11 +1,34 @@
 $(function () {
-  // var x = $(".linkBox3__itemWrapper_1").outerWidth();
-  // var big = x * 2;
-  // var small = x;
-  // $(".linkBox3__itemWrapper_1").css({ height: small });
-  // $(".linkBox3__itemWrapper_2").css({ height: big });
-  // $(".linkBox3__itemWrapper_3").css({ height: small });
-  // $(".linkBox3__itemWrapper_4").css({ height: small });
+  $(".tabSizeOpen").on("click", function (e) {
+    e.preventDefault;
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $("body").removeClass("stop");
+      $(".tabSize__overlay").hide();
+      $(".tabSize__window").hide();
+    } else {
+      $(this).addClass("active");
+      $("body").addClass("stop");
+      $(".tabSize__overlay").show();
+      $(".tabSize__window").show();
+    }
+  });
+  $(".tabSize__overlay").on("click", function (e) {
+    e.preventDefault;
+    $(".tabSizeOpen").removeClass("active");
+    $("body").removeClass("stop");
+    $(".tabSize__overlay").hide();
+    $(".tabSize__window").hide();
+  });
+  $(".tabSize__windowClose").on("click", function (e) {
+    e.preventDefault;
+    $(".tabSizeOpen").removeClass("active");
+    $("body").removeClass("stop");
+    $(".tabSize__overlay").hide();
+    $(".tabSize__window").hide();
+  });
+
+  ////////
 
   $(".header2__search_jsEvent").on("click", function (e) {
     e.preventDefault;
@@ -130,6 +153,42 @@ $(function () {
     },
     // mousewheel: true,
     keyboard: true,
+  });
+
+  var swiper = new Swiper(".bottomWide-container", {
+    slidesPerView: 6,
+    loop: true,
+    spaceBetween: 0,
+    speed: 600,
+    autoplay: {
+      delay: 177000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".bottomWide__right",
+      prevEl: ".bottomWide__left",
+    },
+    keyboard: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      400: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      1280: {
+        slidesPerView: 5,
+      },
+      1600: {
+        slidesPerView: 6,
+      },
+    },
   });
 
   //табы

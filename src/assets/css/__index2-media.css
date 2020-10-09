@@ -63,9 +63,33 @@
   .firstPromo span p {
     font-size: 1.5rem;
   }
+
+  .footer2__area {
+    display: none;
+  }
+  .bottomWide__item a:after {
+    opacity: 1;
+    width: 5rem;
+    height: 5rem;
+    margin-top: -2.5rem;
+    margin-left: -2.5rem;
+  }
+  .about2__outer {
+    padding: 1rem 0 2rem;
+  }
+  .linkBox3 {
+    padding: 20px 0 30px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
+  .about2__left {
+    width: 60%;
+  }
+
+  .about2__right {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -101,6 +125,37 @@
     height: 3rem;
     font-size: 1rem;
   }
+
+  .about2__left {
+    width: 70%;
+  }
+
+  .about2__right {
+    width: 30%;
+  }
+
+  .about2__content h2 {
+    display: none;
+  }
+
+  .about2__content .content * {
+    display: none;
+  }
+  .about2__content .content p:first-child {
+    display: block;
+  }
+  .about2__img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .about2__img:before {
+    bottom: -10px;
+    left: -10px;
+  }
+  .about2__content {
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -112,6 +167,15 @@
     width: 3rem;
     height: 3rem;
     margin-top: -1.5rem;
+  }
+  .bottomWide__left,
+  .bottomWide__right {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+  }
+  .bottomWide__item a span {
+    font-size: 1rem;
   }
   .firstPromo span p {
     font-size: 1rem;
@@ -173,9 +237,24 @@
     left: 5px;
     background-position: center top;
   }
+  .linkBox3__item_1 {
+    background-position: center center;
+  }
   .linkBox3__item span {
     height: 2rem;
     font-size: 0.75rem;
+  }
+
+  .about2__left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about2__right {
+    width: 100%;
+  }
+  .about2__content {
+    padding: 0;
   }
 }
 

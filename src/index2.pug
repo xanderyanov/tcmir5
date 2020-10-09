@@ -5,6 +5,10 @@ include __header
 
 include __footer
 
+include __m2_catalog
+include __brand
+include __adaptiveMenuArs
+
 
 
 mixin best2
@@ -450,7 +454,7 @@ body
     //-       .best3__right
     //-         i.icon-arr-right1
 
-    .about2__area
+    .about2__area.p1280
       .about2__outer
         .about2
           .about2__left
@@ -471,37 +475,41 @@ body
     .bottomWide__area
       .bottomWide__outer
         .bottomWide
-          .bottomWide__item
-            a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4')
-              img(src='assets/img/index2/poster1.jpg', alt='')
-              span Rinascimento (комбинезон)
-          .bottomWide__item
-            a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (красное платье).mp4')
-              img(src='assets/img/index2/poster2.jpg', alt='')
-              span Rinascimento (красное платье)
-          .bottomWide__item
-            a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4')
-              img(src='assets/img/index2/poster3.jpg', alt='')
-              span Rinascimento (Образы, Катя, студия)
-          .bottomWide__item
-            a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Дикенс (платье, кепка, сумка, Дикенс).mp4')
-              img(src='assets/img/index2/poster4.jpg', alt='')
-              span Дикенс (платье, кепка, сумка)
-          .bottomWide__item
-            a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4')
-              img(src='assets/img/index2/poster3.jpg', alt='')
-              span Rinascimento (Образы, Катя, студия)
-          .bottomWide__item
-            a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Дикенс (платье, кепка, сумка, Дикенс).mp4')
-              img(src='assets/img/index2/poster4.jpg', alt='')
-              span Дикенс (платье, кепка, сумка)
-
-
+          .bottomWide-container.swiper-container
+            .bottomWide-wrapper.swiper-wrapper
+              .bottomWide__item.swiper-slide
+                a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (комбинезон).mp4')
+                  img(src='assets/img/index2/poster1.jpg', alt='')
+                  span Rinascimento (комбинезон)
+              .bottomWide__item.swiper-slide
+                a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (красное платье).mp4')
+                  img(src='assets/img/index2/poster2.jpg', alt='')
+                  span Rinascimento (красное платье)
+              .bottomWide__item.swiper-slide
+                a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4', data-caption='<a href="https://tcmir.ru">Ссылка на нужную страницу</a>')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Дикенс (платье, кепка, сумка, Дикенс).mp4')
+                  img(src='assets/img/index2/poster4.jpg', alt='')
+                  span Дикенс (платье, кепка, сумка)
+              .bottomWide__item.swiper-slide
+                a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Rinascimento (образы, Катя, студия).mp4')
+                  img(src='assets/img/index2/poster3.jpg', alt='')
+                  span Rinascimento (Образы, Катя, студия)
+              .bottomWide__item.swiper-slide
+                a(data-fancybox='', href='file:///S:/Shared with me/promo/video roman/Rinasciemento/done/Дикенс (платье, кепка, сумка, Дикенс).mp4')
+                  img(src='assets/img/index2/poster4.jpg', alt='')
+                  span Дикенс (платье, кепка, сумка)
+          .bottomWide__left
+            i.icon-arr-left1
+          .bottomWide__right
+            i.icon-arr-right1
 
  
   .site__footer
     .footer2__area
-      .footer2__outer
+      .footer2__outer.p1280
         footer.footer2
           .footer2__left
             a.footer2__logo(href="#")
@@ -538,7 +546,10 @@ body
             .footer2__links
               a.footer2__link(href="#" target="_blank") Пользовательское Соглашение
               a.footer2__link(href="#" target="_blank") Политика Конфиденциальности
-
+    +m2_bottomMenu
+    //- +aBrands
+    +aBrandsTabs
+    +adaptiveMenuArs
     //- +footer  
 
   +scripts
