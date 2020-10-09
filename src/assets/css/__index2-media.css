@@ -97,6 +97,10 @@
   .firstPromo span p {
     margin: 0 5px;
   }
+  .linkBox3__item span {
+    height: 3rem;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -121,6 +125,25 @@
     height: 4rem;
     width: 4rem;
   }
+
+  .linkBox3__itemWrapper_1 {
+    width: 50%;
+  }
+  .linkBox3__itemWrapper_2 {
+    width: 50%;
+  }
+  .linkBox3__itemWrapper_3 {
+    width: 50%;
+  }
+  .linkBox3__itemWrapper_4 {
+    width: 50%;
+  }
+  .linkBox3__itemWrapper_1:after {
+    padding-top: 100%;
+  }
+  .linkBox3 {
+    padding: 20px 0 20px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -136,6 +159,23 @@
   }
   .firstPromo span p {
     font-size: 0.875rem;
+  }
+  .linkBox3 {
+    padding: 20px 5px 20px;
+  }
+  .linkBox3__itemWrapper:after {
+    padding-top: 60%;
+  }
+  .linkBox3__item {
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background-position: center top;
+  }
+  .linkBox3__item span {
+    height: 2rem;
+    font-size: 0.75rem;
   }
 }
 
