@@ -297,8 +297,8 @@ $(function () {
 
   // end brandDesktop
 
-  //brandMobile
-  $(".aBrandOpenBtn").on("click", function (e) {
+  //allBrandMobile
+  $(".aBrandOpenBtn, .openBrands_dt").on("click", function (e) {
     e.preventDefault;
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
@@ -314,14 +314,14 @@ $(function () {
   });
   $(".aBrands__overlay").on("click", function (e) {
     e.preventDefault;
-    $(".aBrandOpenBtn").removeClass("active");
+    $(".aBrandOpenBtn, .openBrands_dt").removeClass("active");
     $("body").removeClass("stop");
     $(".aBrands__overlay").hide();
     $(".aBrands__area").hide();
   });
   $(".aBrands__close").on("click", function (e) {
     e.preventDefault;
-    $(".aBrandOpenBtn").removeClass("active");
+    $(".aBrandOpenBtn, .openBrands_dt").removeClass("active");
     $("body").removeClass("stop");
     $(".aBrands__overlay").hide();
     $(".aBrands__area").hide();

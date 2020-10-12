@@ -48,11 +48,21 @@
   .aBrands__itemOuter {
     width: 25%;
   }
+  .aBrands__azItemOuter {
+    width: 25%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .aBrands__azItemOuter {
-    width: 25%;
+    width: 33.333%;
+  }
+  .aBrands__azLetterBoxTitle {
+    width: 8%;
+  }
+
+  .aBrands__azLetterBoxContent {
+    width: 92%;
   }
 }
 

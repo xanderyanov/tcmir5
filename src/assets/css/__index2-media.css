@@ -22,6 +22,9 @@
     flex-direction: row;
     width: 50%;
   }
+  .collage__wrapper {
+    padding: 0 10px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -207,6 +210,18 @@
   }
   .linkBox3 {
     padding: 20px 0 20px;
+  }
+  .collage {
+    width: 33.333%;
+  }
+  .collage__4 {
+    width: 100%;
+  }
+  .collage__itemOuter_4_1 {
+    width: 50%;
+  }
+  .collage__itemOuter_4_2 {
+    width: 50%;
   }
 }
 
