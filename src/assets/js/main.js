@@ -87,20 +87,20 @@ $(function () {
     },
     // mousewheel: true,
     keyboard: true,
-
-    // containerModifierClass: "s1-container-",
-    // slideClass: "ss1",
-    // slideActiveClass: "ss1-active",
-    // slideDuplicateActiveClass: "ss1-duplicate-active",
-    // slideVisibleClass: "ss1-visible",
-    // slideDuplicateClass: "ss1-duplicate",
-    // slideNextClass: "ss1-next",
-    // slideDuplicateNextClass: "ss1-duplicate-next",
-    // slidePrevClass: "ss1-prev",
-    // slideDuplicatePrevClass: "ss1-duplicate-prev",
-    // slideBlankClass: "ss1-invisible-blank",
-    // wrapperClass: "s1-wrapper",
   });
+  // setTimeout(function () {
+  //   if (!$(".s2-container").length) return;
+  //   var $window = $(window);
+  //   $.ajax("/ru/GetSwipers2?w=" + $window.width() + "&h=" + $window.height(), {
+  //     method: "GET",
+  //     success: function (data) {
+  //       $(".s2-container").html(data.html);
+  //       // setTimeout(function () {
+  //       //   StartSwipers(data.haveThumbs);
+  //       // }, 500);
+  //     },
+  //   });
+  // }, 10);
 
   var swiper = new Swiper(".best2-container", {
     slidesPerView: 6,
@@ -116,6 +116,18 @@ $(function () {
       prevEl: ".best2__left",
     },
     keyboard: true,
+    // containerModifierClass: "s1-container-",
+    // slideClass: "ss1",
+    // slideActiveClass: "ss1-active",
+    // slideDuplicateActiveClass: "ss1-duplicate-active",
+    // slideVisibleClass: "ss1-visible",
+    // slideDuplicateClass: "ss1-duplicate",
+    // slideNextClass: "ss1-next",
+    // slideDuplicateNextClass: "ss1-duplicate-next",
+    // slidePrevClass: "ss1-prev",
+    // slideDuplicatePrevClass: "ss1-duplicate-prev",
+    // slideBlankClass: "ss1-invisible-blank",
+    // wrapperClass: "s1-wrapper",
     breakpoints: {
       0: {
         slidesPerView: 2,
