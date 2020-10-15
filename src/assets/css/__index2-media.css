@@ -83,6 +83,9 @@
   .linkBox3 {
     padding: 20px 0 30px;
   }
+  .firstPromo span {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -117,9 +120,14 @@
   .firstPromo {
     padding: 10px;
   }
+  .firstPromo {
+    padding: 20px;
+  }
   .firstPromo span {
-    display: flex;
-    flex-direction: row;
+    font-size: 1.25rem;
+  }
+  .firstPromo span br {
+    display: none;
   }
   .firstPromo span p {
     margin: 0 5px;
@@ -231,13 +239,16 @@
   }
 
   .firstPromo {
-    padding: 5px;
+    padding: 15px;
   }
-  .firstPromo span {
-    padding: 5px;
-  }
-  .firstPromo span p {
+  .ss2_info {
     font-size: 0.875rem;
+  }
+  /* .firstPromo span {
+    padding: 5px;
+  } */
+  .firstPromo span {
+    font-size: 1rem;
   }
   .linkBox3 {
     padding: 20px 5px 20px;

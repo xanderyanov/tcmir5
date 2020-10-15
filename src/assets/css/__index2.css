@@ -1538,9 +1538,9 @@
 
 .about3__outer {
   width: 100%;
-  margin: 0 auto;
+  margin: 2.5rem auto;
   max-width: 1280px;
-  padding: 2.5rem 0;
+  /* padding: 2.5rem 0; */
 }
 
 .about3 {
