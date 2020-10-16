@@ -590,7 +590,7 @@
 .firstPromo span {
   display: block;
   padding: 10px;
-  background: var(--orange);
+  /* background: var(--orange); */
   padding: 1rem;
   font-size: 2rem;
   line-height: 1.3;
@@ -711,7 +711,7 @@
   display: block;
   content: "";
   width: 100%;
-  padding-top: 60%;
+  padding-top: 50%;
 }
 
 .ss2 a {
@@ -1784,6 +1784,13 @@
   z-index: 10;
   opacity: 0;
   transition: all 0.5s;
+}
+
+a.videoLink_dt {
+  display: flex;
+}
+a.videoLink_mb {
+  display: none;
 }
 
 .bottomWide__item a:hover:after {

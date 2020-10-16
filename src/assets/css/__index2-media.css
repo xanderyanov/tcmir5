@@ -86,6 +86,28 @@
   .firstPromo span {
     font-size: 1.5rem;
   }
+  .ss2_info {
+    height: 4rem;
+  }
+  .ss2__left,
+  .ss2__right {
+    height: 4rem;
+    width: 4rem;
+  }
+  a.videoLink_dt {
+    display: none;
+  }
+  a.videoLink_mb {
+    display: flex;
+  }
+  .fancybox-iframe,
+  .fancybox-video {
+    height: auto !important;
+  }
+  .fancybox-slide {
+    height: auto !important;
+    overflow: initial !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -99,6 +121,15 @@
 }
 
 @media only screen and (max-width: 920px) {
+  .ss2_info {
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+  .ss2__left,
+  .ss2__right {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -192,13 +223,13 @@
     font-size: 1rem;
   }
   .ss2_info {
-    height: 4rem;
-    font-size: 1rem;
+    height: 3rem;
+    font-size: 0.875rem;
   }
   .ss2__left,
   .ss2__right {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
   }
 
   .linkBox3__itemWrapper_1 {
@@ -281,6 +312,9 @@
   }
   .about2__content {
     padding: 0;
+  }
+  .ss2_info {
+    font-size: 0.75rem;
   }
 }
 
