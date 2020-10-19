@@ -43,7 +43,10 @@
   }
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1200px) {
+  .menu20 li a {
+    font-size: 0.875rem;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -123,7 +126,7 @@
 @media only screen and (max-width: 920px) {
   .ss2_info {
     height: 3.5rem;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   .ss2__left,
   .ss2__right {
@@ -155,7 +158,7 @@
     padding: 20px;
   }
   .firstPromo span {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
   .firstPromo span br {
     display: none;
@@ -198,6 +201,13 @@
   .about2__content {
     padding-left: 20px;
   }
+
+  .firstPromo_dt {
+    display: none;
+  }
+  .firstPromo_mb {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -224,7 +234,6 @@
   }
   .ss2_info {
     height: 3rem;
-    font-size: 0.875rem;
   }
   .ss2__left,
   .ss2__right {
@@ -270,16 +279,16 @@
   }
 
   .firstPromo {
-    padding: 15px;
+    padding: 5px;
   }
   .ss2_info {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
   /* .firstPromo span {
     padding: 5px;
   } */
   .firstPromo span {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .linkBox3 {
     padding: 20px 5px 20px;
@@ -299,7 +308,6 @@
   }
   .linkBox3__item span {
     height: 2rem;
-    font-size: 0.75rem;
   }
 
   .about2__left {
@@ -312,9 +320,6 @@
   }
   .about2__content {
     padding: 0;
-  }
-  .ss2_info {
-    font-size: 0.75rem;
   }
 }
 

@@ -323,9 +323,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+  /* border-radius: 50%; */
+  width: 3rem;
+  height: 3rem;
   /* background: #be3f46; */
   background: var(--orange);
   border: 1px solid #fff;

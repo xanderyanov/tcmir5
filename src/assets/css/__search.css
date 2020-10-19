@@ -60,8 +60,8 @@
 
 .searchWhite__area {
   width: 100%;
-  padding: 5px 0 10px;
-  background: var(--orange);
+  padding: 10px 0;
+  background: var(--header);
   z-index: 480;
   border-bottom-right-radius: 13px;
   border-bottom-left-radius: 13px;
@@ -119,5 +119,5 @@
 
 .searchWhite__btn i {
   font-size: 1rem;
-  color: var(--orange);
+  color: var(--header);
 }
