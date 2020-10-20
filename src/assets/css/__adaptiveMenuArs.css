@@ -9,7 +9,7 @@
   text-decoration: none;
   position: relative;
   display: none;
-  margin-left: auto;
+  /* margin-left: auto; */
   border: 2px solid #fff;
 }
 

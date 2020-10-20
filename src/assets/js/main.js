@@ -1,4 +1,39 @@
 $(function () {
+  var swiper = new Swiper(".brands2slider-container", {
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 20,
+    speed: 600,
+    autoplay: {
+      delay: 177000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".brands2slider__right",
+      prevEl: ".brands2slider__left",
+    },
+    keyboard: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      600: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+
+
+
+
+
+
+
+
   $(".tabSizeOpen").on("click", function (e) {
     e.preventDefault;
     if ($(this).hasClass("active")) {

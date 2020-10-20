@@ -1,0 +1,123 @@
+.brands2promo__area {
+  position: relative;
+}
+
+.brands2promo__outer {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 0 0;
+}
+
+.brands2promo {
+  display: flex;
+}
+
+.brands2promo__left {
+  width: 50%;
+  position: relative;
+}
+
+.brands2promo__right {
+  width: 50%;
+}
+
+/* brands2promo slider */
+
+.brands2slider-slide a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #f2f2f2;
+}
+.brands2slider-slide a:after {
+  content: "";
+  position: absolute;
+  width: 4.5rem;
+  height: 4.5rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.25em;
+  margin-left: -2.25rem;
+  background-image: url(../img/index2/play2.svg);
+  background-size: cover;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+a.videoLink_dt {
+  display: flex;
+}
+a.videoLink_mb {
+  display: none;
+}
+
+.brands2slider-slide a:hover:after {
+  opacity: 1;
+}
+
+.brands2slider-slide a img {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  position: relative;
+  transition: all 0.5s;
+}
+.brands2slider-slide a:hover img {
+  transform: scale(1.05);
+}
+
+.brands2slider__left,
+.brands2slider__right {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -1.25rem;
+  background: #fff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.brands2slider__left:hover,
+.brands2slider__right:hover {
+  background: var(--orange);
+}
+
+.brands2slider__left:focus,
+.brands2slider__right:focus {
+  border: none;
+  outline: none;
+}
+
+.brands2slider__left {
+  left: -1.25rem;
+}
+
+.brands2slider__right {
+  right: -1.25rem;
+}
+
+.brands2slider__left i,
+.brands2slider__right i {
+  font-size: 1.5rem;
+  color: var(--text2);
+  transition: all 0.3s;
+}
+
+.brands2slider__left:hover i,
+.brands2slider__right:hover i {
+  color: #fff;
+}

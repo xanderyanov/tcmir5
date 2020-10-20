@@ -509,7 +509,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 10px 0;
+  /* padding: 5px 10px 0; */
+  padding: 5px 10px 10px;
   background: var(--header);
   z-index: 50;
   position: relative;
