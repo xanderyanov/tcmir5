@@ -3,7 +3,8 @@
   width: 100%;
   height: 100vh;
   z-index: 49;
-  background: var(--orange);
+  /* background: var(--orange); */
+  background: var(--x1greyLight);
   padding: 20px 10px;
   display: none;
 }

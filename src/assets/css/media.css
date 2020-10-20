@@ -23,7 +23,7 @@
   :root {
     --orange: #ff6600;
     /* --header: #404040; */
-    --header: #ff6600;
+    --header: rgba(255, 255, 255, 1);
   }
 }
 

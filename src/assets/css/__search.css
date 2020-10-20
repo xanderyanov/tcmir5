@@ -63,9 +63,11 @@
   padding: 10px 0;
   background: var(--header);
   z-index: 480;
-  border-bottom-right-radius: 13px;
-  border-bottom-left-radius: 13px;
+  /* border-bottom-right-radius: 13px; */
+  /* border-bottom-left-radius: 13px; */
   position: relative;
+  /* border-bottom: 1px solid #d7d7d7; */
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .searchWhite__outer {
@@ -119,5 +121,5 @@
 
 .searchWhite__btn i {
   font-size: 1rem;
-  color: var(--header);
+  color: var(--color2);
 }

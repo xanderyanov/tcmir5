@@ -29,7 +29,8 @@
   --text2: #404040;
   --text2light: #8d8d8d;
   /* --header: #404040; */
-  --header: rgba(255, 51, 0, 1);
+  /* --header: rgba(255, 51, 0, 1); */
+  --header: rgba(255, 255, 255, 1);
 }
 
 .w0 {
