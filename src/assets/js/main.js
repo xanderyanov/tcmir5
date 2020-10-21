@@ -1,4 +1,26 @@
 $(function () {
+
+  
+
+  function openIntroInBrand2 (){
+    $('.brands2openIntro').on('click', function(){
+      if($(this).hasClass("open")){
+        $(this).removeClass("open");
+        $(this).children('.content__redmore_open').show();
+        $(this).children('.content__redmore_close').hide();
+        $(this).closest('.brands2promo__right').find('.content_hide').slideUp(300);
+      }else{
+        $(this).addClass("open");
+        $(this).children('.content__redmore_open').hide();
+        $(this).children('.content__redmore_close').show();
+        $(this).closest('.brands2promo__right').find('.content_hide').slideDown(300);
+      }
+      
+    })
+  }
+  openIntroInBrand2 ();
+
+
   var swiper = new Swiper(".brands2slider-container", {
     slidesPerView: 3,
     loop: true,
