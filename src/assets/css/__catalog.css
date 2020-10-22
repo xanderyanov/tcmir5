@@ -1,5 +1,6 @@
 .catalogPage__outer {
   position: relative;
+  padding-top: 10px;
 }
 
 .catalogPage {
