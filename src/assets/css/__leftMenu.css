@@ -60,16 +60,20 @@
   position: absolute;
   right: 0.3125rem;
   top: 50%;
-  margin-top: -0.75em;
+  margin-top: -0.75rem;
 }
 .catalogMenu li.active > div > .collap {
   color: #fff;
 }
 
+.catalogMenu li div .collap > i {
+  font-size: 1rem !important;
+}
+
 .catalogMenu li a {
   text-decoration: none;
   display: inline-block;
-  padding: 2px 15px 2px 30px;
+  padding: 2px 25px 2px 30px;
   border-radius: 0.3125rem;
   position: relative;
   width: 100%;
