@@ -581,11 +581,11 @@ $(function () {
 
 
 
-  //верхний отступ левого меню в зависимости от высоты полоски фильтров - скрыл 22-10-2020
-  // if ($(".catalogFilter1__area").length) {
-  //   var catalogFilter1Height = $(".catalogFilter1__area").outerHeight();
-  //   $(".catalogMenu__outer").css({ marginTop: catalogFilter1Height });
-  // }
+  //верхний отступ левого меню в зависимости от высоты полоски фильтров
+  if ($(".catalogFilter1__area").length) {
+    var catalogFilter1Height = $(".catalogFilter1__area").outerHeight();
+    $(".catalogMenu__outer").css({ marginTop: catalogFilter1Height + 10 });
+  }
 
   ////////////////////////////////////
 

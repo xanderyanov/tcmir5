@@ -1,8 +1,8 @@
 .filterBox {
   display: flex;
   flex-direction: column;
-  padding: 10px 0 0;
-  /* background: var(--colorLightGrey); */
+  padding: 10px;
+  background: var(--colorLightGrey);
   height: 100%;
 }
 
@@ -13,22 +13,6 @@
 .filterBox__content_scroll {
   max-height: calc(60vh - 150px);
   overflow-y: scroll;
-}
-
-.filterBox__content_scroll::-webkit-scrollbar-track {
-  border-radius: 8px;
-  background-color: var(--colorLightGrey);
-}
-
-.filterBox__content_scroll::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: var(--colorLightGrey);
-}
-
-.filterBox__content_scroll::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background-color: var(--orange);
 }
 
 /* .filterBox__content::-webkit-scrollbar {
@@ -51,7 +35,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.3125rem;
-  min-height: 36px;
 }
 
 .xcheckbox input[type="checkbox"] {
@@ -62,43 +45,38 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 0 0 32px;
+  /* font-size: 0.75rem; */
+  font-size: 1rem;
+  line-height: 1rem;
+  /* padding: 0 0 5px 20px; */
+  padding: 0 0 10px 20px;
   cursor: pointer;
-
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25rem;
-  letter-spacing: 0.04em;
 }
 
 .xcheckbox label::before {
   position: absolute;
-  top: 50%;
-  margin-top: -12px;
+  top: 1px;
   left: 0;
   content: "";
   display: block;
-  height: 24px;
-  width: 24px;
-  border: 1px solid #cecece;
-  box-sizing: border-box;
-  border-radius: 4px;
+  height: 12px;
+  width: 12px;
+  border: 1px solid var(--tColor);
+  border-radius: 2px;
   /* box-shadow: inset 0px 0px 3px 0px #f76060; */
 }
 
 .xcheckbox label::after {
   content: "";
   display: block;
-  height: 8px;
-  width: 12px;
+  height: 4px;
+  width: 6px;
   border-left: 2px solid;
   border-bottom: 2px solid;
   transform: rotate(-45deg);
   position: absolute;
-  left: 6px;
-  top: 50%;
-  margin-top: -7px;
+  left: 3px;
+  top: 4px;
   color: #ff4141;
 }
 
@@ -108,10 +86,6 @@
 /*ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ð³Ð°Ð»ÐºÑƒ Ð¿Ð¾ ÑÐ¾ÑÑ‚Ð¾ÑÐ½Ð¸ÑŽ checked*/
 .xcheckbox input[type="checkbox"]:checked + label::after {
   content: "";
-}
-
-.xcheckbox input[type="checkbox"]:checked + label::before {
-  border: 1px solid #404040;
 }
 
 .xcheckbox input[type="checkbox"]:checked + label {
