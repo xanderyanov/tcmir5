@@ -446,7 +446,7 @@ a.m2_catMenuItem {
 .m2_innerCategory {
   display: flex;
   align-items: center;
-  margin: 0 -5px;
+  /* margin: 0 -5px; */
   /* flex-wrap: wrap; */
 }
 

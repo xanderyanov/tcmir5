@@ -20,29 +20,30 @@ mixin filtersArea
   .catalogFilter1__area
     .catalogFilter1__overlay
     .catalogFilter1
-      .catalogFilter1__item
-        .catalogFilter1__itemTitle.catalogFilter1__itemTitle_sort
-          span Сортировка
-        .catalogFilter1__itemContent.catalogFilter1__itemContent_sort
-          +filterSort
-      .catalogFilter1__item
-        .catalogFilter1__itemTitle
-          span Материал
-        .catalogFilter1__itemContent
-          +filterCheckbox_material
-      .catalogFilter1__item
-        .catalogFilter1__itemTitle
-          span Бренд
-        .catalogFilter1__itemContent
-          +filterCheckbox_brand
-      .catalogFilter1__item
-        .catalogFilter1__itemTitle
-          span Выбор цвета
-        .catalogFilter1__itemContent
-          +filterCheckbox_color
-      .catalogFilter1__item
-        .resetAllFiltersBtn
-          span Очистить фильтры
+      .catalogFilter1__inner
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle.catalogFilter1__itemTitle_sort
+            span Сортировка
+          .catalogFilter1__itemContent.catalogFilter1__itemContent_sort
+            +filterSort
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle
+            span Материал
+          .catalogFilter1__itemContent
+            +filterCheckbox_material
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle
+            span Бренд
+          .catalogFilter1__itemContent
+            +filterCheckbox_brand
+        .catalogFilter1__item
+          .catalogFilter1__itemTitle
+            span Выбор цвета
+          .catalogFilter1__itemContent
+            +filterCheckbox_color
+        .catalogFilter1__item
+          .resetAllFiltersBtn
+            span Очистить фильтры
       .brandBtnDT(title="Выбрать бренд") Бренды
 
 mixin filterSort
@@ -86,9 +87,11 @@ mixin filterCheckbox_material
       .xcheckbox
         input#checkbox_7(type='checkbox', value='7', data-val="filter")
         label(for='checkbox_7') Синтетическое волокно
-    .filter__checkboxReset Очистить выбор
-    .filterEnterBtn
-      span Применить
+    .filter__apply
+      .filter__checkboxReset 
+        span Очистить выбор
+      .filterEnterBtn
+        span Применить
 
 
 

@@ -50,6 +50,9 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  /* .menu21__area {
+    display: none;
+  } */
   .best2__itemInfo {
     align-items: center;
   }

@@ -8,12 +8,6 @@
   .catalogFilter1 {
     display: none;
   }
-  .resetAllFiltersBtn:after {
-    display: none;
-  }
-  .resetAllFiltersBtn:hover {
-    border: none;
-  }
   .adaptiveFilterOnBtn {
     display: block;
   }

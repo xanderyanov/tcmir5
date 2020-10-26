@@ -584,7 +584,7 @@ $(function () {
   //верхний отступ левого меню в зависимости от высоты полоски фильтров
   if ($(".catalogFilter1__area").length) {
     var catalogFilter1Height = $(".catalogFilter1__area").outerHeight();
-    $(".catalogMenu__outer").css({ marginTop: catalogFilter1Height + 10 });
+    $(".catalogMenu__outer").css({ marginTop: catalogFilter1Height });
   }
 
   ////////////////////////////////////
@@ -1507,7 +1507,7 @@ $(function () {
 
   // Adaptive filters js
   // Открытие фильтров
-  $(".filtersBtn_filtr").click(function (e) {
+  $(".filtersBtn_filtr").on("click",function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
@@ -1521,13 +1521,22 @@ $(function () {
       $("body").addClass("stop");
     }
   });
-  // Закрытие адаптивного меню по кнопке Close
-  $(".aFilters__close").click(function () {
+  // Закрытие фильтров по кнопке Close
+  $(".aFilters__close").on("click",function () {
     $(".filtersBtn_filtr").removeClass("open");
     $(".overlay1").hide();
     $(".aFilters__wrapper").fadeOut(200);
     $("body").removeClass("stop");
   });
+
+
+    // Закрытие фильтров по оверлею - не будет работать, так как aFilters__wrapper выше его. 
+    // $(".overlay1").on("click",function () {
+    //   $(".filtersBtn_filtr").removeClass("open");
+    //   $(".overlay1").hide();
+    //   $(".aFilters__wrapper").fadeOut(200);
+    //   $("body").removeClass("stop");
+    // });
 
   $(".aFilterBox__title").on("click", function () {
     if ($(this).hasClass("open")) {

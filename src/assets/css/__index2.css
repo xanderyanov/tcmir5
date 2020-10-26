@@ -376,10 +376,12 @@
   height: 0;
   background: var(--text2);
   transition: all 0.1s;
+  opacity: 0;
 }
 
 .menu20 li a:hover:after,
 .menu20 li.active a:after {
+  opacity: 1;
   bottom: -8px;
   height: 3px;
 }

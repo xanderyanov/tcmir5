@@ -118,6 +118,14 @@
   color: #ff4141;
 }
 
+.filter__apply {
+  display: flex;
+  padding: 10px;
+  background: #f8f8f8;
+  margin: 0 -10px -10px;
+  justify-content: space-between;
+}
+
 /*  */
 
 .xradio {
@@ -230,6 +238,25 @@
 
 .filterEnterBtn {
   position: relative;
+  cursor: pointer;
+  padding: 3px 6px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.filterEnterBtn:hover {
+  border: 2px solid var(--orange);
+}
+
+.filterEnterBtn span {
+  font-size: 0.875rem;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.filterEnterBtn:hover span {
+  color: var(--orange);
 }
 
 .filterEnterBtnStyle {
@@ -304,6 +331,27 @@
 
 .filter__checkboxReset {
   position: relative;
+  cursor: pointer;
+  padding: 3px 6px;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.filter__checkboxReset:hover {
+  border: 2px solid var(--orange);
+}
+
+.filter__checkboxReset span {
+  font-size: 0.875rem;
+  white-space: nowrap;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.filter__checkboxReset:hover span {
+  color: var(--orange);
 }
 
 .filter__checkboxResetBtn {
@@ -370,7 +418,7 @@
 }
 
 .catalogFilter1__itemTitle_sort {
-  background: var(--x1greySuperLight);
+  /* background: var(--x1greySuperLight); */
 }
 
 .active.catalogFilter1__itemTitle_sort {
@@ -378,16 +426,37 @@
 }
 
 .resetAllFiltersBtn {
-  padding: 0.3125rem 0.625rem;
-  border-radius: 5px;
+  padding: 0.3125rem 2rem 0.3125rem 0.625rem;
+  /* border-radius: 5px; */
   position: relative;
   cursor: pointer;
-  background: var(--colorLightGrey);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
 }
+
+.resetAllFiltersBtn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/i/close1.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .resetAllFiltersBtn:hover {
-  background: var(--x1greySuperLight);
+  /* background: var(--x1greySuperLight); */
+  border-bottom: 2px solid var(--lmDark);
 }
 
 .resetAllFiltersBtn span {
   font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.04em;
+  text-align: left;
 }
