@@ -1,25 +1,42 @@
 $(function () {
-
-  
-
-  function openIntroInBrand2 (){
-    $('.brands2openIntro').on('click', function(){
-      if($(this).hasClass("open")){
-        $(this).removeClass("open");
-        $(this).children('.content__redmore_open').show();
-        $(this).children('.content__redmore_close').hide();
-        $(this).closest('.brands2promo__right').find('.content_hide').slideUp(300);
-      }else{
-        $(this).addClass("open");
-        $(this).children('.content__redmore_open').hide();
-        $(this).children('.content__redmore_close').show();
-        $(this).closest('.brands2promo__right').find('.content_hide').slideDown(300);
+  $(".only_num").keydown(function (event) {
+    // Разрешаем: backspace, delete, tab и escape
+    if (
+      event.keyCode == 46 ||
+      event.keyCode == 8 ||
+      event.keyCode == 9 ||
+      event.keyCode == 27 ||
+      // Разрешаем: Ctrl+A
+      (event.keyCode == 65 && event.ctrlKey === true) ||
+      // Разрешаем: home, end, влево, вправо
+      (event.keyCode >= 35 && event.keyCode <= 39)
+    ) {
+      // Ничего не делаем
+      return;
+    } else {
+      // Запрещаем все, кроме цифр на основной клавиатуре, а так же Num-клавиатуре
+      if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
+        event.preventDefault();
       }
-      
-    })
-  }
-  openIntroInBrand2 ();
+    }
+  });
 
+  function openIntroInBrand2() {
+    $(".brands2openIntro").on("click", function () {
+      if ($(this).hasClass("open")) {
+        $(this).removeClass("open");
+        $(this).children(".content__redmore_open").show();
+        $(this).children(".content__redmore_close").hide();
+        $(this).closest(".brands2promo__right").find(".content_hide").slideUp(300);
+      } else {
+        $(this).addClass("open");
+        $(this).children(".content__redmore_open").hide();
+        $(this).children(".content__redmore_close").show();
+        $(this).closest(".brands2promo__right").find(".content_hide").slideDown(300);
+      }
+    });
+  }
+  openIntroInBrand2();
 
   var swiper = new Swiper(".brands2slider-container", {
     slidesPerView: 3,
@@ -47,14 +64,6 @@ $(function () {
       },
     },
   });
-
-
-
-
-
-
-
-
 
   $(".tabSizeOpen").on("click", function (e) {
     e.preventDefault;
@@ -578,8 +587,6 @@ $(function () {
 
   var m2_headerHeight = $(".m2_header").outerHeight();
   $(".m2_headerFake").css({ height: m2_headerHeight });
-
-
 
   //верхний отступ левого меню в зависимости от высоты полоски фильтров
   if ($(".catalogFilter1__area").length) {
@@ -1391,6 +1398,24 @@ $(function () {
     }
   });
 
+  $(".priceFilterEnterBtn").on("click", function () {
+    var filtrItemParent = $(this).closest(".filterBox");
+
+    if (filtrItemParent.find("input").val() != "") {
+      console.log("Выбрано");
+      filtrItemParent.closest(".catalogFilter1__item").find(".catalogFilter1__itemTitle").addClass("active");
+      $(".catalogFilter1__itemContent").removeClass("visible");
+      $(".catalogFilter1__itemTitle").removeClass("open1");
+      $(".catalogFilter1__overlay").hide();
+    } else {
+      console.log("не выбрано");
+      filtrItemParent.closest(".catalogFilter1__item").find(".catalogFilter1__itemTitle").removeClass("active");
+      $(".catalogFilter1__itemContent").removeClass("visible");
+      $(".catalogFilter1__itemTitle").removeClass("open1");
+      $(".catalogFilter1__overlay").hide();
+    }
+  });
+
   //скрипт визуального добавления атрибута checked для чекбокса обычного
   // if ($(".filterBox__checkbox").length) {
   //сам выбор
@@ -1417,10 +1442,15 @@ $(function () {
   // });
   // }
 
+  $(".filter__xInputBoxReset").on("click", function () {
+    $(this).closest(".filterBox").find("input[type=text]").val("");
+    // $(this).closest(".filterBox").find(".only_num").val("");
+  });
+
   //Выбор чекбоксов с цветами - применение эффекта по клику на пункт
   if ($(".filter__checkboxColor").length) {
     //сам выбор
-    $(".checkboxColor__item").click(function (e) {
+    $(".checkboxColor__item").on("click", function (e) {
       e.preventDefault();
       if ($(this).hasClass("checked")) {
         $(this).removeClass("checked");
@@ -1435,7 +1465,7 @@ $(function () {
       }
     });
     //сброс выбора именно для чекбоксов с цветами
-    $(".filter__checkboxColorReset").click(function (e) {
+    $(".filter__checkboxColorReset").on("click", function (e) {
       console.log("сброс фильтров");
       e.preventDefault();
       $(this).closest(".filterBox").find("input[type=checkbox]").removeAttr("checked");
@@ -1447,7 +1477,7 @@ $(function () {
 
   //Скрипт блока сортировки в фильтах
   if ($(".filterBox__sort").length) {
-    $(".filterSort__item").click(function (e) {
+    $(".filterSort__item").on("click", function (e) {
       e.preventDefault();
       $(this).closest(".filterBox__content").find(".filterSort__item").removeClass("filterSort__item_active");
       $(this).addClass("filterSort__item_active");
@@ -1507,7 +1537,7 @@ $(function () {
 
   // Adaptive filters js
   // Открытие фильтров
-  $(".filtersBtn_filtr").on("click",function (e) {
+  $(".filtersBtn_filtr").on("click", function (e) {
     e.preventDefault();
     if ($(this).hasClass("open")) {
       $(this).removeClass("open");
@@ -1522,21 +1552,20 @@ $(function () {
     }
   });
   // Закрытие фильтров по кнопке Close
-  $(".aFilters__close").on("click",function () {
+  $(".aFilters__close").on("click", function () {
     $(".filtersBtn_filtr").removeClass("open");
     $(".overlay1").hide();
     $(".aFilters__wrapper").fadeOut(200);
     $("body").removeClass("stop");
   });
 
-
-    // Закрытие фильтров по оверлею - не будет работать, так как aFilters__wrapper выше его. 
-    // $(".overlay1").on("click",function () {
-    //   $(".filtersBtn_filtr").removeClass("open");
-    //   $(".overlay1").hide();
-    //   $(".aFilters__wrapper").fadeOut(200);
-    //   $("body").removeClass("stop");
-    // });
+  // Закрытие фильтров по оверлею - не будет работать, так как aFilters__wrapper выше его.
+  // $(".overlay1").on("click",function () {
+  //   $(".filtersBtn_filtr").removeClass("open");
+  //   $(".overlay1").hide();
+  //   $(".aFilters__wrapper").fadeOut(200);
+  //   $("body").removeClass("stop");
+  // });
 
   $(".aFilterBox__title").on("click", function () {
     if ($(this).hasClass("open")) {
