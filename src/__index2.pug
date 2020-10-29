@@ -1,3 +1,5 @@
+include __shopTab
+
 mixin siteHeader2
   .site__header
     .topLine2__area.p1280
@@ -125,7 +127,9 @@ mixin siteHeader2
           .logo2
             a(href="#")
               img(src="assets/img/logo8801000mir.svg", alt="")
+
           .header2__buttons
+            .headerRightLi.openShops_dt(href="#") Магазины
             .login2__area
               .login2__item
                 a(href="#") Войти
@@ -193,6 +197,7 @@ mixin siteFooter2
     +m2_bottomMenu
     //- +aBrands
     +aBrandsTabs
+    +shopTab
     +adaptiveMenuArs
     //- +footer  
 

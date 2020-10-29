@@ -5,8 +5,10 @@ include __index2
 include __brandsPage2
 include __header
 include __footer
+include __breadcrumbs
 include __m2_catalog
 include __brand
+include __shopTab
 include __adaptiveMenuArs
 
 include __filters
@@ -26,6 +28,7 @@ body
   +siteHeader2
 
   .site__center.site__center_fdc
+    +fake-breadcrumbs_inBrand
     .brands2promo__area.p1280
       .brands2promo__outer
         .brands2promo
@@ -42,14 +45,11 @@ body
               div.content__redmore_open Подробнее
               div.content__redmore_close Свернуть
     .catalogPage__outer.w0
-      //- .title1.w1
-      //-   h1= pageTitle
-      //-   span 785
       .catalogPage.w1
         +adaptiveFilters
         +leftMenuUlLi
         .catalog__outer
-          +filtersBtnsLine
+          +filtersBtnsLine2
           +filtersArea
           +catalogArea
           +pagiantion

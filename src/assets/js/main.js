@@ -56,8 +56,25 @@ $(function () {
       0: {
         slidesPerView: 1,
       },
-      600: {
+      320: {
         slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      600: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
       },
       1200: {
         slidesPerView: 3,
@@ -285,6 +302,21 @@ $(function () {
     }
   });
 
+  $(".aShopsTabs__title").on("click", function (e) {
+    e.preventDefault();
+    var tabNumber;
+    if (!$(this).hasClass("active")) {
+      tabNumber = $(this).data("tab");
+      $(".aShopsTabs__title").removeClass("active");
+      $(".aShopsTabs__widget").hide().removeClass("active");
+      $(this).addClass("active");
+      $(".aShopsTabs__widgets")
+        .find("[data-widget='" + tabNumber + "']")
+        .fadeIn(400)
+        .addClass("active");
+    }
+  });
+
   // товарные слайдеры ны главной
   if ($(".septSlider1__outer").length) {
     var mySwiper1 = new Swiper(".septSlider1", {
@@ -426,6 +458,60 @@ $(function () {
   });
 
   // end brandMobile
+
+  $(".aShopOpenBtn, .openShops_dt").on("click", function (e) {
+    e.preventDefault;
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $("body").removeClass("stop");
+      $(".aShops__overlay").hide();
+      $(".aShops__area").hide();
+    } else {
+      $(this).addClass("active");
+      $("body").addClass("stop");
+      $(".aShops__overlay").show();
+      $(".aShops__area").show();
+    }
+    $(".menuButton1__areaJS").removeClass("open");
+    $(".menuButton1").removeClass("open");
+    $(".orangeHeader__area").removeClass("orangeHeader__area_fixed");
+    $(".orangeHeader__areaFake2").css({ height: "0" });
+    $(".upBox__area").slideUp(200);
+  });
+  $(".aShops__overlay").on("click", function (e) {
+    e.preventDefault;
+    $(".aShopOpenBtn, .openShops_dt").removeClass("active");
+    $("body").removeClass("stop");
+    $(".aShops__overlay").hide();
+    $(".aShops__area").hide();
+  });
+  $(".aShops__close").on("click", function (e) {
+    e.preventDefault;
+    $(".aShopOpenBtn, .openShops_dt").removeClass("active");
+    $("body").removeClass("stop");
+    $(".aShops__overlay").hide();
+    $(".aShops__area").hide();
+  });
+
+  if ($(window).width() <= 1080) {
+    var m2_menuHeight2 = $(".m2_bottomMenu__area").outerHeight();
+    $(".aShops__area_mb").css({ bottom: m2_menuHeight2 });
+  }
+
+  $(window).resize(function () {
+    if ($(window).width() <= 1080) {
+      var m2_menuHeight2 = $(".m2_bottomMenu__area").outerHeight();
+      $(".aShops__area_mb").css({ bottom: m2_menuHeight2 });
+    }
+
+    // if ($(window).width() > 1080) {
+    //   $(".aBrands__area").hide();
+    //   $(".aBrands__overlay").hide();
+    //   $("body").removeClass("stop");
+    //   $(".aBrandOpenBtn").removeClass("active");
+    //   $(".aBrands__area_mb").css({ bottom: "auto" });
+    // }
+  });
 
   // aCatalog - скрипт перенесен в студию
   // $(".aCatalogOpenBtn").click(function (e) {

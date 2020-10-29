@@ -74,6 +74,9 @@
   .content table {
     margin: 0 0 5px 0;
   }
+  .content {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
