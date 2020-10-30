@@ -1,4 +1,25 @@
 $(function () {
+  var swiper = new Swiper(".lookSlider-container", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    speed: 600,
+    autoplay: {
+      delay: 70000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".lookSlider__right",
+      prevEl: ".lookSlider__left",
+    },
+    pagination: {
+      el: ".lookSlider-pagination",
+      clickable: true,
+    },
+    // mousewheel: true,
+    keyboard: true,
+  });
+
   $(".only_num").keydown(function (event) {
     // Разрешаем: backspace, delete, tab и escape
     if (
