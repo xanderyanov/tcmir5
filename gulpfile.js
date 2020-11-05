@@ -111,6 +111,18 @@ gulp.task("devjs", function () {
   );
 });
 
+gulp.task("sliderJs", function () {
+  return (
+    gulp
+      .src("src/assets/js/slider.js")
+      .pipe(plumber())
+      // .pipe(sourcemaps.init()) //Инициализируем sourcemap
+      // .pipe(uglify()) //Сожмем наш js
+      // .pipe(sourcemaps.write("."))
+      .pipe(gulp.dest("build/assets/js"))
+  );
+});
+
 gulp.task("fonts", function () {
   return gulp.src("src/assets/fonts/**/*.*").pipe(gulp.dest("build/assets/fonts"));
 });
@@ -119,7 +131,10 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "myJs", "devjs", "fonts")));
+gulp.task(
+  "build",
+  gulp.series("clean", gulp.parallel("css", "pug", "image", "js", "sliderJs", "myJs", "devjs", "fonts"))
+);
 
 gulp.task("watch", function () {
   gulp.watch("src/assets/**/*.css*", gulp.series("css")).on("uplink", function (filepath) {
@@ -137,6 +152,10 @@ gulp.task("watch", function () {
   gulp.watch("src/assets/js/devjs.js", gulp.series("devjs")).on("uplink", function (filepath) {
     remember.forget("devjs", path.resolve(filepath));
     delete cached.caches.devjs[path.resolve(filepath)];
+  });
+  gulp.watch("src/assets/js/slider.js", gulp.series("sliderJs")).on("uplink", function (filepath) {
+    remember.forget("sliderJs", path.resolve(filepath));
+    delete cached.caches.sliderJs[path.resolve(filepath)];
   });
   gulp.watch("src/**/*.pug", gulp.series("pug"));
 });

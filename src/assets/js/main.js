@@ -1,25 +1,4 @@
 $(function () {
-  var swiper = new Swiper(".lookSlider-container", {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 0,
-    speed: 600,
-    autoplay: {
-      delay: 70000,
-      disableOnInteraction: true,
-    },
-    navigation: {
-      nextEl: ".lookSlider__right",
-      prevEl: ".lookSlider__left",
-    },
-    pagination: {
-      el: ".lookSlider-pagination",
-      clickable: true,
-    },
-    // mousewheel: true,
-    keyboard: true,
-  });
-
   $(".only_num").keydown(function (event) {
     // Разрешаем: backspace, delete, tab и escape
     if (
@@ -58,50 +37,6 @@ $(function () {
     });
   }
   openIntroInBrand2();
-
-  var swiper = new Swiper(".brands2slider-container", {
-    slidesPerView: 3,
-    loop: true,
-    spaceBetween: 20,
-    speed: 600,
-    autoplay: {
-      delay: 177000,
-      disableOnInteraction: true,
-    },
-    navigation: {
-      nextEl: ".brands2slider__right",
-      prevEl: ".brands2slider__left",
-    },
-    keyboard: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      600: {
-        slidesPerView: 4,
-        spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-    },
-  });
 
   $(".tabSizeOpen").on("click", function (e) {
     e.preventDefault;
@@ -150,48 +85,6 @@ $(function () {
     $(".header2__searchArea").hide();
   });
 
-  //index2_sliders
-  // Маленький слайдер убрали - заменили на статичный баннер
-  // var swiper = new Swiper(".s1-container", {
-  //   slidesPerView: 1,
-  //   loop: true,
-  //   spaceBetween: 0,
-  //   speed: 600,
-  //   autoplay: {
-  //     delay: 7000,
-  //     disableOnInteraction: true,
-  //   },
-  //   navigation: {
-  //     nextEl: ".ss1__right",
-  //     prevEl: ".ss1__left",
-  //   },
-  //   pagination: {
-  //     el: ".s1-pagination",
-  //     clickable: true,
-  //   },
-  //   keyboard: true,
-  // });
-
-  var swiper = new Swiper(".s2-container", {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 0,
-    speed: 600,
-    autoplay: {
-      delay: 7000,
-      disableOnInteraction: true,
-    },
-    navigation: {
-      nextEl: ".ss2__right",
-      prevEl: ".ss2__left",
-    },
-    pagination: {
-      el: ".s2-pagination",
-      clickable: true,
-    },
-    // mousewheel: true,
-    keyboard: true,
-  });
   // setTimeout(function () {
   //   if (!$(".s2-container").length) return;
   //   var $window = $(window);
@@ -206,54 +99,6 @@ $(function () {
   //   });
   // }, 10);
 
-  var swiper = new Swiper(".best2-container", {
-    slidesPerView: 6,
-    loop: true,
-    spaceBetween: 0,
-    speed: 600,
-    autoplay: {
-      delay: 177000,
-      disableOnInteraction: true,
-    },
-    navigation: {
-      nextEl: ".best2__right",
-      prevEl: ".best2__left",
-    },
-    keyboard: true,
-    // containerModifierClass: "s1-container-",
-    // slideClass: "ss1",
-    // slideActiveClass: "ss1-active",
-    // slideDuplicateActiveClass: "ss1-duplicate-active",
-    // slideVisibleClass: "ss1-visible",
-    // slideDuplicateClass: "ss1-duplicate",
-    // slideNextClass: "ss1-next",
-    // slideDuplicateNextClass: "ss1-duplicate-next",
-    // slidePrevClass: "ss1-prev",
-    // slideDuplicatePrevClass: "ss1-duplicate-prev",
-    // slideBlankClass: "ss1-invisible-blank",
-    // wrapperClass: "s1-wrapper",
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-      },
-      400: {
-        slidesPerView: 2,
-      },
-      600: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      1080: {
-        slidesPerView: 5,
-      },
-      1200: {
-        slidesPerView: 6,
-      },
-    },
-  });
-
   var swiper = new Swiper(".best3-container", {
     slidesPerView: 1,
     loop: true,
@@ -267,44 +112,7 @@ $(function () {
       nextEl: ".best3__right",
       prevEl: ".best3__left",
     },
-    // mousewheel: true,
     keyboard: true,
-  });
-
-  var swiper = new Swiper(".bottomWide-container", {
-    slidesPerView: 6,
-    loop: true,
-    spaceBetween: 0,
-    speed: 600,
-    autoplay: {
-      delay: 177000,
-      disableOnInteraction: true,
-    },
-    navigation: {
-      nextEl: ".bottomWide__right",
-      prevEl: ".bottomWide__left",
-    },
-    keyboard: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      400: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1024: {
-        slidesPerView: 4,
-      },
-      1280: {
-        slidesPerView: 5,
-      },
-      1600: {
-        slidesPerView: 6,
-      },
-    },
   });
 
   //табы

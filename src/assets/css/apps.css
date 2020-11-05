@@ -121,6 +121,15 @@
 @import "__index2.css";
 @import "__index2-media.css";
 
+@import "../chunks/__sliderMain1/__sliderMain1.css";
+@import "../chunks/__sliderMain1/__sliderMain1-media";
+
+@import "../chunks/__best/__best.css";
+@import "../chunks/__best/__best-media.css";
+
+@import "../chunks/__collage/__collage.css";
+@import "../chunks/__collage/__collage-media";
+
 @import "__brandsPage2.css";
 @import "__brandsPage2-media.css";
 

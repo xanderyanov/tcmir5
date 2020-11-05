@@ -22,24 +22,11 @@
     flex-direction: row;
     width: 50%;
   }
-  .collage__wrapper {
-    padding: 0 10px;
-  }
 }
 
 @media only screen and (max-width: 1300px) {
   .p1280 {
     padding: 0 10px;
-  }
-  .best2slider {
-    padding: 10px 2rem 20px;
-  }
-  .best2__left {
-    left: 0;
-  }
-
-  .best2__right {
-    right: 0;
   }
 }
 
@@ -53,12 +40,7 @@
   /* .menu21__area {
     display: none;
   } */
-  .best2__itemInfo {
-    align-items: center;
-  }
-  .best2__itemPriceArea {
-    justify-content: center;
-  }
+
   .topLine2__area {
     display: none;
   }
@@ -92,14 +74,6 @@
   .firstPromo span {
     font-size: 1.5rem;
   }
-  .ss2_info {
-    height: 4rem;
-  }
-  .ss2__left,
-  .ss2__right {
-    height: 4rem;
-    width: 4rem;
-  }
   a.videoLink_dt {
     display: none;
   }
@@ -127,15 +101,6 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .ss2_info {
-    height: 3.5rem;
-    font-size: 1.125rem;
-  }
-  .ss2__left,
-  .ss2__right {
-    height: 3.5rem;
-    width: 3.5rem;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -214,15 +179,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .best2slider {
-    padding: 10px 1rem 1rem;
-  }
-  .best2__left,
-  .best2__right {
-    width: 3rem;
-    height: 3rem;
-    margin-top: -1.5rem;
-  }
   .bottomWide__left,
   .bottomWide__right {
     position: absolute;
@@ -234,14 +190,6 @@
   }
   .firstPromo span p {
     font-size: 1rem;
-  }
-  .ss2_info {
-    height: 3rem;
-  }
-  .ss2__left,
-  .ss2__right {
-    height: 3rem;
-    width: 3rem;
   }
 
   .linkBox3__itemWrapper_1 {
@@ -262,18 +210,6 @@
   .linkBox3 {
     padding: 20px 0 20px;
   }
-  .collage {
-    width: 33.333%;
-  }
-  .collage__4 {
-    width: 100%;
-  }
-  .collage__itemOuter_4_1 {
-    width: 50%;
-  }
-  .collage__itemOuter_4_2 {
-    width: 50%;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -284,9 +220,7 @@
   .firstPromo {
     padding: 5px;
   }
-  .ss2_info {
-    font-size: 1rem;
-  }
+
   /* .firstPromo span {
     padding: 5px;
   } */
@@ -327,13 +261,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .best2slider {
-    padding: 10px 0 1rem;
-  }
-  .best2__left,
-  .best2__right {
-    top: 30%;
-  }
 }
 
 @media only screen and (max-width: 320px) {

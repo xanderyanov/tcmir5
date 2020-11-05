@@ -7,6 +7,7 @@ include __filters
 include __filters-adaptive
 include __leftMenu
 include __catalog
+include __pagination
 include __textInContent
 include __footer
 include __scripts
@@ -17,20 +18,25 @@ html(lang="ru-RU")
 body
 
   .site__header
-    +header
+    +siteHeader2
 
   .site__center
     .title1.w1
       h1= pageTitle
     //- include __breadcrumbs
     +shop
-    .catalogPage.w1
-      +adaptiveFilters
-      +leftMenu
-      .catalog__outer
-        +filtersBtnsLine
-        +filtersArea
-        +catalogArea
+    .catalogPage__outer.w0
+      //- .title1.w1
+      //-   h1= pageTitle
+      //-   span 785
+      .catalogPage.w1
+        +adaptiveFilters
+        +leftMenuTreePath
+        .catalog__outer
+          +filtersBtnsLine
+          +filtersArea
+          +catalogArea
+          +pagiantion
     +textInContent
 
   .site__footer
