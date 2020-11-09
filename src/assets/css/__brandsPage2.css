@@ -30,6 +30,29 @@
   position: relative;
 }
 
+.brands2slider-wrapper {
+  align-items: center;
+}
+
+.brands2slider-slideFirst {
+  position: relative;
+  padding: 25px;
+}
+.brands2slider-slideFirst img {
+  display: block;
+  width: 100%;
+}
+.brands2slider-slideFirst span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* .brands2slider-slideFirst:after {
+  display: block;
+  content: "";
+  margin-top: 100%;
+} */
+
 .brands2slider-slide a {
   position: relative;
   display: flex;
