@@ -221,6 +221,34 @@
   color: var(--orange);
 }
 
+.catalogMenu li.lmLev4 > div > a {
+  padding: 4px 2px 4px 60px;
+}
+
+.catalogMenu li.lmLev4 > div span {
+  font-weight: 400;
+  color: var(--lmDark);
+  font-size: 0.75rem;
+}
+
+.catalogMenu li.lmLev4.active > div span:first-child {
+  color: var(--orange);
+}
+
+.catalogMenu li.lmLev5 > div > a {
+  padding: 4px 2px 4px 70px;
+}
+
+.catalogMenu li.lmLev5 > div span {
+  font-weight: 400;
+  color: var(--lmDark);
+  font-size: 0.75rem;
+}
+
+.catalogMenu li.lmLev5.active > div span:first-child {
+  color: var(--orange);
+}
+
 /* .catalogMenu li.lmLev1 > a {
   color: #fff !important;
 } */
