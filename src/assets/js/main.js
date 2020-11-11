@@ -1434,6 +1434,7 @@ $(function () {
     closeBtn: false,
     arrows: true,
     keyboard: true,
+    autoplay: false,
     nextClick: true,
     infobar: true,
     protect: true,

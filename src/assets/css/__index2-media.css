@@ -176,9 +176,12 @@
   }
 }
 @media screen and (orientation: portrait) and (max-device-width: 768px) {
-  /* .fancybox-iframe{
+  /* .fancybox-iframe {
     height: auto !important;
   } */
+  .fancybox-slide--current {
+    background: #000;
+  }
   .fancybox-video {
     height: auto !important;
   }

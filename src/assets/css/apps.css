@@ -133,6 +133,8 @@
 @import "__brandsPage2.css";
 @import "__brandsPage2-media.css";
 
+@import "../chunks/__loader/__loader.css";
+
 @import "__shopTab.css";
 @import "__shopTab-media.css";
 

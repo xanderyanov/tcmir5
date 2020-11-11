@@ -43,6 +43,10 @@ h6 {
   margin-bottom: 20px;
 }
 
+.content_less {
+  position: relative;
+}
+
 .content p,
 /* .content ul,
 .content ol, */
@@ -53,6 +57,12 @@ h6 {
   line-height: 1.5;
   margin: 0 0 10px 0;
   color: var(--tColor);
+}
+
+.content_less p {
+  font-size: 0.875rem;
+  color: var(--tColor);
+  line-height: 1.4;
 }
 
 .content p:last-child,
