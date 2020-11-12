@@ -28,6 +28,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .brands2slider_dt {
+    display: none;
+  }
+  .brands2slider_mb {
+    display: block;
+  }
   .brands2promo {
     flex-direction: column;
   }

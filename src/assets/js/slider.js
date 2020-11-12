@@ -186,12 +186,12 @@ $(function () {
   //     $(this).removeAttr("data-src");
   //   };
   // });
-  setTimeout(function () {
-    $(".brands2slider-slide img[data-src]").each(function () {
-      $(this).attr("src", $(this).data("src"));
-      $(this).removeAttr("data-src");
-    });
-  }, 500);
+  // setTimeout(function () {
+  $(".brands2slider-slide img[data-src]").each(function () {
+    $(this).attr("src", $(this).data("src"));
+    $(this).removeAttr("data-src");
+  });
+  // }, 500);
 
   // var swiper = new Swiper(".brands2slider-container", {
   //   slidesPerView: 3,

@@ -34,10 +34,16 @@
 .brands2slider {
   width: 100%;
   position: relative;
-  display: block;
   transition: all 0.3s;
   opacity: 1;
   height: auto;
+}
+
+.brands2slider_dt {
+  display: block;
+}
+.brands2slider_mb {
+  display: none;
 }
 
 /* .brands2slider_hide {
@@ -117,7 +123,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  /* display: flex; */
+  display: flex;
   line-height: 0;
   margin: 0;
   padding: 0;

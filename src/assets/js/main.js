@@ -1430,13 +1430,13 @@ $(function () {
     $(elem).removeAttr("data-fancybox");
   });
 
-  $("a[data-fancybox]").fancybox({
+  $("a[data-fancybox='gallery']").fancybox({
     closeBtn: false,
     arrows: true,
     keyboard: true,
     autoplay: false,
     nextClick: true,
-    infobar: true,
+    infobar: false, // Should display counter at the top left corner
     protect: true,
     backFocus: false, // убирает рассинхрон с swiper
     nextEffect: "elastic",
@@ -1448,6 +1448,13 @@ $(function () {
     touch: {
       vertical: true, // Allow to drag content vertically
       momentum: true, // Continue movement after releasing mouse/touch when panning
+    },
+    image: {
+      // Wait for images to load before displaying
+      //   true  - wait for image to load and then display;
+      //   false - display thumbnail and load the full-sized image over top,
+      //           requires predefined image dimensions (`data-width` and `data-height` attributes)
+      preload: true,
     },
   });
 

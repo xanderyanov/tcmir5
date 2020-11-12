@@ -176,16 +176,16 @@
   }
 }
 @media screen and (orientation: portrait) and (max-device-width: 768px) {
-  /* .fancybox-iframe {
-    height: auto !important;
-  } */
-  .fancybox-slide--current {
-    background: #000;
+  .fancybox-iframe {
+    height: 100% !important;
   }
+  /* .fancybox-slide--current {
+    background: #000;
+  } */
   .fancybox-video {
     height: auto !important;
   }
-  .fancybox-slide {
+  .fancybox-slide--current {
     height: auto !important;
     overflow: initial !important;
     position: absolute;
