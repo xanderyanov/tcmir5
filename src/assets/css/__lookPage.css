@@ -245,3 +245,88 @@
   background: #f8f8f8;
   border: 1px solid #dedede;
 }
+
+/* lookCard in Catalog */
+
+.lookCard__area {
+  width: 25%;
+  padding: 5px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+}
+.lookCard__area_inLeftMenu {
+  width: 100%;
+  padding: 5px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.lookCard__area_dt {
+  display: block;
+}
+
+.lookCard__area_mb {
+  display: none;
+}
+
+.lookCard__outer {
+  border: 1px solid var(--x1border);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.lookCard {
+  display: flex;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.lookCard__inner {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.lookCard__inner img {
+  display: block;
+  width: 100%;
+  position: relative;
+  transition: all 0.5s;
+  object-fit: cover;
+}
+
+.lookCard__buyBtn {
+  position: absolute;
+  width: 60%;
+  height: 40px;
+  left: 20%;
+  top: 50%;
+  margin-top: -20px;
+  background: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.lookCard:hover .lookCard__buyBtn {
+  opacity: 1;
+}
+
+.lookCard__area_mb .lookCard__buyBtn {
+  opacity: 1;
+}
+
+.lookCard:hover .lookCard__inner img {
+  transform: scale(1.02);
+}

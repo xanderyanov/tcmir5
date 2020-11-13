@@ -1355,16 +1355,16 @@
 .bottomWide__item a:after {
   content: "";
   position: absolute;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 6rem;
+  height: 6rem;
   top: 50%;
   left: 50%;
-  margin-top: -3.75em;
-  margin-left: -3.75rem;
+  margin-top: -3em;
+  margin-left: -3rem;
   background-image: url(../img/index2/play2.svg);
   background-size: cover;
   z-index: 10;
-  opacity: 0;
+  /* opacity: 0; */
   transition: all 0.5s;
 }
 
@@ -1376,7 +1376,7 @@ a.videoLink_mb {
 }
 
 .bottomWide__item a:hover:after {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .bottomWide__item a img {

@@ -60,10 +60,10 @@
   }
   .bottomWide__item a:after {
     opacity: 1;
-    width: 5rem;
-    height: 5rem;
-    margin-top: -2.5rem;
-    margin-left: -2.5rem;
+    width: 4rem;
+    height: 4rem;
+    margin-top: -2rem;
+    margin-left: -2rem;
   }
   .about2__outer {
     padding: 1rem 0 2rem;

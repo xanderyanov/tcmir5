@@ -190,6 +190,12 @@ mixin m2_innerCategory
 mixin catalogArea  
   //- импорт из data.json (подключается через gulp task)
   .catalog
+    .lookCard__area.lookCard__area_mb
+      .lookCard__outer
+        a.lookCard(href="")
+          .lookCard__inner
+            img(src="assets/img/look/01.jpg", alt="")
+            .lookCard__buyBtn Купить
     each item in tovars
       .tovarCard__area(id=item.id)
         .tovarCard__areaborder
@@ -224,6 +230,7 @@ mixin catalogArea
                     span Размеры: 
                     span S, L, XL, XXL
                   .tovarCard__moreInfoLink Подробнее...
+    
             
 
   

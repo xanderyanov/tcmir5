@@ -5,6 +5,12 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .lookCard__area_mb {
+    display: block;
+  }
+  .lookCard__area_dt {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -43,6 +49,9 @@
   .lookSlider__buttons {
     display: none;
   }
+  .lookCard__area {
+    width: 33%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,10 +81,16 @@
   .lookSlider__buttons {
     display: flex;
   }
+  .lookCard__area {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
 }
 
 @media only screen and (max-width: 320px) {
+  .lookCard__area {
+    width: 90%;
+  }
 }
